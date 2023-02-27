@@ -2,13 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pdf
+*.png
 *.wav
 *.DS_Store
-*.scd
-*.midi
-*.mid
-
-*.old.ly
+*.aux
+*.log
+*.synctex.gz
 
 # C extensions
 *.so
