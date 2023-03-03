@@ -9,7 +9,7 @@
         \context LayoutContext = "Layout"
         {
             \autoPageBreaksOff
-            \evans-lbsd #20 #'(19 19 22 19 22 22 19 22 19)
+            \evans-lbsd #20 #'(19 23 22 23 22 22 23 22 23)
             \evans-new-spacing-section #1 #35
             \evans-system-X-offset #4
             s1 * 3/4
@@ -29,7 +29,7 @@
             \evans-new-spacing-section #1 #24
             s1 * 1/2
             \break
-            \evans-lbsd #20 #'(19 19 22 19 22 22 19 22 19)
+            \evans-lbsd #20 #'(19 23 22 23 22 22 23 22 23)
             \evans-system-X-offset #4
             \pageBreak
             \evans-new-spacing-section #1 #35
@@ -53,7 +53,7 @@
             \evans-new-spacing-section #1 #24
             s1 * 5/8
             \break
-            \evans-lbsd #20 #'(19 19 22 19 22 22 19 22 19)
+            \evans-lbsd #20 #'(19 23 22 23 22 22 23 22 23)
             \evans-system-X-offset #4
             \pageBreak
         }

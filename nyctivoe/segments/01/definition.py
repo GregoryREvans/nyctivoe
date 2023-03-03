@@ -9,20 +9,6 @@ from abjadext import rmakers
 
 import nyctivoe
 
-
-def swells(selections):
-    ties = abjad.select.logical_ties(selections)
-    leaves = [tie[0] for tie in ties]
-    cyc_dynamics = evans.CyclicList(["p", "mf", "p", "f"], forget=False)
-    cyc_hairpins = evans.CyclicList(["<", ">"], forget=False)
-    for leaf in leaves:
-        dynamic = abjad.Dynamic(cyc_dynamics(r=1)[0])
-        abjad.attach(dynamic, leaf)
-    for leaf in leaves[:-1]:
-        hairpin = abjad.StartHairpin(cyc_hairpins(r=1)[0])
-        abjad.attach(hairpin, leaf)
-
-
 seed(4)
 
 
@@ -702,7 +688,7 @@ maker = evans.SegmentMaker(
                 hide_middle_note_heads=True,
                 zero_padding=True,
             ),
-            swells,
+            nyctivoe.swells,
             abjad.Clef("petrucci-c3"),
             # nyctivoe.E_color,
         ),
@@ -783,7 +769,7 @@ maker = evans.SegmentMaker(
                 hide_middle_note_heads=True,
                 zero_padding=True,
             ),
-            swells,
+            nyctivoe.swells,
             # nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -1066,7 +1052,7 @@ maker = evans.SegmentMaker(
                 hide_middle_note_heads=True,
                 zero_padding=True,
             ),
-            swells,
+            nyctivoe.swells,
             abjad.Clef("bass"),
             # nyctivoe.E_color,
         ),
@@ -1209,7 +1195,7 @@ maker = evans.SegmentMaker(
                 hide_middle_note_heads=True,
                 zero_padding=True,
             ),
-            swells,
+            nyctivoe.swells,
             abjad.Clef("bass"),
             # nyctivoe.E_color,
         ),

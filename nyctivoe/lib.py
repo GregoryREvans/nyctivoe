@@ -970,3 +970,122 @@ def add_fancy_glisses(indices=[0]):
             )
 
     return returned_function
+
+
+def swells(selections):
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    leaves = [tie[0] for tie in ties]
+    cyc_dynamics = evans.CyclicList(["p", "mf", "p", "f"], forget=False)
+    cyc_hairpins = evans.CyclicList(["<", ">"], forget=False)
+    for leaf in leaves:
+        dynamic = abjad.Dynamic(cyc_dynamics(r=1)[0])
+        abjad.attach(dynamic, leaf)
+    for leaf in leaves[:-1]:
+        hairpin = abjad.StartHairpin(cyc_hairpins(r=1)[0])
+        abjad.attach(hairpin, leaf)
+
+
+def tenor_fingerings(selections):
+    strings = [
+        r"\tenor-sax-chart-one",
+        r"\tenor-sax-chart-seven",
+        r"\tenor-sax-chart-fourteen",
+        r"\tenor-sax-chart-thirtyseven",
+        r"\tenor-sax-chart-sixtynine",
+        r"\tenor-sax-chart-seventyfive",
+        r"\tenor-sax-chart-seventyseven",
+        r"\tenor-sax-chart-seventyeight",
+        r"\tenor-sax-chart-eightyeight",
+    ]
+    markups = [abjad.Markup(_) for _ in strings]
+    cyc_marks = evans.CyclicList(markups, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf, direction=abjad.UP)
+
+
+def tenor_dynamics(selections):
+    dynamics = [
+        abjad.Dynamic(_) for _ in ["ff", "p", "mf", "p", "f", "mp", "f", "ff", "p"]
+    ]
+    cyc_marks = evans.CyclicList(dynamics, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf)
+
+
+def baritone_fingerings(selections):
+    strings = [
+        r"\bari-sax-chart-one",
+        r"\bari-sax-chart-seven",
+        r"\bari-sax-chart-fourteen",
+        r"\bari-sax-chart-thirtyseven",
+        r"\bari-sax-chart-sixtynine",
+        r"\bari-sax-chart-seventyfive",
+        r"\bari-sax-chart-seventyseven",
+        r"\bari-sax-chart-seventyeight",
+        r"\bari-sax-chart-eightyeight",
+    ]
+    markups = [abjad.Markup(_) for _ in strings]
+    cyc_marks = evans.CyclicList(markups, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf, direction=abjad.UP)
+
+
+def baritone_dynamics(selections):
+    dynamics = [
+        abjad.Dynamic(_) for _ in ["ff", "mp", "p", "mf", "f", "mf", "p", "mp", "f"]
+    ]
+    cyc_marks = evans.CyclicList(dynamics, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf)
+
+
+def upward_gliss(selections):
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    groups = []
+    sub_group = []
+    for tie in ties:
+        if len(sub_group) < 1:
+            sub_group.append(tie)
+        else:
+            if tie[0].written_pitch < sub_group[-1][0].written_pitch:
+                groups.append(sub_group)
+                sub_group = [tie]
+            else:
+                sub_group.append(tie)
+    if 1 < len(sub_group):
+        groups.append(sub_group)
+    for group in groups:
+        leaves = abjad.select.leaves(group)
+        zero_padding_glissando(leaves)
+
+
+def downward_gliss(selections):
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    groups = []
+    sub_group = []
+    for tie in ties:
+        if len(sub_group) < 1:
+            sub_group.append(tie)
+        else:
+            if sub_group[-1][0].written_pitch < tie[0].written_pitch:
+                groups.append(sub_group)
+                sub_group = [tie]
+            else:
+                sub_group.append(tie)
+    if 1 < len(sub_group):
+        groups.append(sub_group)
+    for group in groups:
+        leaves = abjad.select.leaves(group)
+        zero_padding_glissando(leaves)

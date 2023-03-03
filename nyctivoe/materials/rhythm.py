@@ -7,6 +7,143 @@ from abjadext import rmakers
 ##
 
 
+def C_rhythm(
+    stage=1,
+    rotation=0,
+    treat_tuplets=True,
+    extra_counts=[0],
+    preamble=[],
+    preprocessor=None,
+    rewrite=None,
+):  # G
+    if stage == 1:
+
+        # numerators = evans.Sequence([4, 4, 2, 4]).rotate(rotation)
+        numerators = evans.Sequence([2, 3, 6, 1, 3, 4, 2]).rotate(rotation)
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preamble=preamble,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 2:
+
+        # numerators = evans.Sequence([4, 4, 2, 4, 4]).rotate(rotation)
+        numerators = evans.Sequence([2, 3, 6, 4, 3, 2, 1]).rotate(rotation)
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preamble=preamble,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 3:
+
+        # numerators = evans.Sequence([4, 4, 2, 4, 4, 4]).rotate(rotation)
+        numerators = evans.Sequence([2, 3, 4, 3, 2, 1]).rotate(rotation)
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preamble=preamble,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 4:
+
+        # numerators = evans.Sequence([4, 4, 4, 2, 4, 4, 4]).rotate(rotation)
+        numerators = evans.Sequence([2, 3, 2, 1]).rotate(rotation)
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preamble=preamble,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+
+
 def E_rhythm(
     stage=1,
     long_rotation=0,

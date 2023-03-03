@@ -83,6 +83,7 @@ info = {
             site="before",
             directed=False,
         ),
+        LilyPondLiteral(argument="\\oneVoice", site="absolute_before", directed=False),
     ],
     "Voice 8": [
         LilyPondLiteral(
@@ -107,5 +108,6 @@ info = {
             site="before",
             directed=False,
         ),
+        LilyPondLiteral(argument="\\oneVoice", site="absolute_before", directed=False),
     ],
 }

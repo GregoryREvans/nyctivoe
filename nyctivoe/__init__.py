@@ -12,6 +12,8 @@ from .lib import (
     add_fancy_glisses,
     alternate_glissandi,
     angles,
+    baritone_dynamics,
+    baritone_fingerings,
     bis_trill,
     cello_alternate_glissandi,
     cello_swell_dynamics,
@@ -55,13 +57,17 @@ from .lib import (
     stop_repeat_blue,
     stop_repeat_red,
     swell_dynamics,
+    swells,
+    tenor_dynamics,
+    tenor_fingerings,
     trill_ties,
     triple_swell,
+    upward_gliss,
     zero_padding_glissando,
 )
 from .materials.instruments import instruments
-from .materials.pitch import potamia_pitches
-from .materials.rhythm import E_rhythm
+from .materials.pitch import baritone_multiphonics, tenor_multiphonics
+from .materials.rhythm import C_rhythm, E_rhythm
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
@@ -163,6 +169,8 @@ __all__ = [
     "fuse_preprocessor",
     "fuse_preprocessor_2",
     "fuse_preprocessor_2_1",
+    "tenor_fingerings",
+    "baritone_fingerings",
     "fuse_preprocessor_3",
     "fuse_preprocessor_3_1",
     "fuse_preprocessor_3_2",
@@ -198,7 +206,11 @@ __all__ = [
     "stop_repeat_blue",
     "substitute_16",
     "swell_dynamics",
+    "swells",
     "trill_ties",
     "triple_swell",
     "zero_padding_glissando",
+    "tenor_dynamics",
+    "baritone_dynamics",
+    "upward_gliss",
 ]
