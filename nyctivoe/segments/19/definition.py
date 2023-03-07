@@ -104,6 +104,10 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+            evans.Attachment(
+                abjad.StopTrillSpan(),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
         ),
         evans.MusicCommand(
             ("cello voice", (0, 5)),
@@ -128,6 +132,10 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+            evans.Attachment(
+                abjad.StopTrillSpan(),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
         ),
         evans.call(
             "score",

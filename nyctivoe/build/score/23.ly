@@ -6,7 +6,7 @@
                   %! COMMENT_MEASURE_NUMBERS
                   %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
-                \tempo 4=48
+                \tempo 4=60
                 \mark \markup \bold {  }
                   %! scaling time signatures
                 \time 4/4
@@ -15,7 +15,7 @@
                   \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 3)
                   \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"48"
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
                   }
                 }
 
@@ -205,115 +205,781 @@
                                     \context Voice = "saxophone 1 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 1]
-                                        r1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.8 1)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        d''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 2]
-                                        r2.
+                                        d''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8.
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 3]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 4]
-                                        r2
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8.
+                                        ]
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 5]
-                                        r1..
+                                        d''4
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 4]
+                                            d''4
+
+                                            d''8
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 5]
+                                            d''4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        d''4
+
+                                        \times 4/5
+                                        {
+
+                                            d''4
+
+                                            d''16
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 6]
-                                        r1.
+                                        d''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 7]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+                                        ~
+
+                                        d''4
+
+                                        d''4
+                                        ~
+
+                                        d''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 7]
+                                            d''8
+
+                                            d''4
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 8]
-                                        r1
+                                        d''4
+                                        ~
+
+                                        d''4
+
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            d''4
+
+                                            d''16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 9]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        d''4
+
+                                        d''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            d''4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 10]
-                                        r2.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+                                            ~
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 11]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 12]
-                                        r2.
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8.
+                                        ]
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 13]
-                                        r2
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 14]
-                                        r1..
+                                            d''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 15]
-                                        r1.
+                                            d''4
+                                            ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 16]
-                                        r2
+                                            d''16
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 12]
+                                            d''4
+
+                                            d''8
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8.
+                                            ]
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 14]
+                                            d''4
+
+                                            d''16
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            d''16
+
+                                            d''4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            d''8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8.
+                                            ]
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+                                            ~
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 17]
-                                        r2
+                                        d''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 18]
-                                        r1.
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 18]
+                                            d''16
+
+                                            d''4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            d''8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        d''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+                                            ~
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 19]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+                                        ~
+
+                                        d''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 20]
-                                        r2
+                                        d''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 21]
-                                        r1..
+                                        \times 4/5
+                                        {
+
+                                            d''16
+
+                                            d''4
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 21]
+                                            d''4
+
+                                            d''8
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            d''8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        d''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 22]
-                                        r1
+                                        d''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            d''16
+
+                                            d''4
+
+                                        }
+
+                                        d''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            d''4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -491,112 +1157,800 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 1]
-                                        r1
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+                                            ~
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 2]
-                                        r2.
+                                        a''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8.
+                                        ]
+                                        ~
+
+                                        a''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 3]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8.
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 4]
-                                        r2
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+                                        ~
+
+                                        a''4
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 4]
+                                            a''4
+
+                                            a''8
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 5]
-                                        r1..
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 6]
-                                        r1.
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 7]
-                                        r2
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        a''4
+
+                                        a''4
+                                        ~
+
+                                        a''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        a''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+                                            ~
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            a''4
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 7]
+                                            a''8
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 8]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8.
+                                            ]
+
+                                        }
+
+                                        a''4
+                                        ~
+
+                                        a''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 9]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        a''4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            a''4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 10]
-                                        r2.
+                                        a''4
+                                        ~
+
+                                        a''4
+
+                                        \times 4/5
+                                        {
+
+                                            a''4
+
+                                            a''16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 11]
-                                        r1
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 12]
-                                        r2.
+                                        a''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 13]
-                                        r2
+                                        a''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 14]
-                                        r1..
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 15]
-                                        r1.
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 16]
-                                        r2
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 14]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+                                        ~
+
+                                        a''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            a''8
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+                                            ~
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 17]
-                                        r2
+                                        a''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 18]
-                                        r1.
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 18]
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''8
+                                            [
+                                            ~
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        a''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 19]
-                                        r2
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+
+                                            a''16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 20]
-                                        r2
+                                        a''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 21]
-                                        r1..
+                                        a''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 22]
-                                        r1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            a''8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        a''4
+                                        ~
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 22]
+                                            a''16
+
+                                            a''4
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        a''4
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''16
+
+                                            a''4
+
+                                            a''16
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -765,115 +2119,798 @@
                             \context Voice = "percussion voice"
                             {
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 1]
-                                r1
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 2]
-                                r2.
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 1]
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.6 0.8 1)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                c'4
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'32
+                                    [
+
+                                    c'8
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+                                    ~
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 2]
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 3]
-                                r2
+                                c'4
+                                ~
+
+                                c'4
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 4]
-                                r2
+                                c'4
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 5]
-                                r1..
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 6]
-                                r1.
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16.
+                                    ]
+                                    ~
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 5]
+                                    c'4
+                                    ~
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+                                ~
+
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 6]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'8
+                                    ~
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+                                ~
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                c'4
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 7]
-                                r2
+                                c'4
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'8
+                                    ~
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 8]
-                                r1
+                                c'4
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8.
+                                    ]
+                                    ~
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 9]
-                                r1
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 10]
-                                r2.
+                                c'4
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'32
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8.
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 11]
-                                r1
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 12]
-                                r2.
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 13]
-                                r2
+                                \times 2/3
+                                {
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 14]
-                                r1..
+                                    c'16
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 15]
-                                r1.
+                                    c'4
+                                    ~
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
+
+                                c'4
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 12]
+                                    c'4
+
+                                    c'8
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 13]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 14]
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+                                ~
+
+                                \times 2/3
+                                {
+
+                                    c'4
+                                    ~
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'8
+                                    ~
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 15]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    c'8
+
+                                    c'4
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'8
+                                    ~
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 16]
-                                r2
+                                c'4
+                                ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 17]
-                                r2
+                                c'4
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 18]
-                                r1.
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 17]
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 18]
+                                    c'16
+
+                                    c'4
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'8
+                                    ~
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+                                    ~
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 19]
-                                r2
+                                c'4
+                                ~
+
+                                c'4
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 20]
-                                r2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 21]
-                                r1..
+                                \revert Staff.Stem.stemlet-length
+                                c'8.
+                                ]
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    c'16
+
+                                    c'4
+                                    ~
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 21]
+                                    c'8
+
+                                    c'4
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 2/3
+                                {
+
+                                    c'16
+
+                                    c'4
+                                    ~
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'8
+                                    ]
+
+                                }
+
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    c'4
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                c'4
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 22]
-                                r1
+                                c'4
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    c'16
+
+                                    c'4
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+                                    ~
+
+                                }
+
+                                c'4
+                                  %! MATERIAL_COLOR
+                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1047,112 +3084,784 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 1]
-                                        r1
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 2]
-                                        r2.
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                            c'16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 3]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        c'4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 4]
-                                        r2
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 5]
-                                        r1..
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 5]
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 6]
-                                        r1.
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+                                            ~
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 7]
-                                        r2
+                                        c'4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 8]
-                                        r1
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 9]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 10]
-                                        r2.
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 11]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 12]
-                                        r2.
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 12]
+                                            c'4
+
+                                            c'8
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 13]
-                                        r2
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 14]
-                                        r1..
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 14]
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 15]
-                                        r1.
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 16]
-                                        r2
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            c'8
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 17]
-                                        r2
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 18]
-                                        r1.
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 18]
+                                            c'16
+
+                                            c'4
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 19]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 20]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 21]
-                                        r1..
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 21]
+                                            c'4
+
+                                            c'8
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        c'4
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 22]
-                                        r1
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+
+                                            c'16
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1327,115 +4036,810 @@
                                     \context Voice = "cello voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 1]
-                                        r1
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.8 1)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+                                            ~
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
-                                        r2.
+                                        c'4
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'16
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        r2
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 4]
-                                        r2
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 4]
+                                            c'4
+
+                                            c'8
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        r1..
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 6]
-                                        r1.
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        r2
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        c'4
+
+                                        c'4
+                                        ~
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        r2.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+                                            ~
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        r1
+                                        c'4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 12]
-                                        r2.
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 13]
-                                        r2
+                                            c'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 14]
-                                        r1..
+                                            c'4
+                                            ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 15]
-                                        r1.
+                                            c'16
+                                            ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 16]
-                                        r2
+                                        }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 17]
-                                        r2
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 12]
+                                            c'8
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'8
+                                            ~
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 14]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        c'4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            c'8
+
+                                            c'4
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 17]
+                                            c'4
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 18]
-                                        r1.
+                                        c'4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 19]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8.
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 20]
-                                        r2
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 21]
-                                        r1..
+                                        c'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        c'4
+
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 22]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                        ~
+
+                                        c'4
+
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()

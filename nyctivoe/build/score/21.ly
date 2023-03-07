@@ -117,25 +117,170 @@
                                     \context Voice = "saxophone 1 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 1]
-                                        r2
+                                        <<
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 2]
-                                        r2
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 3]
-                                        r4.
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 1 voice measure 1]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                                \clef "treble"
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                <d''>8 * 2/7
+                                                [
+                                                (
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 4]
-                                        r2
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                d''2
+                                                :32
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 1 voice measure 2]
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                <d''>8 * 2/7
+                                                [
+                                                (
+
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                d''2
+                                                :32
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 1 voice measure 3]
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                <d''>8 * 2/7
+                                                [
+                                                (
+
+                                                d''8 * 2/7
+
+                                                d''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                d''4.
+                                                :32
+                                                ~
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [temporary music measure 4]
+                                                d''4
+                                                :32
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                <d''>8 * 2/7
+                                                [
+                                                (
+
+                                                d''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                d''4
+                                                :32
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
+
+                                            }
+
+                                        >>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -543,10 +688,48 @@
                                         % [saxophone 2 voice measure 1]
                                         r2
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 2]
-                                        r2
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 2 voice measure 2]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                                \clef "treble"
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                <a''>8 * 2/7
+                                                [
+                                                (
+
+                                                a''8 * 2/7
+
+                                                a''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                a''2
+                                                :32
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
+
+                                            }
+
+                                        >>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -880,15 +1063,142 @@
                                     \context Voice = "viola voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 1]
-                                        r2
+                                        <<
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 2]
-                                        r2
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [viola voice measure 1]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                                \clef "petrucci-c3"
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                a'8 * 2/7
+                                                [
+                                                (
+
+                                                bqf'8 * 2/7
+
+                                                c''8 * 2/7
+
+                                                aqs'8 * 2/7
+
+                                                f''8 * 2/7
+
+                                                cqs''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \pitchedTrill
+                                                bf2
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak bound-details.right.padding 0
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak staff-padding 6
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \startTrillSpan bf
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [viola voice measure 2]
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                c'''8 * 2/7
+                                                [
+                                                (
+
+                                                bqf''8 * 2/7
+
+                                                c'''8 * 2/7
+
+                                                dqf'''8 * 2/7
+
+                                                b''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \pitchedTrill
+                                                c'2
+                                                  %! SPANNER_STOP
+                                                  %! baca._do_spanner_indicator_command(2)
+                                                  %! baca.trill_spanner()
+                                                \stopTrillSpan
+                                                  %! SPANNER_STOP
+                                                  %! baca._do_spanner_indicator_command(2)
+                                                  %! baca.trill_spanner()
+                                                \stopTrillSpan
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak bound-details.right.padding 0
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak staff-padding 6
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \startTrillSpan c'
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
+
+                                            }
+
+                                        >>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1103,13 +1413,33 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 10]
-                                        r2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        \afterGrace
+                                        c'2
+                                        \glissando
+                                        {
+
+                                            c'8
+
+                                        }
+
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 11]
-                                        r4.
-                                        \bar "||"
+                                        \afterGrace
+                                        c'4.
+                                        \glissando
+                                        {
+
+                                            c'8
+                                            \bar "||"
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
+
 
                                     }
 
@@ -1212,20 +1542,199 @@
                                     \context Voice = "cello voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 1]
-                                        r2
+                                        <<
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 2]
-                                        r2
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 3]
-                                        r4.
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [cello voice measure 1]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                                \clef "bass"
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                f8 * 2/7
+                                                [
+                                                (
+
+                                                cqs'8 * 2/7
+
+                                                c'8 * 2/7
+
+                                                a8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \pitchedTrill
+                                                f,2
+                                                ~
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak bound-details.right.padding 0
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak staff-padding 6
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \startTrillSpan f,
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [temporary music measure 2]
+                                                f,8
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                bqf'8 * 2/7
+                                                [
+                                                (
+
+                                                c''8 * 2/7
+
+                                                aqs'8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \pitchedTrill
+                                                aqf,4.
+                                                  %! SPANNER_STOP
+                                                  %! baca._do_spanner_indicator_command(2)
+                                                  %! baca.trill_spanner()
+                                                \stopTrillSpan
+                                                ~
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak bound-details.right.padding 0
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak staff-padding 6
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \startTrillSpan aqf,
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [temporary music measure 3]
+                                                aqf,8
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                  %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-3
+
+                                                  %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                  %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                gqf'8 * 2/7
+                                                [
+                                                (
+
+                                                d''8 * 2/7
+                                                )
+                                                ]
+
+                                            }
+
+                                            \context Voice = "temporary music"
+                                            {
+
+                                                  %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \pitchedTrill
+                                                af4
+                                                  %! SPANNER_STOP
+                                                  %! baca._do_spanner_indicator_command(2)
+                                                  %! baca.trill_spanner()
+                                                \stopTrillSpan
+                                                  %! SPANNER_STOP
+                                                  %! baca._do_spanner_indicator_command(2)
+                                                  %! baca.trill_spanner()
+                                                \stopTrillSpan
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak bound-details.right.padding 0
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                - \tweak staff-padding 6
+                                                  %! SPANNER_START
+                                                  %! baca._do_spanner_indicator_command(1)
+                                                  %! baca.trill_spanner()
+                                                \startTrillSpan af
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
+
+                                            }
+
+                                        >>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()

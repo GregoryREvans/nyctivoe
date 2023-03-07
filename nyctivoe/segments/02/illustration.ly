@@ -1436,32 +1436,155 @@
                                 % [percussion voice measure 5]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.8 1)
-                                c'4.
+                                \clef "percussion"
+                                c'4
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'16
+
+                                    c'16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+                                    ~
+
+                                }
+
+                                c'8
+                                ~
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 6]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    c'32
+
+                                    c'32
+
+                                    c'32
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    c'16
+
+                                    c'4
+                                    ~
+
+                                    c'16
+                                    ~
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 7]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16.
+                                    [
+
+                                    c'32
+
+                                    c'32
+
+                                    c'32
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                c'16
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
                                 ~
 
                                 c'4
                                 ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 6]
-                                c'2
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 7]
-                                c'1
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 8]
-                                c'4.
-                                ~
-
                                 c'4
                                 ~
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 8]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'16
+
+                                    c'16
+
+                                    c'16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    c'4
+
+                                    c'16
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1472,31 +1595,124 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 10]
-                                c'4.
-                                ~
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                c'16
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'32
+                                    [
+
+                                    c'32
+
+                                    c'32
+
+                                    c'32
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16.
+                                    ]
+                                    ~
+
+                                }
+
+                                c'8
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 11]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    c'16
+
+                                    c'16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 12]
+                                    c'16
+
+                                    c'4
+                                    ~
+
+                                    c'16
+                                    ~
+
+                                }
 
                                 c'4
-                                ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 11]
-                                c'4
-                                ~
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 12]
-                                c'1
-                                ~
+                                c'16
+
+                                c'16
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'32
+                                    ]
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 13]
-                                c'4.
-                                ~
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                c'16
+
+                                c'16
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
 
                                 c'4
+                                ~
+
+                                c'8
                                 \bar "||"
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
@@ -2025,381 +2241,302 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 5]
-                                        fqs'2
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-4
-
-                                                \override NoteHead.no-ledgers = ##t
-                                                \override Accidental.transparent = ##t
-                                                \override NoteHead.transparent = ##t
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <f'>8 * 2/5
-                                                ^ \staccato
-                                                - \markup {\hspace #1 "gett.(5)" }
-                                                [
-                                                (
-
-                                                c''8 * 2/5
-                                                ^ \staccato
-
-                                                c''8 * 2/5
-                                                ^ \staccato
-
-                                                c''8 * 2/5
-                                                ^ \staccato
-
-                                                c''8 * 2/5
-                                                ^ \staccato
-                                                )
-                                                ]
-                                                \override NoteHead.no-ledgers = ##f
-                                                \override Accidental.transparent = ##f
-                                                \override NoteHead.transparent = ##f
-
-                                            }
-
-                                            \context Voice = "viola voice"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                f'8
-                                                ~
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [viola voice measure 6]
-                                                f'8
-
-                                            }
-
-                                        >>
-
-                                          %! abjad.on_beat_grace_container(5)
-                                        \oneVoice
-                                        d'4.
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        \clef "petrucci-c3"
+                                        c'4
                                         ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'8
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                            c'4
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 7]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+
+                                        }
+
+                                        c'4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            c'4
+
+                                            c'16
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        c'16
+
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
 
                                         \times 2/3
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [viola voice measure 7]
-                                            d'8
+                                            % [viola voice measure 8]
+                                            c'16
 
-                                            <<
+                                            c'4
+                                            ~
 
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
-
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <cqs'>8 * 1/2
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(4)" }
-                                                    [
-                                                    (
-
-                                                    c''8 * 1/2
-                                                    ^ \staccato
-
-                                                    c''8 * 1/2
-                                                    ^ \staccato
-
-                                                    c''8 * 1/2
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "viola voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    cqs'4
-
-                                                }
-
-                                            >>
-
-                                        }
-
-                                          %! abjad.on_beat_grace_container(5)
-                                        \oneVoice
-                                        fqs'2
-
-                                        \times 2/3
-                                        {
-
-                                            f'4
-
-                                            d'8
+                                            c'16
                                             ~
 
                                         }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 8]
-                                        d'4
+                                        c'4
                                         ~
 
                                         \times 2/3
                                         {
 
-                                            d'4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
 
-                                            cqs'8
-                                            ~
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
 
                                         }
 
-                                        cqs'8
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 9]
-                                        fqs'4
-                                        ~
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 9]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            c'16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 10]
-                                        fqs'4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                        \times 2/3
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
                                         {
 
-                                            <<
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
 
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
+                                            c'32
 
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <f'>8 * 2/5
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(5)" }
-                                                    [
-                                                    (
+                                            c'8
+                                            ~
 
-                                                    c''8 * 2/5
-                                                    ^ \staccato
-
-                                                    c''8 * 2/5
-                                                    ^ \staccato
-
-                                                    c''8 * 2/5
-                                                    ^ \staccato
-
-                                                    c''8 * 2/5
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "viola voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    f'4
-
-                                                }
-
-                                            >>
-
-                                              %! abjad.on_beat_grace_container(5)
-                                            \oneVoice
-                                            d'8
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
                                             ~
 
                                         }
 
-                                        d'8
+                                        c'8
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 11]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            c'16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 12]
+                                            c'16
+
+                                            c'4
+                                            ~
+
+                                            c'16
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+
+                                        }
+
+                                        c'4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 11]
-                                        d'4
-
-                                        \times 2/3
-                                        {
-
-                                            <<
-
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
-
-                                                      %! COMMENT_MEASURE_NUMBERS
-                                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                                    % [viola voice measure 12]
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <cqs'>8 * 1/3
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(6)" }
-                                                    [
-                                                    (
-
-                                                    c''8 * 1/3
-                                                    ^ \staccato
-
-                                                    c''8 * 1/3
-                                                    ^ \staccato
-
-                                                    c''8 * 1/3
-                                                    ^ \staccato
-
-                                                    c''8 * 1/3
-                                                    ^ \staccato
-
-                                                    c''8 * 1/3
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "viola voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    cqs'4
-
-                                                }
-
-                                            >>
-
-                                              %! abjad.on_beat_grace_container(5)
-                                            \oneVoice
-                                            fqs'8
-                                            ~
-
-                                        }
-
-                                        fqs'4
+                                        c'4
                                         ~
-
-                                        \times 2/3
-                                        {
-
-                                            fqs'4
-
-                                            f'8
-                                            ~
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            f'8
-
-                                            d'4
-                                            ~
-
-                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 13]
-                                        d'4
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                        \times 2/3
+                                        c'16
+
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 4/5
                                         {
 
-                                            d'8
+                                            c'16
 
-                                            cqs'4
+                                            c'4
+                                            ~
 
                                         }
 
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-4
-
-                                                \override NoteHead.no-ledgers = ##t
-                                                \override Accidental.transparent = ##t
-                                                \override NoteHead.transparent = ##t
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <fqs'>8 * 1/5
-                                                ^ \staccato
-                                                - \markup {\hspace #1 "gett.(5)" }
-                                                [
-                                                (
-
-                                                c''8 * 1/5
-                                                ^ \staccato
-
-                                                c''8 * 1/5
-                                                ^ \staccato
-
-                                                c''8 * 1/5
-                                                ^ \staccato
-
-                                                c''8 * 1/5
-                                                ^ \staccato
-                                                )
-                                                ]
-                                                \override NoteHead.no-ledgers = ##f
-                                                \override Accidental.transparent = ##f
-                                                \override NoteHead.transparent = ##f
-
-                                            }
-
-                                            \context Voice = "viola voice"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                fqs'8
-                                                \bar "||"
-
-                                            }
-
-                                        >>
+                                        c'8
+                                        \bar "||"
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                     }
 
@@ -2931,65 +3068,116 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        a2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        \clef "petrucci-c3"
+                                        c'4
 
-                                        <<
+                                        \times 4/5
+                                        {
 
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
 
-                                                \override NoteHead.no-ledgers = ##t
-                                                \override Accidental.transparent = ##t
-                                                \override NoteHead.transparent = ##t
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <c'>8 * 2/5
-                                                ^ \staccato
-                                                - \markup {\hspace #1 "gett.(5)" }
-                                                [
-                                                (
+                                            c'16
 
-                                                e'8 * 2/5
-                                                ^ \staccato
+                                            c'16
 
-                                                e'8 * 2/5
-                                                ^ \staccato
+                                            c'16
 
-                                                e'8 * 2/5
-                                                ^ \staccato
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
 
-                                                e'8 * 2/5
-                                                ^ \staccato
-                                                )
-                                                ]
-                                                \override NoteHead.no-ledgers = ##f
-                                                \override Accidental.transparent = ##f
-                                                \override NoteHead.transparent = ##f
+                                        }
 
-                                            }
+                                        c'8
+                                        ~
 
-                                            \context Voice = "cello voice"
-                                            {
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                c'8
-                                                ~
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8.
+                                            [
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 6]
-                                                c'8
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
 
-                                            }
+                                        }
 
-                                        >>
+                                        \times 2/3
+                                        {
 
-                                          %! abjad.on_beat_grace_container(5)
-                                        \oneVoice
-                                        bf4.
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 7]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                            ~
+
+                                        }
+
+                                        c'4
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            c'16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        c'4
                                         ~
 
                                         \times 2/3
@@ -2997,238 +3185,103 @@
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 7]
-                                            bf8
+                                            % [cello voice measure 8]
+                                            c'4
 
-                                            <<
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
 
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
-
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <g>8 * 1/2
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(4)" }
-                                                    [
-                                                    (
-
-                                                    e'8 * 1/2
-                                                    ^ \staccato
-
-                                                    e'8 * 1/2
-                                                    ^ \staccato
-
-                                                    e'8 * 1/2
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "cello voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    g4
-
-                                                }
-
-                                            >>
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
 
                                         }
 
-                                          %! abjad.on_beat_grace_container(5)
-                                        \oneVoice
-                                        aqf2
-
-                                        \times 2/3
+                                        \times 4/5
                                         {
 
-                                            f4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
 
-                                            a8
-                                            ~
+                                            c'16
 
-                                        }
+                                            c'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 8]
-                                        a4
-                                        ~
+                                            c'16
 
-                                        \times 2/3
-                                        {
-
-                                            a4
-
-                                            c'8
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
                                             ~
 
                                         }
 
                                         c'8
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
-                                        bf4
+                                        c'4
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        bf4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                        \times 2/3
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
                                         {
 
-                                            <<
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
 
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
+                                            c'32
 
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <g>8 * 2/5
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(5)" }
-                                                    [
-                                                    (
+                                            c'32
 
-                                                    e'8 * 2/5
-                                                    ^ \staccato
-
-                                                    e'8 * 2/5
-                                                    ^ \staccato
-
-                                                    e'8 * 2/5
-                                                    ^ \staccato
-
-                                                    e'8 * 2/5
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "cello voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    g4
-
-                                                }
-
-                                            >>
-
-                                              %! abjad.on_beat_grace_container(5)
-                                            \oneVoice
-                                            aqf8
-                                            ~
-
-                                        }
-
-                                        aqf8
-                                        ~
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 11]
-                                        aqf4
-
-                                        \times 2/3
-                                        {
-
-                                            <<
-
-                                                \context Voice = "On_Beat_Grace_Container"
-                                                {
-                                                      %! abjad.on_beat_grace_container(1)
-                                                    \set fontSize = #-4
-
-                                                      %! COMMENT_MEASURE_NUMBERS
-                                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                                    % [cello voice measure 12]
-                                                    \override NoteHead.no-ledgers = ##t
-                                                    \override Accidental.transparent = ##t
-                                                    \override NoteHead.transparent = ##t
-                                                      %! abjad.on_beat_grace_container(3)
-                                                    \voiceOne
-                                                    <f>8 * 1/3
-                                                    ^ \staccato
-                                                    - \markup {\hspace #1 "gett.(6)" }
-                                                    [
-                                                    (
-
-                                                    e'8 * 1/3
-                                                    ^ \staccato
-
-                                                    e'8 * 1/3
-                                                    ^ \staccato
-
-                                                    e'8 * 1/3
-                                                    ^ \staccato
-
-                                                    e'8 * 1/3
-                                                    ^ \staccato
-
-                                                    e'8 * 1/3
-                                                    ^ \staccato
-                                                    )
-                                                    ]
-                                                    \override NoteHead.no-ledgers = ##f
-                                                    \override Accidental.transparent = ##f
-                                                    \override NoteHead.transparent = ##f
-
-                                                }
-
-                                                \context Voice = "cello voice"
-                                                {
-
-                                                      %! abjad.on_beat_grace_container(4)
-                                                    \voiceTwo
-                                                    f4
-
-                                                }
-
-                                            >>
-
-                                              %! abjad.on_beat_grace_container(5)
-                                            \oneVoice
-                                            a8
-                                            ~
-
-                                        }
-
-                                        a4
-                                        ~
-
-                                        \times 2/3
-                                        {
-
-                                            a4
-
+                                            \revert Staff.Stem.stemlet-length
                                             c'8
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 11]
+                                            c'16
+
+                                            c'4
                                             ~
 
                                         }
@@ -3236,9 +3289,69 @@
                                         \times 2/3
                                         {
 
-                                            c'8
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 12]
+                                            c'4
 
-                                            bf4
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            c'32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
                                             ~
 
                                         }
@@ -3246,66 +3359,22 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 13]
-                                        bf4
+                                        c'4
                                         ~
 
-                                        \times 2/3
-                                        {
+                                        c'4
+                                        ~
 
-                                            bf8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                            g4
-
-                                        }
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-4
-
-                                                \override NoteHead.no-ledgers = ##t
-                                                \override Accidental.transparent = ##t
-                                                \override NoteHead.transparent = ##t
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <aqf>8 * 1/5
-                                                ^ \staccato
-                                                - \markup {\hspace #1 "gett.(5)" }
-                                                [
-                                                (
-
-                                                e'8 * 1/5
-                                                ^ \staccato
-
-                                                e'8 * 1/5
-                                                ^ \staccato
-
-                                                e'8 * 1/5
-                                                ^ \staccato
-
-                                                e'8 * 1/5
-                                                ^ \staccato
-                                                )
-                                                ]
-                                                \override NoteHead.no-ledgers = ##f
-                                                \override Accidental.transparent = ##f
-                                                \override NoteHead.transparent = ##f
-
-                                            }
-
-                                            \context Voice = "cello voice"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                aqf8
-                                                \bar "||"
-
-                                            }
-
-                                        >>
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                        \bar "||"
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                     }
 

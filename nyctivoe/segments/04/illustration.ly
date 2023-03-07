@@ -107,24 +107,17 @@
                                         % [saxophone 1 voice measure 1]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        d''2
-                                        ~
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \afterGrace
+                                        d''2.
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''32
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''8.
-                                            ]
+                                            d''8
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -319,20 +312,17 @@
                                         d''2
                                         ~
 
-                                        \times 2/3
+                                        \afterGrace
+                                        d''8
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
                                             d''8
-                                            ]
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -452,90 +442,94 @@
                                         % [saxophone 1 voice measure 6]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        d''2
-                                        ~
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \afterGrace
+                                        d''2..
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''32
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''8.
-                                            ]
-                                            ~
+                                            d''8
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
-                                        d''8
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 7]
+                                            \slapped
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            d''16 * 45/64
                                             [
 
-                                            d''16
+                                            d''16 * 23/32
 
-                                            r16
+                                            d''16 * 25/32
 
-                                            d''16
+                                            d''16 * 55/64
 
-                                            d''16
+                                            d''16 * 1
 
-                                            \revert Staff.Stem.stemlet-length
-                                            r16
-                                            ]
+                                            d''16 * 75/64
 
-                                        }
+                                            d''16 * 89/64
 
-                                        \times 4/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            r16
-
-                                            d''16
-
-                                            d''16
+                                            d''16 * 103/64
 
                                             \revert Staff.Stem.stemlet-length
-                                            d''16
-                                            ]
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            r16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            r16
+                                            d''16 * 113/64
                                             ]
                                             \bar "||"
+                                            \revert-noteheads
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+                                        \revert TupletNumber.text
 
                                     }
 
@@ -629,142 +623,177 @@
                                         % [saxophone 2 voice measure 1]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        a''2
-                                        ~
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \afterGrace
+                                        a''2.
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''32
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8.
-                                            ]
+                                            a''8
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
 
-                                        \times 2/3
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 2]
+                                            \slapped
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            a''16 * 45/64
                                             [
 
-                                            a''16
+                                            a''16 * 23/32
 
-                                            r16
+                                            a''16 * 25/32
 
-                                            a''16
+                                            a''16 * 55/64
 
-                                            a''16
+                                            a''16 * 1
+
+                                            a''16 * 75/64
+
+                                            a''16 * 89/64
+
+                                            a''16 * 103/64
 
                                             \revert Staff.Stem.stemlet-length
-                                            r16
+                                            a''16 * 113/64
                                             ]
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 4/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
-                                            [
-
-                                            r16
-
-                                            a''16
-
-                                            a''16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            ]
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
-                                            [
-
-                                            r16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            r16
-                                            ]
-
-                                        }
-
-                                        \times 4/5
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2.
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 3]
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            a''32 * 33/32
                                             [
 
-                                            a''16
+                                            a''32 * 17/16
 
-                                            a''16
+                                            a''32 * 17/16
 
-                                            a''16
+                                            a''32 * 35/32
 
-                                            a''16
+                                            a''32 * 9/8
 
-                                            a''16
+                                            a''32 * 37/32
 
-                                            r16
+                                            a''32 * 39/32
 
-                                            a''16
+                                            a''32 * 41/32
 
-                                            r16
+                                            a''32 * 43/32
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            ]
+                                            a''32 * 45/32
 
-                                        }
+                                            a''32 * 3/2
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
+                                            a''32 * 51/32
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''32
-                                            [
+                                            a''32 * 27/16
 
-                                            a''32
+                                            a''32 * 57/32
 
-                                            a''32
+                                            a''32 * 59/32
 
-                                            a''32
-
-                                            a''32
-
-                                            a''32
+                                            a''32 * 61/32
 
                                             \revert Staff.Stem.stemlet-length
-                                            r32
+                                            a''32 * 61/32
                                             ]
+                                            \revert-noteheads
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+                                        \revert TupletNumber.text
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -1129,21 +1158,18 @@
                                         a''2
                                         ~
 
-                                        \times 2/3
+                                        \afterGrace
+                                        a''8
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
                                             a''8
-                                            ]
                                             \bar "||"
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+
 
                                     }
 
@@ -1331,24 +1357,17 @@
                                 % [percussion voice measure 3]
                                   %! MATERIAL_COLOR
                                 \staffHighlight #(rgb-color 0.6 0.8 1)
-                                c'2
-                                ~
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
+                                \afterGrace
+                                c'2.
+                                \glissando
                                 {
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'32
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'8.
-                                    ]
+                                    c'8
                                       %! MATERIAL_COLOR
                                     \stopStaffHighlight
 
                                 }
+
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1424,7 +1443,43 @@
                                   %! MATERIAL_COLOR
                                 \stopStaffHighlight
 
-                                \times 2/3
+                                \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                    {
+                                        \context Score = "Score"
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = 0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \context RhythmicStaff = "Rhythmic_Staff"
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = 5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = 4
+                                                \override TupletBracket.padding = 1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = 0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'2..
+                                            }
+                                        >>
+                                        \layout
+                                        {
+                                            indent = 0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                                \times 2/2
                                 {
 
                                       %! COMMENT_MEASURE_NUMBERS
@@ -1432,76 +1487,39 @@
                                     % [percussion voice measure 6]
                                       %! MATERIAL_COLOR
                                     \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                    \once \override Beam.grow-direction = #left
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    r16
+                                    c'16 * 3/4
                                     [
 
-                                    c'16
+                                    c'16 * 3/4
 
-                                    r16
+                                    c'16 * 25/32
 
-                                    c'16
+                                    c'16 * 53/64
 
-                                    c'16
+                                    c'16 * 29/32
 
-                                    \revert Staff.Stem.stemlet-length
-                                    r16
-                                    ]
+                                    c'16 * 63/64
 
-                                }
+                                    c'16 * 71/64
 
-                                \times 4/5
-                                {
+                                    c'16 * 5/4
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
+                                    c'16 * 91/64
 
-                                    r16
+                                    c'16 * 51/32
 
-                                    c'16
-
-                                    c'16
+                                    c'16 * 7/4
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    c'16 * 15/8
                                     ]
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
 
                                 }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'32
-                                    [
-
-                                    r32
-
-                                    r32
-
-                                    r32
-
-                                    c'32
-
-                                    c'32
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'32
-                                    ]
-
-                                }
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'16
-                                ]
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                \revert TupletNumber.text
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -1786,7 +1804,43 @@
 
                                         }
 
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2.
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
@@ -1794,68 +1848,35 @@
                                             % [viola voice measure 3]
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            c'16 * 51/64
                                             [
 
-                                            c'16
+                                            c'16 * 51/64
 
-                                            r16
+                                            c'16 * 27/32
 
-                                            c'16
+                                            c'16 * 29/32
 
-                                            c'16
+                                            c'16 * 65/64
 
-                                            \revert Staff.Stem.stemlet-length
-                                            r16
-                                            ]
+                                            c'16 * 73/64
 
-                                        }
+                                            c'16 * 21/16
 
-                                        \times 4/5
-                                        {
+                                            c'16 * 97/64
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            r16
-
-                                            c'16
-
-                                            c'16
+                                            c'16 * 111/64
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'32
-                                            [
-
-                                            r32
-
-                                            r32
-
-                                            r32
-
-                                            c'32
-
-                                            c'32
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'32
+                                            c'16 * 31/16
                                             ]
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+                                        \revert TupletNumber.text
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2016,53 +2037,34 @@
                                         % [viola voice measure 6]
                                           %! MATERIAL_COLOR
                                         \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        c'2
-                                        ~
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \afterGrace
+                                        c'2..
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'32
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'8.
-                                            ]
-                                            ~
+                                            c'8
 
                                         }
 
-                                        c'8
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 7]
-                                        c'4
+                                        c'2
                                         ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \afterGrace
+                                        c'8
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'32
-                                            [
-
                                             c'8
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-                                            ~
+                                            \bar "||"
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
-                                        c'8
-                                        \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -2393,22 +2395,55 @@
                                         c'2
                                         ~
 
-                                        \times 2/3
+                                        \afterGrace
+                                        c'8
+                                        \glissando
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
                                             c'8
-                                            ]
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
 
-                                        \times 2/3
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'4.
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
@@ -2416,163 +2451,186 @@
                                             % [cello voice measure 5]
                                               %! MATERIAL_COLOR
                                             \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            c'16 * 5/8
                                             [
 
-                                            c'16
+                                            c'16 * 43/64
 
-                                            r16
+                                            c'16 * 51/64
 
-                                            c'16
+                                            c'16 * 65/64
 
-                                            c'16
+                                            c'16 * 85/64
 
                                             \revert Staff.Stem.stemlet-length
-                                            r16
+                                            c'16 * 25/16
                                             ]
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            r16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2..
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 6]
+                                            \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'32
+                                            c'32 * 33/32
                                             [
 
-                                            c'32
+                                            c'32 * 33/32
 
-                                            c'32
+                                            c'32 * 33/32
 
-                                            r32
+                                            c'32 * 17/16
 
-                                            r32
+                                            c'32 * 35/32
 
-                                            r32
+                                            c'32 * 9/8
+
+                                            c'32 * 37/32
+
+                                            c'32 * 19/16
+
+                                            c'32 * 5/4
+
+                                            c'32 * 41/32
+
+                                            c'32 * 11/8
+
+                                            c'32 * 23/16
+
+                                            c'32 * 3/2
+
+                                            c'32 * 51/32
+
+                                            c'32 * 53/32
+
+                                            c'32 * 7/4
+
+                                            c'32 * 29/16
+
+                                            c'32 * 15/8
+
+                                            c'32 * 61/32
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'32
+                                            c'32 * 59/32
                                             ]
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 4/5
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            c'16
-
-                                            c'16
-
-                                            c'16
-
-                                            r16
-
-                                            c'16
-
-                                            r16
-
-                                            c'16
-
-                                            c'16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            c'16
-
-                                            c'16
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 7]
-                                            c'16
-
-                                            r16
-
-                                            c'16
-
-                                            c'16
-
-                                            c'16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
+                                            \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            r16
+                                            c'16 * 61/32
                                             [
 
-                                            c'16
+                                            c'16 * 115/64
 
-                                            r16
+                                            c'16 * 49/32
 
-                                            c'16
+                                            c'16 * 5/4
 
-                                            c'16
+                                            c'16 * 33/32
 
-                                            \revert Staff.Stem.stemlet-length
-                                            r16
-                                            ]
+                                            c'16 * 57/64
 
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            r16
+                                            c'16 * 13/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'16
+                                            c'16 * 25/32
                                             ]
                                             \bar "||"
                                               %! MATERIAL_COLOR
                                             \stopStaffHighlight
 
                                         }
+                                        \revert TupletNumber.text
 
                                     }
 

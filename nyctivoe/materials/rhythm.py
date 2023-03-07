@@ -7,6 +7,142 @@ from abjadext import rmakers
 ##
 
 
+def B_rhythm(
+    stage=1,
+    rotation=0,
+    numerators=[4],
+    run_denominators=[8],
+    rest_indices=None,
+    rest_period=None,
+    grace_counts=[3, 4, 5, 6, 7],
+    treat_tuplets=True,
+    extra_counts=[0],
+    preprocessor=None,
+    rewrite=None,
+):
+    if stage == 1:
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            for _ in abjad.select.get(
+                abjad.select.logical_ties(container), rest_indices, rest_period
+            ):
+                rmakers.force_rest(_)
+
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 2:
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.even_division(
+                run_denominators,
+                extra_counts=extra_counts,
+                preprocessor=preprocessor,
+                rewrite=False,
+                treat_tuplets=True,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            for _ in abjad.select.get(
+                abjad.select.leaves(container), rest_indices, rest_period
+            ):
+                rmakers.force_rest(_)
+
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 3:
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.even_division(
+                run_denominators,
+                extra_counts=extra_counts,
+                preprocessor=preprocessor,
+                rewrite=False,
+                treat_tuplets=True,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            for _ in abjad.select.get(
+                abjad.select.leaves(container), rest_indices, rest_period
+            ):
+                rmakers.force_rest(_)
+
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 4:
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                [_ for _ in numerators],
+                16,
+                # end_counts=[],
+                extra_counts=extra_counts,
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+            nested_music = maker(durations)
+            voice = abjad.Voice(nested_music)
+            ties = abjad.select.logical_ties(voice, pitched=True)
+            rmakers.on_beat_grace_container(
+                voice, "temporary music", ties, grace_counts, leaf_duration=(1, 28)
+            )
+            music = abjad.mutate.eject_contents(voice)
+            return music
+
+        return handler_function
+
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+
+
 def C_rhythm(
     stage=1,
     rotation=0,
@@ -15,7 +151,7 @@ def C_rhythm(
     preamble=[],
     preprocessor=None,
     rewrite=None,
-):  # G
+):
     if stage == 1:
 
         # numerators = evans.Sequence([4, 4, 2, 4]).rotate(rotation)
@@ -146,120 +282,140 @@ def C_rhythm(
 
 def E_rhythm(
     stage=1,
-    long_rotation=0,
-    short_rotation=0,
-    predicates=[lambda _: abjad.Duration(_.pair) < abjad.Duration((3, 4))],
-    treat_tuplets=True,
-    # denominators=[4],
-    # extra_counts=[0],
-    # indices=[0],
-    # period=1,
-    rotation=0,
+    numerator_rotation=0,
+    extra_counts_rotation=0,
+    insertions_rotation=0,
     preprocessor=None,
-    rewrite=-1,
-):  # G
+    treat_tuplets=True,
+    rewrite=None,
+):
+
+    extra_counts_ = [
+        0,
+        1,
+        2,
+        3,
+        2,
+        3,
+        0,
+        1,
+        0,
+        2,
+        1,
+        3,
+        2,
+        0,
+        3,
+        1,
+        1,
+        2,
+        3,
+        0,
+        3,
+        0,
+        1,
+        2,
+        1,
+        3,
+        2,
+        0,
+        3,
+        1,
+        0,
+        2,
+    ]
+    rotated_extra_counts = evans.Sequence(extra_counts_).rotate(extra_counts_rotation)
+
+    numerators = [
+        4,
+        6,
+        8,
+        12,
+        4,
+        8,
+        6,
+        12,
+        6,
+        8,
+        12,
+        4,
+        6,
+        12,
+        8,
+        4,
+        8,
+        12,
+        4,
+        6,
+        8,
+        4,
+        12,
+        6,
+        12,
+        4,
+        6,
+        8,
+        12,
+        6,
+        4,
+        8,
+    ]
+    rotated_numerators = evans.Sequence(numerators).rotate(numerator_rotation)
+
+    insertions = [
+        [1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1],
+        [1, 1, 1, 1],
+    ]
+    rotated_insertions = evans.Sequence(insertions).rotate(insertions_rotation)
+    cyclic_insertions = evans.CyclicList(rotated_insertions, forget=False)
+
+    finalized_numerators = []
+    for i in rotated_numerators:
+        finalized_numerators.append(i)
+        local_insertion = cyclic_insertions(r=1)[0]
+        finalized_numerators.extend(local_insertion)
+
     if stage == 1:
 
-        # def attack_selector(selections):
-        #     sel_1 = abjad.select.leaves(selections)
-        #     sel_2 = abjad.select.get(sel_1, indices, period)
-        #     return sel_2
+        def handler_function(durations, state=None, previous_state=None):
 
-        rtm = [
-            evans.rotate_tree("(1 ((2 (1 (1 (1 1)))) (2 (1 1 1)) 2 1 2))", n=_)
-            for _ in range(rotation, rotation + 12)
-        ]
-
-        handler_1 = evans.RhythmHandler(
-            evans.make_rtm(rtm, treat_tuplets=treat_tuplets), forget=False
-        )
-        handler_2 = evans.RhythmHandler(
-            evans.make_rtm(
-                ["(1 (1 (1 (1 1))))", "(1 (1 1 1))", "(1 (2 1 2))"],
+            maker = evans.talea(
+                [_ for _ in rotated_numerators],
+                16,
+                extra_counts=[_ for _ in rotated_extra_counts],
+                preprocessor=preprocessor,
+                rewrite=rewrite,
                 treat_tuplets=treat_tuplets,
-            ),
-            forget=False,
-        )
-        handler_3 = evans.RhythmHandler(
-            evans.make_rtm(
-                ["(1 (2 1))", "(1 (3 1))", "(1 (2 1))", "(1 (1 1))"],
-                treat_tuplets=treat_tuplets,
-            ),
-            forget=False,
-        )
-        handler_4 = evans.RhythmHandler(
-            evans.even_division([16], extra_counts=[2], treat_tuplets=treat_tuplets)
-        )
-        handler_5 = evans.RhythmHandler(
-            evans.make_rtm(
-                # ["(1 (-1 1 1 1 1 1 1))", "(1 (1 1 -3 -2))", "(1 (-3 1 1))", "(1 (1 1 1 1))"],
-                [
-                    "(1 ((1 (-1 1 1 1 1 1 1)) (1 (1 1 -1 1 1 -1)) 1))",
-                    "(1 ((1 (-1 1 -1 1 1)) (1 (1 1 1 1)) 1))",
-                ],
-                treat_tuplets=treat_tuplets,
-            ),
-            forget=False,
-        )
+            )
 
-        long_handlers = evans.Sequence([handler_1, handler_5]).rotate(long_rotation)
-        short_handlers = evans.Sequence([handler_2, handler_3]).rotate(  # also had 4
-            short_rotation
-        )
-
-        cyc_long = evans.CyclicList(long_handlers, forget=False)
-        cyc_short = evans.CyclicList(short_handlers, forget=False)
-
-        def handler_function(
-            durations, state=None, previous_state=None
-        ):  # seems to work accurately
-            time_signatures = [_ for _ in durations]
-            divisions = time_signatures
-            if preprocessor is not None:
-                durations = [abjad.Duration(_.pair) for _ in divisions]
-                divisions = preprocessor(durations)
-            if predicates is not None:
-                seq = evans.Sequence(divisions)
-                partitions = seq.partition_by_predicate_list(predicates)
-            if predicates[0](partitions[0][0]):
-                maker = evans.CyclicList([cyc_short, cyc_long], forget=False)
-                # marks = evans.CyclicList([abjad.Markup(r"\markup SHORT"), abjad.Markup(r"\markup LONG")], forget=False)
-                # prints = evans.CyclicList(["SHORT\n", "LONG\n"], forget=False)
-            else:
-                maker = evans.CyclicList([cyc_long, cyc_short], forget=False)
-                # marks = evans.CyclicList([abjad.Markup(r"\markup LONG"), abjad.Markup(r"\markup SHORT")], forget=False)
-                # prints = evans.CyclicList(["LONG\n", "SHORT\n"], forget=False)
             container = abjad.Container()
-            for partition in partitions:
-                maker_group = maker(r=1)[0]
-                # print(partition)
-                # print(prints(r=1)[0])
-                maker_ = maker_group(r=1)[0]
-                nested_music = maker_(partition)
-                # abjad.attach(marks(r=1)[0], abjad.select.leaf(nested_music, 0), direction=abjad.UP)
-                for component in nested_music:
-                    if isinstance(component, list):
-                        container.extend(component)
-                    else:
-                        container.append(component)
-                # for division in partition:
-                #     maker_ = maker_group(r=1)[0]
-                #     nested_music = maker_([division])
-                #     abjad.attach(marks(r=1)[0], abjad.select.leaf(nested_music, 0), direction=abjad.UP)
-                #     for component in nested_music:
-                #         if isinstance(component, list):
-                #             container.extend(component)
-                #         else:
-                #             container.append(component)
-            if rewrite is not None:
-                meter_command = evans.RewriteMeterCommand(boundary_depth=rewrite)
-                metered_staff = rmakers.wrap_in_time_signature_staff(
-                    container[:], time_signatures
-                )
-                meter_command(metered_staff)
-                music = abjad.mutate.eject_contents(metered_staff)
-            else:
-                music = abjad.mutate.eject_contents(container)
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            # for _ in abjad.select.get(abjad.select.logical_ties(container), rest_indices, rest_period):
+            #     rmakers.force_rest(_)
+
+            music = abjad.mutate.eject_contents(container)
 
             return music
 
@@ -267,7 +423,65 @@ def E_rhythm(
 
     if stage == 2:
 
-        return None
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.talea(
+                finalized_numerators,
+                16,
+                extra_counts=[_ for _ in rotated_extra_counts],
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            # for _ in abjad.select.get(abjad.select.logical_ties(container), rest_indices, rest_period):
+            #     rmakers.force_rest(_)
+
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
+
+    if stage == 3:
+
+        def handler_function(durations, state=None, previous_state=None):
+
+            maker = evans.note(
+                preprocessor=preprocessor,
+                rewrite=rewrite,
+                treat_tuplets=treat_tuplets,
+            )
+
+            container = abjad.Container()
+            nested_music = maker(durations)
+            for component in nested_music:
+                if isinstance(component, list):
+                    container.extend(component)
+                else:
+                    container.append(component)
+
+            music = abjad.mutate.eject_contents(container)
+
+            return music
+
+        return handler_function
 
     else:
-        raise Exception(f"No stage {stage}. Use 1 or 2.")
+        raise Exception(f"No stage {stage}. Use 1, 2, or 3.")
+
+
+def add_aftergraces(selections):
+    for tie in abjad.select.logical_ties(selections, pitched=True):
+        final_leaf = tie[-1]
+        grace = abjad.AfterGraceContainer([abjad.Note("c'8")])
+        abjad.attach(grace, final_leaf)
+        abjad.attach(abjad.Glissando(), final_leaf)

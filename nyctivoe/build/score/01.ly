@@ -441,195 +441,146 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 5]
-                                        r4
-
                                         a''4
                                         \p
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                         \<
-
-                                        r4
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 6]
-                                        a''4
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                        a''4
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                        ~
 
                                         \times 2/3
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 1 voice measure 7]
-                                            r4
+                                            a''16
 
                                             a''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            ~
 
-                                            r4
+                                            a''16
+                                            ~
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         a''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
                                         ]
+                                        ~
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 6]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
 
                                         \times 2/3
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                            [
+                                            a''4
 
                                             a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            r8
-                                            ]
+                                            ~
 
                                         }
 
-                                        r8
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 7]
+                                        a''4
 
-                                        r8
+                                        a''4
 
-                                        \times 4/5
+                                        a''4
+                                        ~
+
+                                        \times 2/3
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                            [
+                                            a''16
+
+                                            a''4
+                                            ~
+
+                                            a''16
+                                            ~
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            a''4
 
                                             a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                            ]
+                                            ~
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 8]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r8
-                                        [
+                                        a''4
 
-                                        \revert Staff.Stem.stemlet-length
-                                        a''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                        ]
+                                        a''4
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
-
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                        \revert Staff.Stem.stemlet-length
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                        [
-
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                        \revert Staff.Stem.stemlet-length
-                                        a''16
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                        ]
-
-                                        \times 8/9
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            r16
-                                            [
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                            r16
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            r16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                            ]
-
-                                        }
+                                        a''4
+                                        ~
 
                                         \times 2/3
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                            [
 
-                                            r16
+                                            a''4
+                                            ~
 
                                             a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            r16
-
-                                            a''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                            ]
+                                            ~
 
                                         }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''8
+                                        \ff
+                                        ]
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -874,38 +825,61 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 11]
-                                        r4
-
                                         f'''4
                                         \p
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
                                         \<
-
-                                        r4
-
-                                        f'''4
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                        f'''4
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                        ~
 
                                         \times 2/3
                                         {
 
-                                            r4
+                                            f'''16
 
                                             f'''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            ~
 
-                                            r4
+                                            f'''16
+                                            ~
 
                                         }
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         f'''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         f'''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                        ]
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f'''8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        f'''8
+                                        ]
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            f'''4
+
+                                            f'''8
+                                            ~
+
+                                        }
+
+                                        f'''4
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 12]
+                                        f'''4
+
+                                        f'''4
+                                        ~
 
                                         \times 2/3
                                         {
@@ -913,24 +887,24 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 13]
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            f'''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                            [
+                                            f'''16
 
-                                            f'''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            f'''4
+                                            ~
 
-                                            \revert Staff.Stem.stemlet-length
-                                            r8
-                                            ]
+                                            f'''16
+                                            ~
 
                                         }
 
-                                        r8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f'''8
+                                        [
 
-                                        r8
+                                        \revert Staff.Stem.stemlet-length
+                                        f'''8
                                         \ff
+                                        ]
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -1664,123 +1638,40 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 6]
-                                        r4
+                                        g''4
+                                        \p
+                                        \<
+                                        ~
 
-                                        r4
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            g''8.
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 7]
                                         g''4
-                                        \p
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                        \<
 
-                                        \times 2/3
-                                        {
-
-                                            g''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            g''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            g''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                        }
-
-                                        r4
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            r8
-                                            [
-
-                                            g''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            g''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                            ]
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        g''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        r8
-                                        ]
+                                        g''4
+                                        ~
 
                                         \times 4/5
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            g''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                            [
-
-                                            r8
-
-                                            g''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            g''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            r8
-                                            ]
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        g''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        g''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                        ]
-
-                                        \times 8/9
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                            [
 
-                                            r16
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            r16
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            \revert Staff.Stem.stemlet-length
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                            ]
+                                            g''4
+                                            ~
 
                                         }
 
@@ -1788,38 +1679,91 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            g''8.
                                             [
 
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            r16
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            g''16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                            r16
-
                                             \revert Staff.Stem.stemlet-length
-                                            r16
-                                            \ff
+                                            g''8
                                             ]
+                                            ~
 
                                         }
+
+                                        g''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            g''16
+
+                                            g''4
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            g''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 8]
+                                            g''4
+
+                                            g''16
+                                            ~
+
+                                        }
+
+                                        g''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            g''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            g''8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        g''4
+
+                                        g''4
+                                        \ff
 
                                         <<
 
@@ -1923,71 +1867,96 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 11]
-                                        r4
-
-                                        r4
-
-                                        \times 2/3
-                                        {
-
-                                            e'''4
-                                            \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-                                            \<
-
-                                            e'''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                            e'''4
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
-
-                                        }
-
                                         e'''4
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
-
-                                        r4
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 12]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        e'''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-                                        ]
+                                        \p
+                                        \<
+                                        ~
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e'''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
                                             [
 
-                                            e'''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
-                                            r8
-
-                                            e'''8
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
-
                                             \revert Staff.Stem.stemlet-length
-                                            r8
+                                            e'''8.
                                             ]
+                                            ~
 
                                         }
 
-                                        e'''8
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                        e'''4
 
-                                        e'''8
-                                        \ff
-                                        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                        e'''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            e'''16
+
+                                            e'''4
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            e'''8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            e'''8
+                                            ]
+                                            ~
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 2 voice measure 12]
+                                        e'''4
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            e'''16
+
+                                            e'''4
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            e'''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            e'''8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            e'''4
+
+                                            e'''16
+                                            \ff
+
+                                        }
 
                                         <<
 

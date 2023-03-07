@@ -200,32 +200,239 @@
 
                                         }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 2]
-                                        r2
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 3]
-                                        r2..
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 2]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            r16
+                                            [
+
+                                            \clef "treble"
+                                            d''16
+
+                                            r16
+
+                                            d''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            r16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        r16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            d''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        d''8
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 4]
                                         r2
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 5]
-                                        r2..
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 6]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 5]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            r16
+                                            [
 
-                                        r8
+                                            \clef "treble"
+                                            d''16
+
+                                            r16
+
+                                            d''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            r16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            r16
+
+                                            d''16
+
+                                            r16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            d''8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''8
+                                            ]
+
+                                        }
+
+                                        d''8
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -235,14 +442,41 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 8]
-                                        r1
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        d''4
+
+                                        d''4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        d''4
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 9]
-                                        r2
+                                        d''4
 
-                                        r8
+                                        d''4
+
+                                        d''8
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -597,15 +831,88 @@
 
                                         }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 4]
-                                        r2
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 5]
-                                        r2..
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 4]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            r16
+                                            [
+
+                                            \clef "treble"
+                                            a''16
+
+                                            r16
+
+                                            a''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            r16
+
+                                            a''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 5]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.8 1)
+                                            a''4
+
+                                            a''8
+                                            ~
+
+                                        }
+
+                                        a''4
+
+                                        a''4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''8
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -640,20 +947,110 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 8]
-                                        r1
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
+                                        a''4
+                                        ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 9]
-                                        r2
+                                        a''4
+                                        ~
 
-                                        r8
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            a''8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        a''4
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 9]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            r16
+                                            [
+
+                                            \clef "treble"
+                                            a''16
+
+                                            r16
+
+                                            a''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            r16
+
+                                            a''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        r16
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 10]
-                                        r4.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        r16
+
+                                        a''16
+
+                                        a''16
+
+                                        a''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
                                         \bar "||"
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                     }
 
@@ -768,15 +1165,101 @@
                                 % [percussion voice measure 3]
                                 r2..
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 4]
-                                r2
+                                \times 4/5
+                                {
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 5]
-                                r2..
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 4]
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
+                                    \clef "percussion"
+                                    c'16
+
+                                    r16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
+                                    c'16
+
+                                    r16
+
+                                    c'16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 5]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c'16
+                                    [
+
+                                    r16
+
+                                    c'16
+
+                                    r16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'16
+                                [
+
+                                c'16
+
+                                \revert Staff.Stem.stemlet-length
+                                r8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                r8
+                                ]
+                                  %! MATERIAL_COLOR
+                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -802,11 +1285,41 @@
 
                                 r8
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 10]
-                                r4.
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 10]
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
+                                    \clef "percussion"
+                                    c'16
+
+                                    r16
+
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c'16
+                                    ]
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                r16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'16
+                                ]
                                 \bar "||"
+                                  %! MATERIAL_COLOR
+                                \stopStaffHighlight
 
                             }
 
@@ -909,9 +1422,58 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 1]
-                                        r2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
 
-                                        r8
+                                        \clef "petrucci-c3"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            r16
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1108,7 +1670,22 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 7]
-                                        r4
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        \clef "petrucci-c3"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1328,9 +1905,58 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
-                                        r2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
 
-                                        r8
+                                        \clef "bass"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            r16
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1380,7 +2006,43 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        r2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        \clef "bass"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            r16
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1455,9 +2117,58 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                        r2
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
 
-                                        r8
+                                        \clef "bass"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            r16
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1467,7 +2178,70 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        r1
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        \clef "bass"
+                                        c'16
+
+                                        r16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            r16
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            [
+
+                                            c'16
+
+                                            r16
+
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1479,8 +2253,27 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        r4.
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        \clef "bass"
+                                        c'16
+
+                                        r16
+
+                                        c'16
+
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        r16
+                                        ]
                                         \bar "||"
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                     }
 

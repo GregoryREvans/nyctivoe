@@ -1721,6 +1721,7 @@
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "petrucci-c3"
                                         r4
+                                        \stopTrillSpan
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         c8
@@ -2479,6 +2480,7 @@
                                         \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "bass"
                                         r4
+                                        \stopTrillSpan
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         c8.

@@ -127,8 +127,14 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("percussion voice", (4, 13)),
-            evans.make_tied_notes(preprocessor=None, rewrite=False),
-            # evans.PitchHandler([12]),
+            nyctivoe.E_rhythm(
+                stage=2,
+                numerator_rotation=0,
+                extra_counts_rotation=0,
+                insertions_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            abjad.Clef("percussion"),
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -160,50 +166,15 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("viola voice", (4, 13)),
-            evans.talea(
-                [5, 2],
-                8,
-                extra_counts=[0, 1, 3],
+            nyctivoe.E_rhythm(
+                stage=2,
+                numerator_rotation=-1,
+                extra_counts_rotation=0,
+                insertions_rotation=-1,
                 preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
             ),
-            evans.PitchHandler(["fqs'", "f'", "d'", "cqs'"]),
-            # nyctivoe.E_color,
-        ),
-        evans.call(
-            "viola voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="c''", gettato=True
-            )(_),
-            selector=evans.select_measures([4], leaf=1),
-        ),
-        evans.call(
-            "viola voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[4], fixed_gettato_pitch="c''", gettato=True
-            )(_),
-            selector=evans.select_measures([6], leaf=1),
-        ),
-        evans.call(
-            "viola voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="c''", gettato=True
-            )(_),
-            selector=evans.select_measures([9], leaf=1),
-        ),
-        evans.call(
-            "viola voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[6], fixed_gettato_pitch="c''", gettato=True
-            )(_),
-            selector=evans.select_measures([11], leaf=0),
-        ),
-        evans.call(
-            "viola voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="c''", gettato=True
-            )(_),
-            selector=evans.select_measures([12], leaf=3),
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("cello voice", (0, 4)),
@@ -234,50 +205,15 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("cello voice", (4, 13)),
-            evans.talea(
-                [5, 2],
-                8,
-                extra_counts=[0, 1, 3],
+            nyctivoe.E_rhythm(
+                stage=2,
+                numerator_rotation=-2,
+                extra_counts_rotation=0,
+                insertions_rotation=-2,
                 preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
             ),
-            evans.PitchHandler(["a", "c'", "bf", "g", "aqf", "f"]),
-            # nyctivoe.E_color,
-        ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="e'", gettato=True
-            )(_),
-            selector=evans.select_measures([4], leaf=1),
-        ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[4], fixed_gettato_pitch="e'", gettato=True
-            )(_),
-            selector=evans.select_measures([6], leaf=1),
-        ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="e'", gettato=True
-            )(_),
-            selector=evans.select_measures([9], leaf=1),
-        ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[6], fixed_gettato_pitch="e'", gettato=True
-            )(_),
-            selector=evans.select_measures([11], leaf=0),
-        ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.fitted_obgc(
-                number_of_leaves=[5], fixed_gettato_pitch="e'", gettato=True
-            )(_),
-            selector=evans.select_measures([12], leaf=3),
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.E_color,
         ),
         evans.call(
             "score",

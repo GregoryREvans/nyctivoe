@@ -35,22 +35,9 @@ maker = evans.SegmentMaker(
     fermata_measures=nyctivoe.fermata_measures_04,
     commands=[
         evans.MusicCommand(
-            ("saxophone 1 voice", [0]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("saxophone 1 voice", 0),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -78,22 +65,9 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
-            ("saxophone 1 voice", [3]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("saxophone 1 voice", 3),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -115,41 +89,40 @@ maker = evans.SegmentMaker(
             nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("saxophone 1 voice", [5]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("saxophone 1 voice", 5),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [6]),
-            evans.even_division(
-                [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
-                extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
-                preprocessor=evans.make_preprocessor(
-                    quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
-                ),
-                rewrite=False,
-                treat_tuplets=True,
+            # evans.even_division(
+            #     [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
+            #     extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
+            #     preprocessor=evans.make_preprocessor(
+            #         quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
+            #     ),
+            #     rewrite=False,
+            #     treat_tuplets=True,
+            # ),
+            # lambda _: [
+            #     rmakers.force_rest(x)
+            #     for x in abjad.select.get(
+            #         abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
+            #     )
+            # ],
+            evans.accelerando(
+                [(1, 20), (1, 8), (1, 16)],
+                [(1, 30), (1, 16), (1, 32)],
+                [(1, 8), (1, 20), (1, 16)],
+                # preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]),
+                # preprocessor=evans.make_preprocessor(sum=True),
             ),
-            lambda _: [
-                rmakers.force_rest(x)
-                for x in abjad.select.get(
-                    abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
-                )
-            ],
+            abjad.LilyPondLiteral(r"\slapped", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             # evans.loop([-12], [1, 1, 0, 2]),
             # # abjad.glissando,
             # nyctivoe.zero_padding_glissando,
@@ -161,41 +134,40 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [0]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("saxophone 2 voice", 0),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", [1, 2]),
-            evans.even_division(
-                [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
-                extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
-                preprocessor=evans.make_preprocessor(
-                    quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
-                ),
-                rewrite=False,
-                treat_tuplets=True,
+            # evans.even_division(
+            #     [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
+            #     extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
+            #     preprocessor=evans.make_preprocessor(
+            #         quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
+            #     ),
+            #     rewrite=False,
+            #     treat_tuplets=True,
+            # ),
+            # lambda _: [
+            #     rmakers.force_rest(x)
+            #     for x in abjad.select.get(
+            #         abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
+            #     )
+            # ],
+            evans.accelerando(
+                [(1, 20), (1, 8), (1, 16)],
+                [(1, 30), (1, 16), (1, 32)],
+                [(1, 8), (1, 20), (1, 16)],
+                # preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]),
+                # preprocessor=evans.make_preprocessor(sum=True),
             ),
-            lambda _: [
-                rmakers.force_rest(x)
-                for x in abjad.select.get(
-                    abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
-                )
-            ],
+            abjad.LilyPondLiteral(r"\slapped", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
             # evans.loop([-12], [1, 1, 0, 2]),
             # # abjad.glissando,
             # nyctivoe.zero_padding_glissando,
@@ -249,22 +221,9 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [6]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("saxophone 2 voice", 6),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -287,22 +246,9 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
-            ("percussion voice", [2]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("percussion voice", 2),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -326,21 +272,28 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("percussion voice", [5]),
-            evans.even_division(
-                [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
-                extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
-                preprocessor=evans.make_preprocessor(
-                    quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
-                ),
-                rewrite=False,
-                treat_tuplets=True,
+            # evans.even_division(
+            #     [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
+            #     extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
+            #     preprocessor=evans.make_preprocessor(
+            #         quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
+            #     ),
+            #     rewrite=False,
+            #     treat_tuplets=True,
+            # ),
+            # lambda _: [
+            #     rmakers.force_rest(x)
+            #     for x in abjad.select.get(
+            #         abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
+            #     )
+            # ],
+            evans.accelerando(
+                [(1, 20), (1, 8), (1, 16)],
+                [(1, 30), (1, 16), (1, 32)],
+                [(1, 8), (1, 20), (1, 16)],
+                # preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]),
+                # preprocessor=evans.make_preprocessor(sum=True),
             ),
-            lambda _: [
-                rmakers.force_rest(x)
-                for x in abjad.select.get(
-                    abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
-                )
-            ],
             # evans.loop([-12], [1, 1, 0, 2]),
             # # abjad.glissando,
             # nyctivoe.zero_padding_glissando,
@@ -393,21 +346,28 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("viola voice", [2]),
-            evans.even_division(
-                [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
-                extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
-                preprocessor=evans.make_preprocessor(
-                    quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
-                ),
-                rewrite=False,
-                treat_tuplets=True,
+            # evans.even_division(
+            #     [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
+            #     extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
+            #     preprocessor=evans.make_preprocessor(
+            #         quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
+            #     ),
+            #     rewrite=False,
+            #     treat_tuplets=True,
+            # ),
+            # lambda _: [
+            #     rmakers.force_rest(x)
+            #     for x in abjad.select.get(
+            #         abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
+            #     )
+            # ],
+            evans.accelerando(
+                [(1, 20), (1, 8), (1, 16)],
+                [(1, 30), (1, 16), (1, 32)],
+                [(1, 8), (1, 20), (1, 16)],
+                # preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]),
+                # preprocessor=evans.make_preprocessor(sum=True),
             ),
-            lambda _: [
-                rmakers.force_rest(x)
-                for x in abjad.select.get(
-                    abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
-                )
-            ],
             # evans.loop([-12], [1, 1, 0, 2]),
             # # abjad.glissando,
             # nyctivoe.zero_padding_glissando,
@@ -444,21 +404,8 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             ("viola voice", [5, 6]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
@@ -507,41 +454,35 @@ maker = evans.SegmentMaker(
             nyctivoe.D_color,
         ),
         evans.MusicCommand(
-            ("cello voice", [3]),
-            evans.talea(
-                [10, 8, 6, 4, 6, 8],
-                16,
-                extra_counts=[0, 1, 3],
-                preprocessor=evans.make_preprocessor(quarters=True),
-                rewrite=False,
-            ),
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            ("cello voice", 3),
+            nyctivoe.E_rhythm(stage=3),
+            nyctivoe.add_aftergraces,
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("cello voice", [4, 5, 6]),
-            evans.even_division(
-                [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
-                extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
-                preprocessor=evans.make_preprocessor(
-                    quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
-                ),
-                rewrite=False,
-                treat_tuplets=True,
+            # evans.even_division(
+            #     [16, 16, 16, 16, 16, 16, 16, 16, 8, 8, 8, 8, 8, 4, 4, 4, 4],
+            #     extra_counts=[2, 1, 3, 2, 3, 2, 1, 0, 2, 1, 2, 1, 0, 1, 0, 1, 0],
+            #     preprocessor=evans.make_preprocessor(
+            #         quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]
+            #     ),
+            #     rewrite=False,
+            #     treat_tuplets=True,
+            # ),
+            # lambda _: [
+            #     rmakers.force_rest(x)
+            #     for x in abjad.select.get(
+            #         abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
+            #     )
+            # ],
+            evans.accelerando(
+                [(1, 20), (1, 8), (1, 16)],
+                [(1, 30), (1, 16), (1, 32)],
+                [(1, 8), (1, 20), (1, 16)],
+                # preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 1, 1, 2, 2, 1, 2]),
+                # preprocessor=evans.make_preprocessor(sum=True),
             ),
-            lambda _: [
-                rmakers.force_rest(x)
-                for x in abjad.select.get(
-                    abjad.select.leaves(_), [0, 2, 5, 7, 12, 13, 14, 20, 22, 30], 35
-                )
-            ],
             # evans.loop([-12], [1, 1, 0, 2]),
             # # abjad.glissando,
             # nyctivoe.zero_padding_glissando,
