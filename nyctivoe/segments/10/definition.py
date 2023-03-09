@@ -227,6 +227,18 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
+            ("viola voice", [0, 1]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=3,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 1]),
+            # nyctivoe.zero_padding_glissando,
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("viola voice", [2, 3, 4]),
             nyctivoe.B_rhythm(
                 stage=2,
@@ -291,6 +303,18 @@ maker = evans.SegmentMaker(
             # bis,
             abjad.Clef("petrucci-c3"),
             nyctivoe.B_color,
+        ),
+        evans.MusicCommand(
+            ("cello voice", [0, 1]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=4,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            # nyctivoe.zero_padding_glissando,
+            abjad.Clef("bass"),
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("cello voice", [2, 3, 4]),

@@ -194,40 +194,532 @@
                                     \context Voice = "saxophone 1 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 1]
-                                        r1.
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "treble"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 3]
-                                        r1
+                                            ds''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 4]
-                                        r1
+                                            d''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 5]
-                                        r2.
+                                            ds''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 6]
-                                        r1
+                                            d''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 7]
-                                        r2.
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        ds''16
+
+                                        d''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ds''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 2]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        ds''16
+
+                                        d''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ds''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 4]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 5]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        d''16
+                                        [
+
+                                        ds''16
+
+                                        d''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ds''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''32
+                                            [
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 7]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -285,40 +777,551 @@
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 9]
-                                        r1..
+                                        \times 4/5
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 10]
-                                        r1.
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 9]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "treble"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 11]
-                                        r2
+                                            ds''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 12]
-                                        r2
+                                            d''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 13]
-                                        r1.
+                                            ds''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 14]
-                                        r2
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 15]
-                                        r2
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ds''16
+                                        [
+
+                                        d''16
+
+                                        ds''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''32
+                                            [
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 10]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ds''16
+                                        [
+
+                                        d''16
+
+                                        ds''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 11]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''32
+                                            [
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 12]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 13]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ds''16
+                                        [
+
+                                        d''16
+
+                                        ds''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        d''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''32
+                                            [
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            ds''32
+
+                                            d''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 14]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ds''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ds''16
+                                            [
+
+                                            d''16
+
+                                            ds''16
+
+                                            d''16
+
+                                            ds''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1237,55 +2240,826 @@
                                     \context Voice = "saxophone 2 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 1]
-                                        r1.
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "treble"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 3]
-                                        r1
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        as''16
+                                        [
+
+                                        a''16
+
+                                        as''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 2]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''32
+                                            [
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 4]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        as''16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 5]
-                                        r2.
+                                        a''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 6]
-                                        r1
+                                        as''16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 7]
-                                        r2.
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 8]
-                                        r2
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''32
+                                            [
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 5]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 6]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        as''16
+                                        [
+
+                                        a''16
+
+                                        as''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 7]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''32
+                                            [
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 8]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 9]
-                                        r1..
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        as''16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 10]
-                                        r1.
+                                        a''16
+
+                                        as''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''32
+                                            [
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 10]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        as''16
+                                        [
+
+                                        a''16
+
+                                        as''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        a''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''32
+                                            [
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1562,45 +3336,557 @@
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 14]
-                                        r2
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 15]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 14]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "treble"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 16]
-                                        r1..
+                                            as''32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 17]
-                                        r1
+                                            a''32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 18]
-                                        r2.
+                                            as''32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 19]
-                                        r1
+                                            a''32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 20]
-                                        r2.
+                                            as''32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 21]
-                                        r2
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 16]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        as''16
+
+                                        a''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        as''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 17]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        as''16
+
+                                        a''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        as''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 18]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 19]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        a''16
+                                        [
+
+                                        as''16
+
+                                        a''16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        as''16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 20]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''16
+                                            [
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a''32
+                                            [
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            a''32
+
+                                            as''32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 2 voice measure 21]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            as''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a''16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            as''16
+                                            [
+
+                                            a''16
+
+                                            as''16
+
+                                            a''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            as''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2004,45 +4290,568 @@
                                     \context Voice = "string 1 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 1]
-                                        r1.
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 1]
+                                            \revert Staff.StaffSymbol.line-positions
+                                            \staff-line-count 4
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "percussion"
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 3]
-                                        r1
+                                            d'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 4]
-                                        r1
+                                            b16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 5]
-                                        r2.
+                                            g16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 6]
-                                        r1
+                                            b16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 7]
-                                        r2.
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+
+                                        d'16
+
+                                        b16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'32
+                                            [
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            d'32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 2]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 3]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+
+                                        d'16
+
+                                        b16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        g16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 4]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            g32
+
+                                            d'32
+
+                                            f'32
+
+                                            b32
+
+                                            d'32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 5]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+
+                                        d'16
+
+                                        b16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        g16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 6]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'32
+                                            [
+
+                                            d'32
+
+                                            b32
+
+                                            d'32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 7]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 1 voice measure 8]
-                                        r2
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        g16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        f'16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2054,40 +4863,511 @@
                                         % [string 1 voice measure 10]
                                         r1.
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 11]
-                                        r2
+                                        \times 4/5
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 12]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 11]
+                                            \revert Staff.StaffSymbol.line-positions
+                                            \staff-line-count 4
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "percussion"
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 13]
-                                        r1.
+                                            d'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 14]
-                                        r2
+                                            b16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 15]
-                                        r2
+                                            g16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 16]
-                                        r1..
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 17]
-                                        r1
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 12]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        b16
+                                        [
+
+                                        d'16
+
+                                        g16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 13]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 14]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        f'16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 15]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 16]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        f'16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 17]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b32
+                                            [
+
+                                            d'32
+
+                                            g32
+
+                                            d'32
+
+                                            f'32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2133,42 +5413,614 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 1]
-                                        r1.
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 1 0.2 0.2)
+                                        \clef "petrucci-c3"
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c16
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 2]
-                                        r2
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 3]
-                                        r1
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 4]
-                                        r1
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''8.
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''2
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 2]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 16/17
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 16/19
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 4]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 5]
-                                        r2.
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''8
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 6]
-                                        r1
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c8.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 7]
-                                        r2.
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 8]
-                                        r2
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \times 16/17
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 6]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 7]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4.
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4.
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/11
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 8]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c''16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2511,40 +6363,498 @@
                                           %! MATERIAL_COLOR
                                         \stopStaffHighlight
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 11]
-                                        r2
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 11]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "petrucci-c3"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 12]
-                                        r2
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 13]
-                                        r1.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c8.
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 14]
-                                        r2
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 15]
-                                        r2
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/13
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 13]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4.
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 14]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/11
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 15]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 16]
-                                        r1..
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 17]
-                                        r1
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''8.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''2
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \times 16/17
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 17]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -3041,60 +7351,871 @@
                                     \context Voice = "string 2 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 1]
-                                        r1.
+                                        \times 2/3
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 1]
+                                            \revert Staff.StaffSymbol.line-positions
+                                            \staff-line-count 4
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "percussion"
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 3]
-                                        r1
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        f'16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 2]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            d'32
+
+                                            g32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 3]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 4]
-                                        r1
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        b16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 5]
-                                        r2.
+                                        d'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 6]
-                                        r1
+                                        g16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 7]
-                                        r2.
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 8]
-                                        r2
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 5]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 6]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        f'16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 7]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 8]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 9]
-                                        r1..
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 10]
-                                        r1.
+                                        f'16
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 11]
-                                        r2
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b32
+                                            [
+
+                                            d'32
+
+                                            g32
+
+                                            d'32
+
+                                            f'32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            g16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 10]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
+
+                                        f'16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        b16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            f'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            f'32
+
+                                            d'32
+
+                                            b32
+
+                                            d'32
+
+                                            g32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 11]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            f'16
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -3116,41 +8237,557 @@
                                         % [string 2 voice measure 15]
                                         r2
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 16]
-                                        r1..
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 17]
-                                        r1
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 16]
+                                            \revert Staff.StaffSymbol.line-positions
+                                            \staff-line-count 4
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "percussion"
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'32
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 18]
-                                        r2.
+                                            d'32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 19]
-                                        r1
+                                            b32
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 20]
-                                        r2.
+                                            g32
+
+                                            b32
+
+                                            d'32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+
+                                        d'16
+
+                                        b16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        g16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 17]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'32
+                                            [
+
+                                            g32
+
+                                            d'32
+
+                                            f'32
+
+                                            b32
+
+                                            d'32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 18]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            g16
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        f'16
+                                        [
+
+                                        d'16
+
+                                        b16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        g16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 19]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'32
+                                            [
+
+                                            d'32
+
+                                            b32
+
+                                            d'32
+
+                                            g32
+
+                                            b32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 20]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'16
+                                            [
+
+                                            d'16
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 21]
-                                        r2
+                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                        d'16
+                                        [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 22]
-                                        r1
-                                        \bar "||"
+                                        g16
+
+                                        d'16
+
+                                        \revert VanishingStringStaff.Stem.stemlet-length
+                                        f'16
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            b16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            d'16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            b16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 4/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 2 voice measure 22]
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            f'32
+                                            [
+
+                                            d'32
+
+                                            b32
+
+                                            g32
+
+                                            b32
+
+                                            d'32
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            f'32
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            b16
+
+                                            d'16
+
+                                            g16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            [
+
+                                            d'16
+
+                                            f'16
+
+                                            b16
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+                                            \bar "||"
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                     }
 
@@ -3167,60 +8804,910 @@
                                     \context Voice = "cello voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 1]
-                                        r1.
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/13
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "bass"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 2]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 4]
-                                        r1
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 5]
-                                        r2.
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 6]
-                                        r1
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c2
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''8
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 4]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4.
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/13
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 5]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 16/19
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 6]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        r2.
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''4.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 8]
-                                        r2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 9]
-                                        r1..
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 10]
-                                        r1.
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 11]
-                                        r2
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 8]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 14/15
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 9]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4.
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 10]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 11]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            c4
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -3524,41 +10011,568 @@
 
                                         }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 16]
-                                        r1..
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 28/31
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 17]
-                                        r1
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 16]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \clef "bass"
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 18]
-                                        r2.
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 17]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''8.
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/13
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 18]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 19]
-                                        r1
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 20]
-                                        r2.
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 21]
-                                        r2
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 22]
-                                        r1
-                                        \bar "||"
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c16
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''16
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c4
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c''8.
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 20]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 21]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c8
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                        }
+
+                                        \times 16/19
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 22]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c4..
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c''2
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c16
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c''16
+                                            ]
+                                            \bar "||"
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
+
+                                        }
 
                                     }
 

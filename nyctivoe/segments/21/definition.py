@@ -78,6 +78,17 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
+            ("saxophone 1 voice", [9, 10]),
+            nyctivoe.D_rhythm(
+                stage=1,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            abjad.Clef("treble"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("saxophone 2 voice", 1),
             nyctivoe.B_rhythm(
                 stage=4,
@@ -120,6 +131,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("saxophone 2 voice", 8),
+            nyctivoe.D_rhythm(
+                stage=1,
+                extra_counts_rotation=-1,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            abjad.Clef("treble"),
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("viola voice", [0, 1]),
@@ -172,6 +194,64 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("string 1 voice", [5, 6, 7, 8]),
+            nyctivoe.D_rhythm(
+                stage=4,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        1,
+                        -3,
+                        -1,
+                        1,
+                        -3,
+                        1,
+                        3,
+                        -1,
+                        1,
+                    ]
+                ]
+            ),
+            abjad.Clef("percussion"),
+            abjad.LilyPondLiteral(
+                r"\revert Staff.StaffSymbol.line-positions", site="before"
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
+            ("viola voice", [5, 6, 7, 8]),
+            nyctivoe.D_rhythm(
+                stage=2,
+                numerator_rotation=0,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([-12, 12]),
+            nyctivoe.zero_padding_glissando,
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("viola voice", [9, 10]),
@@ -230,6 +310,64 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("string 2 voice", [7, 8, 9, 10]),
+            nyctivoe.D_rhythm(
+                stage=4,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        1,
+                        -3,
+                        -1,
+                        1,
+                        -3,
+                        1,
+                        3,
+                        -1,
+                        1,
+                    ]
+                ]
+            ),
+            abjad.Clef("percussion"),
+            abjad.LilyPondLiteral(
+                r"\revert Staff.StaffSymbol.line-positions", site="before"
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
+            ("cello voice", [7, 8, 9, 10]),
+            nyctivoe.D_rhythm(
+                stage=2,
+                numerator_rotation=0,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([-12, 12]),
+            nyctivoe.zero_padding_glissando,
+            abjad.Clef("bass"),
+            nyctivoe.D_color,
         ),
         evans.call(
             "score",

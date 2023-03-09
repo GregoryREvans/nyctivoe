@@ -324,24 +324,61 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
-            ("viola voice", [0, 1]),
-            evans.talea(
-                [1, 1, 5, 4, 3, 1],
-                16,
-                extra_counts=[0, 1, 2, 3, 2, 1, 0, 2, 1, 3],
-                preprocessor=None,
-                rewrite=False,
+            ("string 1 voice", [0, 1]),
+            nyctivoe.D_rhythm(
+                stage=4,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
             ),
-            evans.PitchHandler(["f", "c''", "b", "c'", "d'", "e'", "f''"]),
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        1,
+                        -3,
+                        -1,
+                        1,
+                        -3,
+                        1,
+                        3,
+                        -1,
+                        1,
+                    ]
+                ]
+            ),
+            abjad.Clef("percussion"),
+            abjad.LilyPondLiteral(
+                r"\revert Staff.StaffSymbol.line-positions", site="before"
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
+            ("viola voice", [0, 1]),
+            nyctivoe.D_rhythm(
+                stage=2,
+                numerator_rotation=0,
+                extra_counts_rotation=0,
+                preprocessor=None,
+            ),
+            evans.PitchHandler([-12, 12]),
             nyctivoe.zero_padding_glissando,
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            # evans.Attachment(
-            #     abjad.Clef("treble"),
-            #     selector=lambda _: abjad.select.leaf(_, 0),
-            # ),
+            abjad.Clef("petrucci-c3"),
             nyctivoe.D_color,
         ),
         evans.MusicCommand(
@@ -433,24 +470,61 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
+            ("string 2 voice", [1, 2]),
+            nyctivoe.D_rhythm(
+                stage=4,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        -3,
+                        -1,
+                        1,
+                        3,
+                        1,
+                        -1,
+                        1,
+                        -3,
+                        -1,
+                        1,
+                        -3,
+                        1,
+                        3,
+                        -1,
+                        1,
+                    ]
+                ]
+            ),
+            abjad.Clef("percussion"),
+            abjad.LilyPondLiteral(
+                r"\revert Staff.StaffSymbol.line-positions", site="before"
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("cello voice", [1, 2]),
-            evans.talea(
-                [1, 1, 5, 4, 3, 1],
-                16,
-                extra_counts=[0, 1, 2, 3, 2, 1, 0, 2, 1, 3],
+            nyctivoe.D_rhythm(
+                stage=2,
+                numerator_rotation=-1,
+                extra_counts_rotation=1,
                 preprocessor=None,
-                rewrite=False,
             ),
-            evans.PitchHandler(["f", "c''", "b", "c'", "d'", "e'", "f''"]),
+            evans.PitchHandler([-12, 12]),
             nyctivoe.zero_padding_glissando,
-            # evans.loop([-12], [1, 1, 0, 2]),
-            # # abjad.glissando,
-            # nyctivoe.zero_padding_glissando,
-            # nyctivoe.swells,
-            evans.Attachment(
-                abjad.Clef("petrucci-c4"),
-                selector=lambda _: abjad.select.leaf(_, 0),
-            ),
+            abjad.Clef("bass"),
             nyctivoe.D_color,
         ),
         evans.MusicCommand(

@@ -59,6 +59,17 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
+            ("saxophone 2 voice", 5),
+            nyctivoe.D_rhythm(
+                stage=1,
+                extra_counts_rotation=0,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 1]),
+            abjad.Clef("treble"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("percussion voice", (0, 7)),
             nyctivoe.E_rhythm(
                 stage=1,
@@ -67,6 +78,17 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
             nyctivoe.E_color,
+        ),
+        evans.MusicCommand(
+            ("viola voice", [0, 1, 2]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=1,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 1]),
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("viola voice", [3, 4, 5, 6]),
@@ -117,6 +139,28 @@ maker = evans.SegmentMaker(
             # bis,
             abjad.Clef("bass"),
             nyctivoe.B_color,
+        ),
+        evans.MusicCommand(
+            ("cello voice", [1, 2]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=2,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 1]),
+            abjad.Clef("bass"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
+            ("cello voice", 5),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=3,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 1]),
+            abjad.Clef("bass"),
+            nyctivoe.D_color,
         ),
         evans.call(
             "score",

@@ -61,6 +61,18 @@ maker = evans.SegmentMaker(
             nyctivoe.E_color,
         ),
         evans.MusicCommand(
+            ("saxophone 2 voice", [0, 1, 2]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=5,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            # nyctivoe.zero_padding_glissando,
+            abjad.Clef("treble"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("percussion voice", [0, 1, 2, 3, 4]),
             nyctivoe.B_rhythm(
                 stage=3,
@@ -107,6 +119,18 @@ maker = evans.SegmentMaker(
             nyctivoe.E_rhythm(stage=3),
             nyctivoe.add_aftergraces,
             nyctivoe.E_color,
+        ),
+        evans.MusicCommand(
+            ("cello voice", [0, 1, 2]),
+            nyctivoe.D_rhythm(
+                stage=3,
+                rtm_rotation=6,
+                # preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            # nyctivoe.zero_padding_glissando,
+            abjad.Clef("bass"),
+            nyctivoe.D_color,
         ),
         evans.call(
             "score",

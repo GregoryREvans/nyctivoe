@@ -67,7 +67,7 @@ from .lib import (
 )
 from .materials.instruments import instruments
 from .materials.pitch import baritone_multiphonics, tenor_multiphonics
-from .materials.rhythm import B_rhythm, C_rhythm, E_rhythm, add_aftergraces
+from .materials.rhythm import B_rhythm, C_rhythm, D_rhythm, E_rhythm, add_aftergraces
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
@@ -154,6 +154,7 @@ __all__ = [
     "C_rhythm",
     "D",
     "D_color",
+    "D_rhythm",
     "E",
     "E_color",
     "E_rhythm",

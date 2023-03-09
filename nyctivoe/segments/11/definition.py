@@ -96,6 +96,18 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
+            ("saxophone 2 voice", (0, 11)),
+            nyctivoe.D_rhythm(
+                stage=1,
+                extra_counts_rotation=-3,
+                preprocessor=evans.make_preprocessor(quarters=True),
+            ),
+            evans.PitchHandler([0, 2]),
+            # nyctivoe.zero_padding_glissando,
+            abjad.Clef("treble"),
+            nyctivoe.D_color,
+        ),
+        evans.MusicCommand(
             ("percussion voice", [0, 1, 2, 3, 4, 5]),
             nyctivoe.B_rhythm(
                 stage=4,
