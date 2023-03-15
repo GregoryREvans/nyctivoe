@@ -34,6 +34,17 @@ maker = evans.SegmentMaker(
     fermata_measures=nyctivoe.fermata_measures_10,
     commands=[
         evans.MusicCommand(
+            ("saxophone 1 voice", [0, 1]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                extra_counts=[3],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
+        ),
+        evans.MusicCommand(
             ("saxophone 1 voice", [2, 3, 4]),
             nyctivoe.B_rhythm(
                 stage=2,
@@ -100,6 +111,17 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
+            ("saxophone 2 voice", [0, 1]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[3, 10, 7, 8, 13, 8, 6, 1, -1],
+                extra_counts=[2],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
+        ),
+        evans.MusicCommand(
             ("saxophone 2 voice", [2, 3, 4, 5]),
             nyctivoe.B_rhythm(
                 stage=2,
@@ -164,6 +186,17 @@ maker = evans.SegmentMaker(
             # bis,
             abjad.Clef("treble"),
             nyctivoe.B_color,
+        ),
+        evans.MusicCommand(
+            ("percussion voice", [0, 1]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[10, 7, 8, 13, 8, 6, 1, -1, 3],
+                extra_counts=[1],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", [2, 3, 4, 5]),

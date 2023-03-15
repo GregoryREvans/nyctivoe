@@ -59,7 +59,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            # nyctivoe.C_color,
+            nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", (4, 13)),
@@ -74,7 +74,7 @@ maker = evans.SegmentMaker(
             nyctivoe.tenor_fingerings,
             nyctivoe.tenor_dynamics,
             abjad.Clef("treble"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (0, 4)),
@@ -101,7 +101,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            # nyctivoe.C_color,
+            nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (4, 13)),
@@ -116,7 +116,7 @@ maker = evans.SegmentMaker(
             nyctivoe.baritone_fingerings,
             nyctivoe.baritone_dynamics,
             abjad.Clef("treble"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (0, 4)),
@@ -162,7 +162,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("petrucci-c3"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            # nyctivoe.C_color,
+            nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("viola voice", (4, 13)),
@@ -201,7 +201,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("bass"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            # nyctivoe.C_color,
+            nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("cello voice", (4, 13)),

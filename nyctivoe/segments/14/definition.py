@@ -107,6 +107,17 @@ maker = evans.SegmentMaker(
             nyctivoe.C_color,
         ),
         evans.MusicCommand(
+            ("saxophone 1 voice", [6, 7]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[6, 1, -1, 3, 10, 7, 8, 13, 8],
+                extra_counts=[2],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
+        ),
+        evans.MusicCommand(
             ("saxophone 1 voice", [8, 9, 10, 11]),
             nyctivoe.B_rhythm(
                 stage=1,
@@ -251,6 +262,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("saxophone 1 voice", 17),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[6, 1, -1, 3, 10, 7, 8, 13, 8],
+                extra_counts=[2],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [18]),
@@ -571,6 +593,17 @@ maker = evans.SegmentMaker(
             nyctivoe.B_color,
         ),
         evans.MusicCommand(
+            ("percussion voice", [3, 4]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[1, -1, 3, 10, 7, 8, 13, 8, 6],
+                extra_counts=[1],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
+        ),
+        evans.MusicCommand(
             ("percussion voice", [8, 9, 10, 11]),
             nyctivoe.B_rhythm(
                 stage=1,
@@ -590,6 +623,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.B_color,
+        ),
+        evans.MusicCommand(
+            ("percussion voice", [12, 13]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[1, -1, 3, 10, 7, 8, 13, 8, 6],
+                extra_counts=[1],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", [14, 15]),
@@ -690,6 +734,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("viola voice", [6, 7]),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                extra_counts=[0],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", [8, 9, 10, 11]),
@@ -806,6 +861,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             nyctivoe.C_color,
+        ),
+        evans.MusicCommand(
+            ("viola voice", 17),
+            nyctivoe.A_rhythm(
+                stage=1,
+                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                extra_counts=[0],
+                preprocessor=evans.make_preprocessor(quarters=True),
+                rewrite=None,
+            ),
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", 18),

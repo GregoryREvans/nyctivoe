@@ -200,9 +200,13 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 1]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         <>\mp \< \after 2 \ff \after 2 \> 
                                         <d' d'' bf'' dqs''' bf'''>1
                                         ^ \tenor-sax-chart-one
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -247,6 +251,8 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 2]
                                             \slapped
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.6 1)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
                                             gqs'16 * 15/8
@@ -437,6 +443,8 @@
                                             \p
                                             ]
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -454,6 +462,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 5]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         a''4
                                         \p
                                         \<
@@ -594,6 +604,8 @@
                                         a''8
                                         \ff
                                         ]
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -638,6 +650,8 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 9]
                                             \slapped
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.6 1)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
                                             gqs'16 * 15/8
@@ -831,6 +845,8 @@
                                             \p
                                             ]
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -838,6 +854,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 11]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         f'''4
                                         \p
                                         \<
@@ -918,6 +936,8 @@
                                         f'''8
                                         \ff
                                         ]
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -962,6 +982,8 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 14]
                                             \slapped
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.6 1)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
                                             gqs'16 * 15/8
@@ -1416,6 +1438,8 @@
                                             ]
                                             \bar "||"
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -1549,6 +1573,8 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [saxophone 2 voice temp measure 1]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                                 \clef "treble"
                                                 \voiceTwo
                                                 ftqs'1
@@ -1596,6 +1622,8 @@
                                                 % [saxophone 2 voice temp measure 2]
                                                 \voiceTwo
                                                 ftqs'1
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
 
                                             }
 
@@ -1651,6 +1679,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 6]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         g''4
                                         \p
                                         \<
@@ -1777,6 +1807,8 @@
 
                                         g''4
                                         \ff
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         <<
 
@@ -1786,6 +1818,8 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [saxophone 2 voice temp measure 9]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                                 \voiceTwo
                                                 ftqs'2
                                                 \ff
@@ -1832,6 +1866,8 @@
                                                 % [saxophone 2 voice temp measure 10]
                                                 \voiceTwo
                                                 ftqs'2
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
 
                                             }
 
@@ -1880,6 +1916,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 11]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                         e'''4
                                         \p
                                         \<
@@ -1968,6 +2006,8 @@
 
                                             e'''16
                                             \ff
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -1979,6 +2019,8 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [saxophone 2 voice temp measure 14]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                                 \voiceTwo
                                                 ftqs'1..
                                                 \ff
@@ -2035,6 +2077,8 @@
                                                 % [saxophone 2 voice temp measure 15]
                                                 \voiceTwo
                                                 ftqs'1
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
 
                                             }
 
@@ -2193,6 +2237,8 @@
                                 % [percussion voice measure 1]
                                 \loop-spanner 16
                                 \staff-line-count 1
+                                  %! MATERIAL_COLOR
+                                \staffHighlight #(rgb-color 0.6 0.6 1)
                                 \clef "percussion"
                                 c'1
                                 \mf
@@ -2215,6 +2261,8 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 2]
                                 c'1
+                                  %! MATERIAL_COLOR
+                                \stopStaffHighlight
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -2231,6 +2279,8 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 4]
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8
                                     \p
@@ -2571,6 +2621,8 @@
                                     c'8
                                     \f
                                     ]
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
 
                                 }
 
@@ -2617,6 +2669,8 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 9]
                                     \staff-line-count 4
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.6 0.6 1)
                                     \once \override Beam.grow-direction = #right
                                     \override Staff.Stem.stemlet-length = 0.75
                                     b16 * 63/32
@@ -2763,6 +2817,8 @@
                                       %! baca.hairpin()
                                     \p
                                     ]
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
 
                                 }
                                 \revert TupletNumber.text
@@ -2773,6 +2829,8 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 11]
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8
                                     \p
@@ -2927,6 +2985,8 @@
                                     c'8
                                     \f
                                     ]
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
 
                                 }
 
@@ -2973,6 +3033,8 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 14]
                                     \staff-line-count 4
+                                      %! MATERIAL_COLOR
+                                    \staffHighlight #(rgb-color 0.6 0.6 1)
                                     \once \override Beam.grow-direction = #right
                                     \override Staff.Stem.stemlet-length = 0.75
                                     b16 * 63/32
@@ -3363,6 +3425,8 @@
                                     b16 * 13/16
                                     ]
                                     \bar "||"
+                                      %! MATERIAL_COLOR
+                                    \stopStaffHighlight
 
                                 }
                                 \revert TupletNumber.text
@@ -3406,6 +3470,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 1 voice measure 3]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                         e16
                                         [
@@ -3515,6 +3581,8 @@
                                         \revert VanishingStringStaff.Stem.stemlet-length
                                         e16
                                         ]
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         \times 4/5
                                         {
@@ -3522,6 +3590,8 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 1 voice measure 4]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.8 1)
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             e'8
                                             [
@@ -4312,6 +4382,8 @@
                                             \revert VanishingStringStaff.Stem.stemlet-length
                                             d''8
                                             ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -4331,6 +4403,8 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 1 voice measure 11]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 0.6 0.8 1)
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             e'8
                                             [
@@ -4677,6 +4751,8 @@
                                             \revert VanishingStringStaff.Stem.stemlet-length
                                             g8
                                             ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -4710,6 +4786,8 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 1]
                                         \override Staff.StaffSymbol.line-positions = #'(-4.2 -4 4 4.2)
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \stringNumberSpanner "I + II"
                                         \clef "varpercussion"
                                         \afterGrace
@@ -4791,12 +4869,16 @@
                                         <a c'>4
                                         \stopTextSpan
                                         \startTextSpan
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 3]
                                         \revert Staff.StaffSymbol.line-positions
                                         \staff-line-count 5
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "petrucci-c3"
                                         ef2.
                                         :32
@@ -4804,11 +4886,15 @@
                                         \stopTextSpan
                                         - \tweak stencil #constante-hairpin
                                         \<
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 4]
                                         \staff-line-count 5
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "petrucci-c3"
                                         <bf g'>4
                                         \p
@@ -4966,10 +5052,14 @@
                                         \undo \hide NoteHead
                                         <bf g'>4
                                         \f
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 9]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         f'16
                                         - \accent
@@ -5023,11 +5113,15 @@
                                         \sfz
                                         ]
                                         \startTrillSpan
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 11]
                                         \staff-line-count 5
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         <bf g'>4
                                         \p
                                         \stopTrillSpan
@@ -5105,10 +5199,14 @@
                                           %! abjad.glissando(6)
                                         \undo \hide NoteHead
                                         <bf g'>4
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 14]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         f'16
                                         - \accent
@@ -5244,6 +5342,8 @@
                                         c''4
                                         \f
                                         \bar "||"
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                     }
 
@@ -5281,6 +5381,7 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 2 voice measure 1]
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             c'8
                                             [
@@ -5586,10 +5687,13 @@
                                         \revert VanishingStringStaff.Stem.stemlet-length
                                         e'8
                                         ]
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 3]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                         c'8
                                         [
@@ -5662,12 +5766,16 @@
                                             \revert VanishingStringStaff.Stem.stemlet-length
                                             d'8
                                             ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 4]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                         c'8
                                         [
@@ -6366,6 +6474,8 @@
                                             \revert VanishingStringStaff.Stem.stemlet-length
                                             c'16
                                             ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -6375,6 +6485,7 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 2 voice measure 9]
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             c'8
                                             [
@@ -6531,10 +6642,13 @@
                                         \revert VanishingStringStaff.Stem.stemlet-length
                                         e'16
                                         ]
+                                        \stopStaffHighlight
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [string 2 voice measure 11]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                         c'8
                                         [
@@ -6834,6 +6948,8 @@
                                             \revert VanishingStringStaff.Stem.stemlet-length
                                             g'8
                                             ]
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -6843,6 +6959,7 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 2 voice measure 14]
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             c'8
                                             [
@@ -7274,6 +7391,7 @@
                                             g'16
                                             ]
                                             \bar "||"
+                                            \stopStaffHighlight
 
                                         }
 
@@ -7297,6 +7415,8 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 1]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \clef "petrucci-c4"
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <e b>16
@@ -7365,6 +7485,8 @@
                                             <g d'>16
                                             \ff
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -7376,6 +7498,8 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [cello voice temp measure 3]
+                                                  %! MATERIAL_COLOR
+                                                \staffHighlight #(rgb-color 0.6 0.8 1)
                                                 \voiceOne
                                                 \clef "bass"
                                                 \override Staff.Stem.stemlet-length = 0.75
@@ -7403,6 +7527,8 @@
                                                 e8
                                                 )
                                                 ]
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
 
                                             }
 
@@ -7439,6 +7565,8 @@
                                                 - \tenuto
                                                 )
                                                 ]
+                                                  %! MATERIAL_COLOR
+                                                \stopStaffHighlight
 
                                             }
 
@@ -7448,6 +7576,8 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "bass"
                                         <e, b,>4
                                         \p
@@ -7613,12 +7743,16 @@
                                           %! abjad.glissando(6)
                                         \undo \hide NoteHead
                                         <e, b,>4
+                                          %! MATERIAL_COLOR
+                                        \stopStaffHighlight
 
                                         \repeat tremolo 2 {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 9]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \clef "petrucci-c4"
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <e b>16
@@ -7661,12 +7795,16 @@
                                             <g d'>16
                                             \ff
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
+                                          %! MATERIAL_COLOR
+                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "bass"
                                         <e, b,>4
                                         \p
@@ -7758,6 +7896,8 @@
                                             \undo \hide NoteHead
                                             <e, b,>8
                                             \mf
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 
@@ -7799,6 +7939,8 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 15]
+                                              %! MATERIAL_COLOR
+                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \clef "petrucci-c4"
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <e b>16
@@ -7839,6 +7981,8 @@
                                             \ff
                                             \bar "||"
                                             \revert-noteheads
+                                              %! MATERIAL_COLOR
+                                            \stopStaffHighlight
 
                                         }
 

@@ -95,7 +95,7 @@ maker = evans.SegmentMaker(
                 r"<>\mp \< \after 2 \ff \after 2 \> ", site="opening"
             ),
             # abjad.Clef("treble"), # disrupts placement of literal attachment with \after
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [1]),
@@ -131,7 +131,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         # evans.MusicCommand(
         #     ("voice 1 voice", [0, 1]),
@@ -160,7 +160,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(["g'"]),
             # bis,
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [8, 9]),
@@ -196,7 +196,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [10, 11, 12]),
@@ -219,7 +219,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(["ef''"]),
             # bis,
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", [13, 14]),
@@ -255,7 +255,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", [0, 1]),
@@ -264,7 +264,7 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["aqs,"]),
             abjad.Clef("treble"),
             abjad.Dynamic("ff"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -314,14 +314,14 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(["bf"]),
             # bis,
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", [8, 9]),
             evans.note(preprocessor=None, rewrite=False),
             evans.PitchHandler(["aqs,"]),
             abjad.Dynamic("ff"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -371,14 +371,14 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(["g'"]),
             # bis,
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", [13, 14]),
             evans.note(preprocessor=None, rewrite=False),
             evans.PitchHandler(["aqs,"]),
             abjad.Dynamic("ff"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -428,7 +428,7 @@ maker = evans.SegmentMaker(
             evans.trill(padding=3, right_padding=25),
             abjad.LilyPondLiteral(r"\loop-spanner 16", site="before"),
             abjad.Dynamic("mf"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (3, 8)),
@@ -449,7 +449,7 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("f"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("percussion voice", [8, 9]),
@@ -468,7 +468,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
             abjad.LilyPondLiteral(r'\boxed-markup "woodblocks" 1', site="after"),
             evans.hairpin("mf > p", [16]),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", [10, 11, 12]),
@@ -489,7 +489,7 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("f"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            # nyctivoe.B_color,
+            nyctivoe.B_color,
         ),
         evans.MusicCommand(
             ("percussion voice", [13, 14]),
@@ -508,7 +508,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
             abjad.LilyPondLiteral(r'\boxed-markup "woodblocks" 1', site="after"),
             evans.hairpin("mp < f", [16]),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         # evans.MusicCommand(
         #     ("string 1 voice", [0, 1]),
@@ -603,7 +603,7 @@ maker = evans.SegmentMaker(
                 lambda _: abjad.get.leaf(abjad.select.leaf(_, -1, grace=False), 1),
             ),
             abjad.Dynamic("f"),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("string 1 voice", [2]),
@@ -615,7 +615,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("string 1 voice", (3, 8)),
@@ -633,7 +633,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [2]),
@@ -647,7 +647,7 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             abjad.StartHairpin("--"),
             abjad.Clef("petrucci-c3"),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", (3, 8)),
@@ -671,7 +671,7 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("petrucci-c3"),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [8, 9]),
@@ -710,7 +710,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], forget=False, articulation_boolean_vector=[1, 1, 1, 1, 0]
             ),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("string 1 voice", [10, 11, 12]),
@@ -728,7 +728,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [10, 11, 12]),
@@ -751,7 +751,7 @@ maker = evans.SegmentMaker(
                 zero_padding=True,
             ),
             nyctivoe.swells,
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [13, 14]),
@@ -814,7 +814,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], forget=False, articulation_boolean_vector=[1, 1, 1, 1, 0]
             ),
-            # nyctivoe.A_color,
+            nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [0, 1]),
@@ -825,7 +825,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -968,7 +968,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 9),
             ),
             abjad.Clef("petrucci-c4"),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [2]),
@@ -985,7 +985,7 @@ maker = evans.SegmentMaker(
                     for _ in [0, 1, 2, 8, 2, 4, 1, 2, -3]
                 ]
             ),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
@@ -1003,7 +1003,7 @@ maker = evans.SegmentMaker(
                     for _ in [0, 1, 2, 8, 2, 4, 1, 2, -3]
                 ]
             ),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
@@ -1012,7 +1012,7 @@ maker = evans.SegmentMaker(
             evans.PitchHandler([-5, -6, -5, -7, -5, -8]),
             abjad.slur,
             abjad.Clef("bass"),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("cello voice", (3, 8)),
@@ -1035,7 +1035,7 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("bass"),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [8, 9]),
@@ -1046,7 +1046,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -1137,7 +1137,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 5),
             ),
             abjad.Clef("petrucci-c4"),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [10, 11, 12]),
@@ -1155,7 +1155,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("cello voice", [10, 11, 12]),
@@ -1178,7 +1178,7 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("bass"),
-            # nyctivoe.E_color,
+            nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [13, 14]),
@@ -1189,7 +1189,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -1289,7 +1289,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 5),
             ),
             abjad.Clef("petrucci-c4"),
-            # nyctivoe.D_color,
+            nyctivoe.D_color,
         ),
         evans.call(
             "score",
