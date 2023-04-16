@@ -60,13 +60,17 @@ from .lib import (
     swells,
     tenor_dynamics,
     tenor_fingerings,
+    rotated_tenor_dynamics,
+    rotated_tenor_fingerings,
     trill_ties,
     triple_swell,
     upward_gliss,
+    downward_gliss,
     zero_padding_glissando,
+    swipe_stems,
 )
 from .materials.instruments import instruments
-from .materials.pitch import baritone_multiphonics, tenor_multiphonics
+from .materials.pitch import baritone_multiphonics, tenor_multiphonics, rotated_tenor_multiphonics
 from .materials.rhythm import (
     A_rhythm,
     B_rhythm,
@@ -101,6 +105,7 @@ from .materials.time_signatures import (
     fermata_measures_21,
     fermata_measures_22,
     fermata_measures_23,
+    fermata_measures_24,
     reduced_signatures_01,
     reduced_signatures_02,
     reduced_signatures_03,
@@ -124,6 +129,7 @@ from .materials.time_signatures import (
     reduced_signatures_21,
     reduced_signatures_22,
     reduced_signatures_23,
+    reduced_signatures_24,
     signatures_01,
     signatures_02,
     signatures_03,
@@ -147,6 +153,7 @@ from .materials.time_signatures import (
     signatures_21,
     signatures_22,
     signatures_23,
+    signatures_24,
 )
 
 __all__ = [
@@ -183,7 +190,11 @@ __all__ = [
     "fuse_preprocessor",
     "fuse_preprocessor_2",
     "fuse_preprocessor_2_1",
+    "rotated_tenor_dynamics",
+    "rotated_tenor_fingerings",
+    "rotated_tenor_multiphonics",
     "tenor_fingerings",
+    "downward_gliss",
     "baritone_fingerings",
     "fuse_preprocessor_3",
     "fuse_preprocessor_3_1",
@@ -208,6 +219,7 @@ __all__ = [
     "select_measures",
     "select_run_first_leaves",
     "signatures_01",
+    "swipe_stems",
     "special_hairpin",
     "start_bis_trill_one",
     "start_bis_trill_two",

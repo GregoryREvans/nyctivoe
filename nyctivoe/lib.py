@@ -145,12 +145,22 @@ def zero_padding_glissando(selections):
     for run in abjad.select.runs(selections):
         leaves = abjad.select.leaves(run)
         for leaf in leaves[1:-1]:
-            abjad.tweak(leaf.note_head, r"\tweak Accidental.stencil ##f")
-            abjad.tweak(leaf.note_head, r"\tweak transparent ##t")
-            abjad.tweak(leaf.note_head, r"\tweak X-extent #'(0 . 0)")
             if abjad.get.has_indicator(leaf, abjad.Tie):
                 abjad.detach(abjad.Tie(), leaf)
     abjad.glissando(selections[:], zero_padding=True, allow_repeats=True)
+    for run in abjad.select.runs(selections):
+        leaves = abjad.select.leaves(run)
+        for leaf in leaves[1:-1]:
+            if isinstance(leaf, abjad.Note):
+                abjad.tweak(leaf.note_head, r"\tweak Accidental.stencil ##f")
+                abjad.tweak(leaf.note_head, r"\tweak transparent ##t")
+                abjad.tweak(leaf.note_head, r"\tweak X-extent #'(0 . 0)")
+            elif isinstance(leaf, abjad.Chord):
+                for head in leaf.note_heads:
+                    abjad.override(leaf).Accidental.stencil = "##f"
+                    abjad.override(leaf).NoteHead.transparent = "##t"
+                    abjad.tweak(head, r"\tweak X-extent #'(0 . 0)")
+                    abjad.override(leaf).NoteHead.X_extent = "#'(0 . 0)"
 
 
 def with_sharps(selections):
@@ -1018,6 +1028,39 @@ def tenor_dynamics(selections):
         abjad.attach(mark, first_leaf)
 
 
+def rotated_tenor_fingerings(selections):
+    strings = [
+        r"\tenor-sax-chart-fourteen",
+        r"\tenor-sax-chart-thirtyseven",
+        r"\tenor-sax-chart-sixtynine",
+        r"\tenor-sax-chart-seventyfive",
+        r"\tenor-sax-chart-seventyseven",
+        r"\tenor-sax-chart-seventyeight",
+        r"\tenor-sax-chart-eightyeight",
+        r"\tenor-sax-chart-one",
+        r"\tenor-sax-chart-seven",
+    ]
+    markups = [abjad.Markup(_) for _ in strings]
+    cyc_marks = evans.CyclicList(markups, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf, direction=abjad.UP)
+
+
+def rotated_tenor_dynamics(selections):
+    dynamics = [
+        abjad.Dynamic(_) for _ in ["mf", "p", "f", "mp", "f", "ff", "p", "ff", "p", ]
+    ]
+    cyc_marks = evans.CyclicList(dynamics, forget=False)
+    ties = abjad.select.logical_ties(selections, pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        mark = cyc_marks(r=1)[0]
+        abjad.attach(mark, first_leaf)
+
+
 def baritone_fingerings(selections):
     strings = [
         r"\bari-sax-chart-one",
@@ -1089,3 +1132,20 @@ def downward_gliss(selections):
     for group in groups:
         leaves = abjad.select.leaves(group)
         zero_padding_glissando(leaves)
+
+
+def swipe_stems(selections):
+    literals = evans.CyclicList(
+        [
+            r"\swipeUpStemOn",
+            r"\swipeDownStemOn",
+        ],
+        forget=False,
+    )
+    for leaf in abjad.select.leaves(selections, pitched=True):
+        direction = literals(r=1)[0]
+        literal = abjad.LilyPondLiteral(direction, site="before")
+        abjad.attach(literal, leaf)
+
+    last_leaf = abjad.select.leaf(selections, -1, pitched=True)
+    abjad.attach(abjad.LilyPondLiteral(r"\stemOff", site="after"), last_leaf)

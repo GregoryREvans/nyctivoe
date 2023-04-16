@@ -12,7 +12,7 @@ breaks = evans.Breaks(
         evans.System(measures=6, lbsd=(15, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
     ),
     evans.Page(
-        evans.System(measures=3, lbsd=(15, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
+        evans.System(measures=4, lbsd=(15, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
     ),
     time_signatures=nyctivoe.reduced_signatures_01,
     default_spacing=(1, 35),  # 42

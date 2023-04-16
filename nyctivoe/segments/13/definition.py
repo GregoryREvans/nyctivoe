@@ -37,166 +37,276 @@ maker = evans.SegmentMaker(
             ("saxophone 1 voice", (0, 4)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[6, 1, -1, 3, 10, 7, 8, 13, 8],
+                numerators=[6, 3, 10, 7, 8, 13, 8],
                 extra_counts=[3],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.tenor_multiphonics,
+            nyctivoe.tenor_fingerings,
+            nyctivoe.tenor_dynamics,
+            abjad.Clef("treble"),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", (4, 12)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[6, 1, -1, 3, 10, 7, 8, 13, 8],
+                numerators=[6, 3, 10, 7, 8, 13, 8],
                 extra_counts=[3],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence(["g", "aqs", "eqs'", "f'", "bf'", "b'", "ef''", "e''"]).mirror(False).rotate(0).random_walk(
+                    length=100,
+                    step_list=[1, 1, 2, 2],
+                    random_seed=2,
+                ).remove_repeats()]
+            ),
+            abjad.Dynamic("sfp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, -1, pitched=True),
+            ),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", (12, 16)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[6, 1, -1, 3, 10, 7, 8, 13, 8],
+                numerators=[6, 3, 10, 7, 8, 13, 8],
                 extra_counts=[3],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.tenor_multiphonics,
+            nyctivoe.tenor_fingerings,
+            nyctivoe.tenor_dynamics,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (0, 6)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[1, -1, 3, 10, 7, 8, 13, 8, 6],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[2],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.baritone_multiphonics,
+            nyctivoe.baritone_fingerings,
+            nyctivoe.baritone_dynamics,
+            abjad.Clef("treble"),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (6, 11)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[1, -1, 3, 10, 7, 8, 13, 8, 6],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[2],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence(["d,", "g", "aqs", "eqs'", "f'", "bf'", "b'"]).mirror(False).rotate(1).random_walk(
+                    length=100,
+                    step_list=[1, 2, 1, 1, 2],
+                    random_seed=3,
+                ).remove_repeats()]
+            ),
+            abjad.Dynamic("sfp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, -1, pitched=True),
+            ),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (11, 16)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[1, -1, 3, 10, 7, 8, 13, 8, 6],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[2],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.baritone_multiphonics,
+            nyctivoe.baritone_fingerings,
+            nyctivoe.baritone_dynamics,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (0, 5)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.swells,
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [-1, -3, -1, -3, 1, 3, 1, -1, 1, -1, 3]
+                ]
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            abjad.LilyPondLiteral(r'\boxed-markup "gongs" 1', site="after"),
+            evans.ArticulationHandler(["tremolo"]),
+            abjad.Clef("percussion"),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (5, 12)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            abjad.Dynamic("sfp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, -1, pitched=True),
+            ),
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [-1, -3, -1, -3, 1, 3, 1, -1, 1, -1, 3]
+                ]
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            evans.ArticulationHandler(["tremolo"]),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (12, 16)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[-1, 3, 10, 7, 8, 13, 8, 6, 1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            nyctivoe.swells,
+            evans.PitchHandler(
+                [
+                    float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
+                    for _ in [-1, -3, -1, -3, 1, 3, 1, -1, 1, -1, 3]
+                ]
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            evans.ArticulationHandler(["tremolo"]),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", (0, 4)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[3, 10, 7, 8, 13, 8, 6, 1, -1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[0],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler([["ef'", "gqf'"], ["ef'", "aqf'"], ["gqf'", "cqs''"], ["ef'", "cqs'"]]),
+            abjad.Clef("petrucci-c3"),
+            nyctivoe.swells,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", (4, 11)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[3, 10, 7, 8, 13, 8, 6, 1, -1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[0],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence(["g", "aqs", "eqs'", "f'", "bf'", "b'", "ef''", "e''", "fs''", "gqs''", "aqf''"]).mirror(False).rotate(3).random_walk(
+                    length=100,
+                    step_list=[1, 2, 1, 1, 2],
+                    random_seed=4,
+                ).remove_repeats()]
+            ),
+            abjad.Dynamic("sfp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, -1, pitched=True),
+            ),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("viola voice", (11, 16)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[3, 10, 7, 8, 13, 8, 6, 1, -1],
+                numerators=[3, 10, 7, 8, 13, 8, 6],
                 extra_counts=[0],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler([["ef'", "aqf'"], ["gqf'", "cqs''"], ["ef'", "cqs'"], ["ef'", "gqf'"]]),
+            nyctivoe.swells,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("cello voice", (0, 5)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[10, 7, 8, 13, 8, 6, 1, -1, 3],
+                numerators=[10, 7, 8, 13, 8, 6, 3],
                 extra_counts=[-1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler([["aqs,", "ef"], ["ef", "cqs'"], ["ef", "gqf'"], ["ef", "cqs'"]]),
+            abjad.Clef("bass"),
+            nyctivoe.swells,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("cello voice", (5, 11)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[10, 7, 8, 13, 8, 6, 1, -1, 3],
+                numerators=[10, 7, 8, 13, 8, 6, 3],
                 extra_counts=[-1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence(["d,", "g", "aqs", "eqs'", "f'", "bf'", "b'"]).mirror(False).rotate(4).random_walk(
+                    length=100,
+                    step_list=[1, 2, 1, 1, 1],
+                    random_seed=4,
+                ).remove_repeats()]
+            ),
+            abjad.Dynamic("sfp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, -1, pitched=True),
+            ),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("cello voice", (11, 16)),
             nyctivoe.A_rhythm(
                 stage=1,
-                numerators=[10, 7, 8, 13, 8, 6, 1, -1, 3],
+                numerators=[10, 7, 8, 13, 8, 6, 3],
                 extra_counts=[-1],
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=None,
             ),
-            nyctivoe.A_color,
+            evans.PitchHandler([["ef", "cqs'"], ["aqs,", "ef"], ["ef", "cqs'"], ["ef", "gqf'"]]),
+            nyctivoe.swells,
+            # nyctivoe.A_color,
         ),
         evans.call(
             "score",
@@ -233,6 +343,11 @@ maker = evans.SegmentMaker(
             nyctivoe.lib.met_40,
             lambda _: abjad.select.leaf(_, 11),
         ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r'\sectionLabel \markup \underline "Segment 13"', site="before"),
+        #     evans.select_measures([0], leaf=0),
+        # ),
     ],
     score_template=nyctivoe.score,
     transpose_from_sounding_pitch=True,

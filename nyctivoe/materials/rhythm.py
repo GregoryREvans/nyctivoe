@@ -521,38 +521,38 @@ def E_rhythm(
     rotated_extra_counts = evans.Sequence(extra_counts_).rotate(extra_counts_rotation)
 
     numerators = [
-        4,
-        6,
-        8,
         12,
-        4,
-        8,
-        6,
+        14,
+        16,
+        20,
         12,
-        6,
-        8,
+        16,
+        14,
+        20,
+        14,
+        16,
+        20,
         12,
-        4,
-        6,
+        14,
+        20,
+        16,
         12,
-        8,
-        4,
-        8,
+        16,
+        20,
         12,
-        4,
-        6,
-        8,
-        4,
+        14,
+        16,
         12,
-        6,
+        20,
+        14,
+        20,
         12,
-        4,
-        6,
-        8,
+        14,
+        16,
+        20,
+        14,
         12,
-        6,
-        4,
-        8,
+        16,
     ]
     rotated_numerators = evans.Sequence(numerators).rotate(numerator_rotation)
 
@@ -676,6 +676,11 @@ def E_rhythm(
 def add_aftergraces(selections):
     for tie in abjad.select.logical_ties(selections, pitched=True):
         final_leaf = tie[-1]
-        grace = abjad.AfterGraceContainer([abjad.Note("c'8")])
+        if isinstance(final_leaf, abjad.Note):
+            pitch = final_leaf.written_pitch
+            grace = abjad.AfterGraceContainer([abjad.Note(pitch, (1, 8))])
+        elif isinstance(final_leaf, abjad.Chord):
+            pitch = final_leaf.written_pitches
+            grace = abjad.AfterGraceContainer([abjad.Chord(pitch, (1, 8))])
         abjad.attach(grace, final_leaf)
         abjad.attach(abjad.Glissando(), final_leaf)

@@ -6,13 +6,16 @@ import nyctivoe
 
 breaks = evans.Breaks(
     evans.Page(
-        evans.System(measures=7, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
+        evans.System(measures=5, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
     ),
     evans.Page(
-        evans.System(measures=7, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
+        evans.System(measures=5, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
     ),
     evans.Page(
-        evans.System(measures=7, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
+        evans.System(measures=5, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
+    ),
+    evans.Page(
+        evans.System(measures=6, lbsd=(20, "(19 19 22 19 22 22 19 22 19)"), x_offset=4),
     ),
     time_signatures=nyctivoe.reduced_signatures_15,
     default_spacing=(1, 35),  # 42

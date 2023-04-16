@@ -116,8 +116,8 @@
                         \context RemoveableStaffGroup = "sub group 1"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 1" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 1" }
+                            instrumentName = \markup { \hcenter-in #14 "Tenor Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "tn. sx." }
                         }
                         <<
 
@@ -140,18 +140,16 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [saxophone 1 voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                 \clef "treble"
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                b''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                cqs'''8 * 2/7
 
                                                 d''8 * 2/7
                                                 )
@@ -164,14 +162,16 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''4
+                                                c''4
                                                 :32
+                                                \sfz
+                                                \>
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 2]
-                                                d''4
+                                                c''4
                                                 :32
 
                                             }
@@ -189,13 +189,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                bqs''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                g''8 * 2/7
 
-                                                d''8 * 2/7
+                                                dqs''8 * 2/7
 
                                                 d''8 * 2/7
                                                 )
@@ -208,7 +208,7 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''2
+                                                d'2
                                                 :32
 
                                             }
@@ -226,17 +226,17 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                cqs'''8 * 2/7
                                                 [
                                                 (
 
                                                 d''8 * 2/7
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
-                                                d''8 * 2/7
+                                                cs'''8 * 2/7
 
-                                                d''8 * 2/7
+                                                aqf''8 * 2/7
                                                 )
                                                 ]
 
@@ -247,14 +247,14 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''4
+                                                g'4
                                                 :32
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 3]
-                                                d''4.
+                                                g'4.
                                                 :32
 
                                             }
@@ -272,19 +272,19 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                e''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
                                                 d''8 * 2/7
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
-                                                d''8 * 2/7
+                                                f''8 * 2/7
 
-                                                d''8 * 2/7
+                                                dqs''8 * 2/7
                                                 )
                                                 ]
 
@@ -295,17 +295,16 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''4
+                                                bqf'4
                                                 :32
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 4]
-                                                d''4.
+                                                bqf'4.
                                                 :32
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
+                                                \pp
 
                                             }
 
@@ -314,34 +313,41 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 5]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        d''4
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            d''16
-
-                                            d''16
-
-                                            d''16
-
-                                            d''16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''16
-                                            ]
-                                            ~
-
-                                        }
-
-                                        d''4
+                                        c''4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ~
+
+                                        c''4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c''8
+                                        [
+
+                                        cqs''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
+
+                                        \revert Staff.Stem.stemlet-length
+                                        cs''16
+                                        ]
 
                                         \times 4/5
                                         {
@@ -350,46 +356,45 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 6]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d''8.
+                                            bqs'16
                                             [
 
-                                            d''16
+                                            bqf'16
+
+                                            bqs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             \revert Staff.Stem.stemlet-length
-                                            d''16
+                                            c''8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            - \tweak stencil #abjad-flared-hairpin
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+                                            ~
 
                                         }
 
-                                        \times 2/3
-                                        {
+                                        c''4
+                                        ~
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''16
-                                            ]
-
-                                            d''4
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            d''16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''16
-                                            ]
-
-                                        }
+                                        c''8
+                                        ~
 
                                         \times 2/3
                                         {
@@ -397,13 +402,16 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 7]
-                                            d''16
-
-                                            d''4
+                                            c''4
                                             ~
 
-                                            d''16
-                                            ~
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            ctqs''16
+                                            ]
 
                                         }
 
@@ -412,29 +420,33 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d''32
+                                            cqs''32
                                             [
 
-                                            d''32
+                                            ctqs''32
 
                                             d''32
-
-                                            d''32
-
-                                            d''32
-
-                                            d''32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                             \revert Staff.Stem.stemlet-length
-                                            d''32
+                                            eqf''8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
                                             ]
                                             ~
 
                                         }
 
-                                        d''4
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        eqf''4
 
                                         <<
 
@@ -446,17 +458,15 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [saxophone 1 voice measure 8]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                b''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                cqs'''8 * 2/7
 
                                                 d''8 * 2/7
                                                 )
@@ -469,8 +479,10 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''2
+                                                c''2
                                                 :32
+                                                \sfz
+                                                \>
 
                                             }
 
@@ -487,13 +499,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                bqs''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                g''8 * 2/7
 
-                                                d''8 * 2/7
+                                                dqs''8 * 2/7
 
                                                 d''8 * 2/7
                                                 )
@@ -506,14 +518,14 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''8
+                                                d'8
                                                 :32
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 9]
-                                                d''4.
+                                                d'4.
                                                 :32
 
                                             }
@@ -534,17 +546,17 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                cqs'''8 * 2/7
                                                 [
                                                 (
 
                                                 d''8 * 2/7
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
-                                                d''8 * 2/7
+                                                cs'''8 * 2/7
 
-                                                d''8 * 2/7
+                                                aqf''8 * 2/7
                                                 )
                                                 ]
 
@@ -555,11 +567,11 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''4.
+                                                g'4.
                                                 :32
                                                 ~
 
-                                                d''4
+                                                g'4
                                                 :32
 
                                             }
@@ -577,19 +589,19 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                e''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
                                                 d''8 * 2/7
 
-                                                d''8 * 2/7
+                                                eqf''8 * 2/7
 
-                                                d''8 * 2/7
+                                                f''8 * 2/7
 
-                                                d''8 * 2/7
+                                                dqs''8 * 2/7
                                                 )
                                                 ]
 
@@ -600,14 +612,14 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''4
+                                                bqf'4
                                                 :32
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 11]
-                                                d''2
+                                                bqf'2
                                                 :32
 
                                             }
@@ -625,13 +637,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                <d''>8 * 2/7
+                                                bf''8 * 2/7
                                                 [
                                                 (
 
-                                                d''8 * 2/7
+                                                fqs''8 * 2/7
 
-                                                d''8 * 2/7
+                                                f''8 * 2/7
                                                 )
                                                 ]
 
@@ -642,11 +654,10 @@
 
                                                   %! abjad.on_beat_grace_container(4)
                                                 \voiceTwo
-                                                d''8
+                                                bf'8
                                                 :32
+                                                \pp
                                                 \bar "||"
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
 
                                             }
 
@@ -747,8 +758,8 @@
                         \context RemoveableStaffGroup = "sub group 2"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 2" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 2" }
+                            instrumentName = \markup { \hcenter-in #14 "Baritone Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "br. sx." }
                         }
                         <<
 
@@ -768,26 +779,104 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 1]
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
+                                            \half-harmonic
                                             \clef "treble"
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''32
+                                            cs'32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                            b''32
+                                            ds'32
 
-                                            a''32
+                                            f'32
 
-                                            b''32
+                                            fs'32
 
-                                            a''32
+                                            f'32
 
-                                            b''32
+                                            e'32
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''32
+                                            d'32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                         }
 
@@ -798,20 +887,62 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 2]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            e'16
                                             [
 
-                                            a''16
+                                            fs'16
 
-                                            b''16
+                                            g'16
 
-                                            a''16
+                                            fs'16
 
-                                            b''16
+                                            f'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            e'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                         }
 
@@ -819,17 +950,22 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            fs'16
                                             [
 
-                                            a''16
+                                            gs'16
 
-                                            b''16
+                                            a'16
 
-                                            a''16
+                                            gs'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            g'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -838,19 +974,61 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            ds'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            b''16
+                                            f'16
 
-                                            a''16
+                                            g'16
 
-                                            b''16
+                                            gs'16
 
-                                            a''16
+                                            g'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            fs'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -859,19 +1037,61 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            fs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                            b''16
+                                            gs'16
 
-                                            a''16
+                                            as'16
 
-                                            b''16
+                                            b'16
 
-                                            a''16
+                                            as'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            a'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -880,42 +1100,121 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 3]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        a''16
+                                        f'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
                                         [
+                                        (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
-                                        b''16
+                                        g'16
 
-                                        a''16
+                                        a'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        b''16
+                                        as'16
                                         ]
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            a'16
                                             [
 
-                                            b''16
+                                            gs'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
-                                            a''16
+                                            fs'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                            b''16
+                                            gs'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            as'16
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        b'16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        as'16
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -926,31 +1225,115 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 4]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''32
+                                            a'32
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             [
 
-                                            a''32
+                                            gs'32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            b''32
+                                            as'32
 
-                                            a''32
+                                            c''32
 
-                                            b''32
+                                            cs''32
 
-                                            a''32
+                                            c''32
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''32
+                                            b'32
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        a''16
+                                        g'16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
+                                        (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
-                                        b''16
+                                        a'16
                                         ]
 
                                         \times 4/5
@@ -960,18 +1343,60 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 5]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            b'16
                                             [
 
-                                            b''16
+                                            c''16
 
-                                            a''16
+                                            b'16
 
-                                            b''16
+                                            as'16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            as'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                         }
 
@@ -979,20 +1404,62 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            c''16
                                             [
 
-                                            a''16
+                                            d''16
 
-                                            b''16
+                                            ds''16
 
-                                            a''16
+                                            d''16
 
-                                            b''16
+                                            cs''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            a'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                         }
 
@@ -1000,20 +1467,62 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            b'16
                                             [
 
-                                            a''16
+                                            cs''16
 
-                                            b''16
+                                            d''16
 
-                                            a''16
+                                            cs''16
 
-                                            b''16
+                                            c''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            as'16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                         }
 
@@ -1021,42 +1530,89 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 6]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        c''16
                                         [
 
-                                        a''16
+                                        d''16
 
-                                        b''16
+                                        ds''16
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        d''16
                                         ]
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            cs''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             [
 
-                                            a''16
+                                            c''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                            b''16
+                                            d''16
 
-                                            a''16
+                                            e''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            f''16
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        a''16
+                                        e''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        b''16
+                                        ds''16
+                                        )
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanOne
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -1067,22 +1623,101 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 7]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''32
+                                            b'32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            b''32
+                                            cs''32
 
-                                            a''32
+                                            ds''32
 
-                                            b''32
+                                            e''32
 
-                                            a''32
+                                            ds''32
 
-                                            b''32
+                                            d''32
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''32
+                                            d''32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                         }
 
@@ -1090,20 +1725,62 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            e''16
                                             [
 
-                                            a''16
+                                            fs''16
 
-                                            b''16
+                                            g''16
 
-                                            a''16
+                                            fs''16
 
-                                            b''16
+                                            f''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            cs''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                         }
 
@@ -1111,17 +1788,22 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            ds''16
                                             [
 
-                                            a''16
+                                            f''16
 
-                                            b''16
+                                            fs''16
 
-                                            a''16
+                                            f''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            e''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -1133,19 +1815,61 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 8]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            d''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
-                                            b''16
+                                            e''16
 
-                                            a''16
+                                            fs''16
 
-                                            b''16
+                                            g''16
 
-                                            a''16
+                                            fs''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            f''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -1154,29 +1878,108 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            e''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             [
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            b''16
+                                            fs''16
+
+                                            gs''16
 
                                             a''16
 
-                                            b''16
-
-                                            a''16
+                                            gs''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            g''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        a''16
+                                        ds''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         [
+                                        (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
-                                        b''16
+                                        f''16
                                         ]
 
                                         \times 4/5
@@ -1186,27 +1989,69 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 9]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            g''16
                                             [
 
-                                            b''16
+                                            gs''16
 
-                                            a''16
+                                            g''16
 
-                                            b''16
+                                            fs''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            fs''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        gs''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        as''16
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -1220,18 +2065,60 @@
                                             b''32
                                             [
 
-                                            a''32
-
-                                            b''32
+                                            as''32
 
                                             a''32
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
-                                            b''32
+                                            f''32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+
+                                            g''32
 
                                             a''32
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''32
+                                            as''32
                                             ]
 
                                         }
@@ -1243,13 +2130,55 @@
                                             a''16
                                             [
 
-                                            b''16
+                                            gs''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
-                                            a''16
+                                            fs''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            b''16
+                                            gs''16
 
-                                            a''16
+                                            as''16
 
                                             \revert Staff.Stem.stemlet-length
                                             b''16
@@ -1261,27 +2190,69 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
+                                            as''16
                                             [
 
-                                            b''16
-
                                             a''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
 
-                                            b''16
+                                            gs''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+
+                                            as''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            c'''16
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        cs'''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        c'''16
                                         ]
 
                                         \times 2/3
@@ -1292,53 +2263,137 @@
                                             % [saxophone 2 voice measure 11]
                                             \override Staff.Stem.stemlet-length = 0.75
                                             b''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             [
 
+                                            g''16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                            (
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7.25
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
                                             a''16
 
                                             b''16
 
-                                            a''16
-
-                                            b''16
+                                            c'''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16
+                                            b''16
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        as''16
+                                        )
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanOne
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        as''16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
                                         ]
+                                        (
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b''16
+                                        c'''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a''16
+                                        d'''16
                                         ]
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
+                                            ds'''16
                                             [
 
-                                            a''16
+                                            d'''16
 
                                             \revert Staff.Stem.stemlet-length
-                                            b''16
+                                            cs'''16
+                                            )
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
                                             \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
+                                            \revert-noteheads
 
                                         }
 
@@ -1455,20 +2510,19 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [percussion voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                        \staff-line-count 4
                                         \clef "percussion"
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
+                                        \mp
                                         [
                                         (
+                                        \boxed-markup "log drums" 1
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
                                         )
                                         ]
 
@@ -1477,16 +2531,17 @@
                                     \context Voice = "temporary music"
                                     {
 
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'4
+                                        g4
                                         :32
+                                        \sfz
+                                        \>
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary music measure 2]
-                                        c'4
+                                        g4
                                         :32
 
                                     }
@@ -1500,19 +2555,17 @@
                                           %! abjad.on_beat_grace_container(1)
                                         \set fontSize = #-3
 
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
                                         )
                                         ]
 
@@ -1521,14 +2574,13 @@
                                     \context Voice = "temporary music"
                                     {
 
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'2
+                                        g2
                                         :32
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        g8
                                         :32
                                         [
 
@@ -1543,21 +2595,19 @@
                                           %! abjad.on_beat_grace_container(1)
                                         \set fontSize = #-3
 
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        b8 * 2/7
                                         )
                                         ]
 
@@ -1567,9 +2617,8 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'8
+                                        g8
                                         :32
                                         ]
                                         ~
@@ -1577,11 +2626,11 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary music measure 3]
-                                        c'4.
+                                        g4.
                                         :32
                                         ~
 
-                                        c'4
+                                        g4
                                         :32
 
                                     }
@@ -1598,17 +2647,15 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [percussion voice measure 4]
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
                                         )
                                         ]
 
@@ -1617,9 +2664,8 @@
                                     \context Voice = "temporary music"
                                     {
 
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'4.
+                                        g4.
                                         :32
                                         ~
 
@@ -1627,7 +2673,7 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary music measure 5]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        g8
                                         :32
                                         [
 
@@ -1642,19 +2688,17 @@
                                           %! abjad.on_beat_grace_container(1)
                                         \set fontSize = #-3
 
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
                                         )
                                         ]
 
@@ -1664,14 +2708,13 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'8
+                                        g8
                                         :32
                                         ]
                                         ~
 
-                                        c'4.
+                                        g4.
                                         :32
 
                                     }
@@ -1685,21 +2728,19 @@
                                           %! abjad.on_beat_grace_container(1)
                                         \set fontSize = #-3
 
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        b8 * 2/7
                                         )
                                         ]
 
@@ -1708,16 +2749,15 @@
                                     \context Voice = "temporary music"
                                     {
 
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'8
+                                        g8
                                         :32
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary music measure 6]
-                                        c'2
+                                        g2
                                         :32
 
                                     }
@@ -1731,17 +2771,15 @@
                                           %! abjad.on_beat_grace_container(1)
                                         \set fontSize = #-3
 
-                                          %! abjad.on_beat_grace_container(2)
                                         \slash
-                                          %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c'>8 * 2/7
+                                        b8 * 2/7
                                         [
                                         (
 
-                                        c'8 * 2/7
+                                        d'8 * 2/7
 
-                                        c'8 * 2/7
+                                        f'8 * 2/7
                                         )
                                         ]
 
@@ -1750,12 +2788,10 @@
                                     \context Voice = "temporary music"
                                     {
 
-                                          %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        c'8
+                                        g8
                                         :32
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \pp
 
                                     }
 
@@ -1764,40 +2800,20 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 7]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.8 1)
-                                c'4
+                                \staff-line-count 4
+                                \clef "percussion"
+                                g4
+                                :32
+                                \mp
+                                ~
+                                \boxed-markup "gongs" 1
+
+                                g4
+                                :32
                                 ~
 
-                                \times 2/3
-                                {
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'8
-                                    [
-
-                                    c'16
-
-                                    c'16
-
-                                    c'16
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
-
-                                }
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
-
-                                c'16
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ]
-                                ~
+                                g4
+                                :32
 
                                 \times 4/5
                                 {
@@ -1806,15 +2822,17 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 8]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'8
+                                    b16
                                     [
 
-                                    c'16
+                                    g16
 
-                                    c'16
+                                    f'16
+
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    g16
                                     ]
 
                                 }
@@ -1822,20 +2840,20 @@
                                 \times 2/3
                                 {
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
+                                    f'16
 
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
+                                    b4
+                                    :32
+                                    ~
 
-                                    c'4
+                                    b16
+                                    :32
                                     ~
 
                                 }
 
-                                c'8
+                                b8
+                                :32
                                 ~
 
                                 \times 2/3
@@ -1844,101 +2862,83 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 9]
+                                    b4
+                                    :32
+
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    f'16
                                     [
 
-                                    c'16
-
-                                    c'16
-
-                                    c'16
-
-                                    c'16
-
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    d'16
                                     ]
-                                    ~
 
                                 }
 
-                                c'8
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+
+                                    f'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 10]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
-
-                                c'16
-
-                                c'16
-
-                                \revert Staff.Stem.stemlet-length
-                                c'16
-                                ]
-
-                                c'4
+                                d'4
+                                :32
                                 ~
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'16
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
-
-                                c'16
-
-                                c'16
-
-                                \revert Staff.Stem.stemlet-length
-                                c'16
-                                ]
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [percussion voice measure 11]
-                                c'4
+                                d'4
+                                :32
                                 ~
 
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
+                                d'4
+                                :32
+                                ~
+
+                                d'8
+                                :32
+                                ~
+
+                                \times 4/5
                                 {
 
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [percussion voice measure 11]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16.
+                                    d'16
+                                    :32
                                     [
 
-                                    c'32
+                                    b16
 
-                                    c'32
+                                    d'16
 
-                                    c'32
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'32
+                                    f'16
                                     ]
 
                                 }
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                [
+                                d'4
+                                :32
+                                ~
 
-                                \revert Staff.Stem.stemlet-length
-                                c'16
-                                ]
+                                d'8
+                                :32
                                 \bar "||"
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 
@@ -2055,8 +3055,6 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [viola voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                 \clef "petrucci-c3"
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
@@ -2068,7 +3066,7 @@
 
                                                 bqf'8 * 2/7
 
-                                                c''8 * 2/7
+                                                c'8 * 2/7
                                                 )
                                                 ]
 
@@ -2084,6 +3082,8 @@
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
                                                 bf4
+                                                \sfz
+                                                \>
                                                 ~
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
@@ -2126,9 +3126,9 @@
                                                 [
                                                 (
 
-                                                f''8 * 2/7
+                                                f'8 * 2/7
 
-                                                cqs''8 * 2/7
+                                                cqs'8 * 2/7
                                                 )
                                                 ]
 
@@ -2143,7 +3143,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                c'2.
+                                                c2.
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2163,7 +3163,7 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan c'
+                                                \startTrillSpan c
 
                                             }
 
@@ -2183,15 +3183,15 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                c''8 * 2/7
+                                                c'8 * 2/7
                                                 [
                                                 (
 
-                                                bqf''8 * 2/7
+                                                bqf'8 * 2/7
 
-                                                c'''8 * 2/7
+                                                c'8 * 2/7
 
-                                                dqf'''8 * 2/7
+                                                dqf'8 * 2/7
                                                 )
                                                 ]
 
@@ -2206,7 +3206,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                f'2
+                                                f2
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2226,7 +3226,7 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan f'
+                                                \startTrillSpan f
 
                                             }
 
@@ -2243,13 +3243,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                b''8 * 2/7
+                                                b'8 * 2/7
                                                 [
                                                 (
 
-                                                gqf'''8 * 2/7
+                                                gqf'8 * 2/7
 
-                                                d'''8 * 2/7
+                                                d'8 * 2/7
                                                 )
                                                 ]
 
@@ -2264,7 +3264,8 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                aqf'8
+                                                aqf8
+                                                \pp
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2288,9 +3289,7 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan aqf'
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
+                                                \startTrillSpan aqf
 
                                             }
 
@@ -2299,48 +3298,50 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 4]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        c'4
+                                        fs4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ~
 
-                                        c'8
+                                        fs8
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 5]
-                                        c'4
+                                        fs4
                                         ~
 
-                                        \times 4/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'8
-                                            [
-
-                                            c'16
-
-                                            c'16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
+                                        fs4
+                                        ~
 
                                         \times 2/3
                                         {
 
-                                            c'16
-
-                                            c'4
+                                            fs4
                                             ~
 
-                                            c'16
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            fs16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            fqs16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                            ]
 
                                         }
 
@@ -2354,8 +3355,6 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [viola voice measure 6]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
@@ -2366,7 +3365,7 @@
 
                                                 bqf'8 * 2/7
 
-                                                c''8 * 2/7
+                                                c'8 * 2/7
                                                 )
                                                 ]
 
@@ -2382,6 +3381,8 @@
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
                                                 bf2
+                                                \sfz
+                                                \>
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
@@ -2418,9 +3419,9 @@
                                                 [
                                                 (
 
-                                                f''8 * 2/7
+                                                f'8 * 2/7
 
-                                                cqs''8 * 2/7
+                                                cqs'8 * 2/7
                                                 )
                                                 ]
 
@@ -2435,7 +3436,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                c'8
+                                                c8
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2456,16 +3457,16 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan c'
+                                                \startTrillSpan c
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 7]
-                                                c'2
+                                                c2
                                                 ~
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                c'8
+                                                c8
                                                 [
 
                                             }
@@ -2483,15 +3484,15 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                c''8 * 2/7
+                                                c'8 * 2/7
                                                 [
                                                 (
 
-                                                bqf''8 * 2/7
+                                                bqf'8 * 2/7
 
-                                                c'''8 * 2/7
+                                                c'8 * 2/7
 
-                                                dqf'''8 * 2/7
+                                                dqf'8 * 2/7
                                                 )
                                                 ]
 
@@ -2507,7 +3508,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                f'8
+                                                f8
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2529,12 +3530,12 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan f'
+                                                \startTrillSpan f
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 8]
-                                                f'4.
+                                                f4.
 
                                             }
 
@@ -2551,13 +3552,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                b''8 * 2/7
+                                                b'8 * 2/7
                                                 [
                                                 (
 
-                                                gqf'''8 * 2/7
+                                                gqf'8 * 2/7
 
-                                                d'''8 * 2/7
+                                                d'8 * 2/7
                                                 )
                                                 ]
 
@@ -2572,7 +3573,8 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                aqf'4
+                                                aqf4
+                                                \pp
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2596,9 +3598,7 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan aqf'
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
+                                                \startTrillSpan aqf
 
                                             }
 
@@ -2607,33 +3607,49 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 9]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        c'4
+                                        g4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ~
 
-                                        c'8
+                                        g8
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 10]
-                                        c'4
+                                        g4
                                         ~
 
-                                        \times 4/5
+                                        g4
+                                        ~
+
+                                        \times 2/3
                                         {
 
+                                            g4
+                                            ~
+
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8
+                                            g16
                                             [
 
-                                            c'16
-
-                                            c'16
-
                                             \revert Staff.Stem.stemlet-length
-                                            c'16
+                                            gqs16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
                                             ]
 
                                         }
@@ -2641,30 +3657,15 @@
                                         \times 2/3
                                         {
 
-                                            c'16
-
-                                            c'4
-                                            ~
-
-                                            c'16
-                                            ~
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
+                                            af16
                                             [
 
-                                            c'16
+                                            gqf16
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'16
+                                            fqs16
                                             ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -2678,8 +3679,6 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [viola voice measure 11]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
@@ -2690,7 +3689,7 @@
 
                                                 bqf'8 * 2/7
 
-                                                c''8 * 2/7
+                                                c'8 * 2/7
                                                 )
                                                 ]
 
@@ -2706,6 +3705,8 @@
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
                                                 bf2
+                                                \sfz
+                                                \>
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
@@ -2738,13 +3739,13 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                aqs''8 * 2/7
+                                                aqs'8 * 2/7
                                                 [
                                                 (
 
-                                                f''8 * 2/7
+                                                f'8 * 2/7
 
-                                                cqs'''8 * 2/7
+                                                cqs'8 * 2/7
                                                 )
                                                 ]
 
@@ -2759,7 +3760,8 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                c'8
+                                                c8
+                                                \pp
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -2783,10 +3785,8 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan c'
+                                                \startTrillSpan c
                                                 \bar "||"
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
 
                                             }
 
@@ -2911,8 +3911,6 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [cello voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                 \clef "bass"
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
@@ -2922,9 +3920,9 @@
                                                 [
                                                 (
 
-                                                cqs'8 * 2/7
+                                                cqs8 * 2/7
 
-                                                c'8 * 2/7
+                                                c8 * 2/7
                                                 )
                                                 ]
 
@@ -2940,6 +3938,8 @@
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
                                                 f,4
+                                                \sfz
+                                                \>
                                                 ~
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
@@ -2984,7 +3984,7 @@
 
                                                 bqf8 * 2/7
 
-                                                c'8 * 2/7
+                                                c8 * 2/7
                                                 )
                                                 ]
 
@@ -3043,11 +4043,11 @@
                                                 [
                                                 (
 
-                                                gqf'8 * 2/7
+                                                gqf8 * 2/7
 
-                                                d'8 * 2/7
+                                                d8 * 2/7
 
-                                                dqf'8 * 2/7
+                                                dqf8 * 2/7
                                                 )
                                                 ]
 
@@ -3062,7 +4062,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                af8
+                                                af,8
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -3083,12 +4083,12 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan af
+                                                \startTrillSpan af,
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 3]
-                                                af4.
+                                                af,4.
 
                                             }
 
@@ -3105,19 +4105,19 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                bqf'8 * 2/7
+                                                bqf8 * 2/7
                                                 [
                                                 (
 
-                                                c'8 * 2/7
+                                                c8 * 2/7
 
-                                                dqf'8 * 2/7
+                                                dqf8 * 2/7
 
-                                                b'8 * 2/7
+                                                b8 * 2/7
 
-                                                af'8 * 2/7
+                                                af8 * 2/7
 
-                                                eqf''8 * 2/7
+                                                eqf8 * 2/7
                                                 )
                                                 ]
 
@@ -3132,7 +4132,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                bf4
+                                                bf,4
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -3153,19 +4153,19 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan bf
+                                                \startTrillSpan bf,
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 4]
-                                                bf4.
+                                                bf,4.
                                                 ~
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [temporary music measure 5]
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                bf8
+                                                bf,8
                                                 [
 
                                             }
@@ -3183,17 +4183,17 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                ef''8 * 2/7
+                                                ef8 * 2/7
                                                 [
                                                 (
 
-                                                c''8 * 2/7
+                                                c8 * 2/7
 
-                                                dqf''8 * 2/7
+                                                dqf8 * 2/7
 
-                                                ef''8 * 2/7
+                                                ef8 * 2/7
 
-                                                cqs''8 * 2/7
+                                                cqs8 * 2/7
                                                 )
                                                 ]
 
@@ -3209,7 +4209,7 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                c'8
+                                                c,8
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -3231,15 +4231,14 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan c'
+                                                \startTrillSpan c,
 
-                                                c'2
+                                                c,2
+                                                \pp
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
                                                 \stopTrillSpan
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
 
                                             }
 
@@ -3248,33 +4247,26 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        c'4
+                                        af4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         ~
 
-                                        \times 2/3
-                                        {
+                                        af4
+                                        ~
 
-                                            c'4
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'16
-                                        ]
+                                        af8
+                                        ~
 
                                         \times 4/5
                                         {
@@ -3282,74 +4274,100 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 7]
+                                            af4
+
+                                            gqs16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
+                                            af16
                                             [
 
-                                            c'16
+                                            gqf16
+
+                                            gqs16
+
+                                            gqf16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
+                                            fs16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            - \tweak stencil #abjad-flared-hairpin
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             \revert Staff.Stem.stemlet-length
-                                            c'8.
+                                            gqs16
                                             ]
                                             ~
 
                                         }
 
-                                        c'4
+                                        gqs4
                                         ~
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16.
-                                            [
-
-                                            c'32
-
-                                            c'32
-
-                                            c'32
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'32
-                                            ]
-
-                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        c'4
+                                        gqs4
+                                        ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'32
+                                            gqs8.
                                             [
 
-                                            c'32
-
-                                            c'32
-
-                                            c'32
-
-                                            c'32
-
-                                            c'32
-
                                             \revert Staff.Stem.stemlet-length
-                                            c'32
+                                            gqf32
                                             ]
-                                            ~
 
                                         }
 
-                                        c'8
-                                        ~
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        gqs16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        g16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                         \times 4/5
                                         {
@@ -3357,31 +4375,18 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 9]
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            [
+                                            fqs16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
 
-                                            c'16
-
-                                            c'16
-
-                                            c'16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c'16
-                                            ]
+                                            eqs4
+                                            ~
 
                                         }
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'16
-                                        ]
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        eqs8
 
                                         <<
 
@@ -3393,8 +4398,6 @@
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [cello voice measure 10]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                                   %! abjad.on_beat_grace_container(2)
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
@@ -3403,9 +4406,9 @@
                                                 [
                                                 (
 
-                                                cqs'8 * 2/7
+                                                cqs8 * 2/7
 
-                                                c'8 * 2/7
+                                                c8 * 2/7
                                                 )
                                                 ]
 
@@ -3421,6 +4424,8 @@
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
                                                 f,2.
+                                                \sfz
+                                                \>
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
@@ -3459,7 +4464,7 @@
 
                                                 bqf8 * 2/7
 
-                                                c'8 * 2/7
+                                                c8 * 2/7
                                                 )
                                                 ]
 
@@ -3517,15 +4522,15 @@
                                                 \slash
                                                   %! abjad.on_beat_grace_container(3)
                                                 \voiceOne
-                                                aqs'8 * 2/7
+                                                aqs8 * 2/7
                                                 [
                                                 (
 
-                                                gqf'8 * 2/7
+                                                gqf8 * 2/7
 
-                                                d''8 * 2/7
+                                                d8 * 2/7
 
-                                                dqf''8 * 2/7
+                                                dqf8 * 2/7
                                                 )
                                                 ]
 
@@ -3540,7 +4545,8 @@
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
                                                 \pitchedTrill
-                                                af4
+                                                af,4
+                                                \pp
                                                   %! SPANNER_STOP
                                                   %! baca._do_spanner_indicator_command(2)
                                                   %! baca.trill_spanner()
@@ -3564,10 +4570,8 @@
                                                   %! SPANNER_START
                                                   %! baca._do_spanner_indicator_command(1)
                                                   %! baca.trill_spanner()
-                                                \startTrillSpan af
+                                                \startTrillSpan af,
                                                 \bar "||"
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
 
                                             }
 

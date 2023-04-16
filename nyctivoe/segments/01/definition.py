@@ -50,35 +50,35 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context",
             lambda _: evans.wrap_in_repeats(_, number_of_repeats=3),
-            evans.select_measures([2], leaves=True),
+            evans.select_measures([2, 3], leaves=True),
         ),
-        evans.call(
-            "Global Context",
-            lambda _: evans.wrap_in_repeats(_, number_of_repeats=4),
-            evans.select_measures([5, 6, 7], leaves=True),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(
-                r"""\set Score.repeatCommands = #'((volta "1-3"))""", site="before"
-            ),
-            lambda _: abjad.select.leaf(_, 7),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(
-                r"""\set Score.repeatCommands = #'((volta "4"))""", site="before"
-            ),
-            lambda _: abjad.select.leaf(_, 8),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(
-                r"""\set Score.repeatCommands = #'((volta #f))""",
-                site="before",
-            ),
-            lambda _: abjad.select.leaf(_, 9),
-        ),
+        # evans.call(
+        #     "Global Context",
+        #     lambda _: evans.wrap_in_repeats(_, number_of_repeats=4),
+        #     evans.select_measures([5, 6, 7], leaves=True),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(
+        #         r"""\set Score.repeatCommands = #'((volta "1-3"))""", site="before"
+        #     ),
+        #     lambda _: abjad.select.leaf(_, 7),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(
+        #         r"""\set Score.repeatCommands = #'((volta "4"))""", site="before"
+        #     ),
+        #     lambda _: abjad.select.leaf(_, 8),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(
+        #         r"""\set Score.repeatCommands = #'((volta #f))""",
+        #         site="before",
+        #     ),
+        #     lambda _: abjad.select.leaf(_, 9),
+        # ),
         evans.MusicCommand(
             ("saxophone 1 voice", [0]),
             evans.make_tied_notes(preprocessor=None, rewrite=False),
@@ -92,46 +92,10 @@ maker = evans.SegmentMaker(
             ),
             # abjad.Dynamic("f"),
             abjad.LilyPondLiteral(
-                r"<>\mp \< \after 2 \ff \after 2 \> ", site="opening"
+                r"<>\mp \< \after 2 \ff ", site="opening"
             ),
             # abjad.Clef("treble"), # disrupts placement of literal attachment with \after
-            nyctivoe.A_color,
-        ),
-        evans.MusicCommand(
-            ("saxophone 1 voice", [1]),
-            evans.accelerando(
-                [(1, 8), (1, 20), (1, 16)],
-                [(1, 16), (1, 30), (1, 32)],
-                [(1, 20), (1, 8), (1, 16)],
-                preprocessor=evans.make_preprocessor(quarters=True),
-            ),
-            evans.PitchHandler(
-                [
-                    "fqs",
-                    "f",
-                    "d",
-                    "cqs",
-                    "aqs",
-                    "a",
-                    "f",
-                    "eqs",
-                    "cqs'",
-                    "c'",
-                    "a",
-                    "gqs",
-                    "eqs'",
-                    "e'",
-                    "c'",
-                    "bqs",
-                ]
-            ),
-            evans.hairpin("mf > p", [16]),
-            abjad.LilyPondLiteral(r"\slapped", site="before"),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
-                selector=lambda _: abjad.select.leaf(_, -1),
-            ),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         # evans.MusicCommand(
         #     ("voice 1 voice", [0, 1]),
@@ -140,7 +104,7 @@ maker = evans.SegmentMaker(
         #     nyctivoe.A_color,
         # ),
         evans.MusicCommand(
-            ("saxophone 1 voice", (4, 8)),
+            ("saxophone 1 voice", (5, 9)),
             nyctivoe.B_rhythm(
                 stage=1,
                 numerators=[7, 8, 6],
@@ -158,12 +122,32 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("ff"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(
+                [
+                    "fqs",
+                    "f",
+                    "d",
+                    "cqs",
+                    "aqs",
+                    "a",
+                    "f",
+                    "eqs",
+                    "cqs'",
+                    "c'",
+                    "a",
+                    "gqs",
+                    "eqs'",
+                    "e'",
+                    "c'",
+                    "bqs",
+                ]
+            ),
+            evans.text_span([r"sub tone"], "=|", padding=5, id=1),
             # bis,
-            nyctivoe.B_color,
+            # nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("saxophone 1 voice", [8, 9]),
+            ("saxophone 1 voice", [9, 10]),
             evans.accelerando(
                 [(1, 8), (1, 20), (1, 16)],
                 [(1, 16), (1, 30), (1, 32)],
@@ -171,35 +155,19 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
             evans.PitchHandler(
-                [
-                    "fqs",
-                    "f",
-                    "d",
-                    "cqs",
-                    "aqs",
-                    "a",
-                    "f",
-                    "eqs",
-                    "cqs'",
-                    "c'",
-                    "a",
-                    "gqs",
-                    "eqs'",
-                    "e'",
-                    "c'",
-                    "bqs",
-                ]
+                [-12, 8.5, 0, 12.5, 20, 12.5, 8,]
             ),
+            lambda _: baca.register(abjad.select.leaves(_), -12, 0),
             evans.hairpin("mf > p", [16]),
             abjad.LilyPondLiteral(r"\slapped", site="before"),
             evans.Attachment(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("saxophone 1 voice", [10, 11, 12]),
+            ("saxophone 1 voice", [11, 12, 13]),
             nyctivoe.B_rhythm(
                 stage=1,
                 numerators=[7, 8, 6],
@@ -216,18 +184,6 @@ maker = evans.SegmentMaker(
             evans.Attachment(
                 abjad.Dynamic("ff"),
                 selector=lambda _: abjad.select.leaf(_, -1),
-            ),
-            evans.PitchHandler(["ef''"]),
-            # bis,
-            nyctivoe.B_color,
-        ),
-        evans.MusicCommand(
-            ("saxophone 1 voice", [13, 14]),
-            evans.accelerando(
-                [(1, 8), (1, 20), (1, 16)],
-                [(1, 16), (1, 30), (1, 32)],
-                [(1, 20), (1, 8), (1, 16)],
-                preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 2]),
             ),
             evans.PitchHandler(
                 [
@@ -249,22 +205,38 @@ maker = evans.SegmentMaker(
                     "bqs",
                 ]
             ),
+            evans.text_span([r"sub tone"], "=|", padding=5, id=1),
+            # bis,
+            # nyctivoe.B_color,
+        ),
+        evans.MusicCommand(
+            ("saxophone 1 voice", [14, 15]),
+            evans.accelerando(
+                [(1, 8), (1, 20), (1, 16)],
+                [(1, 16), (1, 30), (1, 32)],
+                [(1, 20), (1, 8), (1, 16)],
+                preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[1, 2]),
+            ),
+            evans.PitchHandler(
+                [-12, 8.5, 0, 12.5, 20, 12.5, 8,]
+            ),
+            lambda _: baca.register(abjad.select.leaves(_), -12, 0),
             evans.hairpin("mp < f", [16]),
             abjad.LilyPondLiteral(r"\slapped", site="before"),
             evans.Attachment(
                 abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [0, 1]),
+            ("saxophone 2 voice", 0),
             # evans.make_tied_notes(preprocessor=None, rewrite=False),
             evans.note(preprocessor=None, rewrite=False),
             evans.PitchHandler(["aqs,"]),
             abjad.Clef("treble"),
             abjad.Dynamic("ff"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -277,24 +249,8 @@ maker = evans.SegmentMaker(
             ),
             evans.select_measures([0], leaves=[0]),
         ),
-        evans.call(
-            "saxophone 2 voice",
-            evans.IntermittentVoiceHandler(
-                [
-                    abjad.Chord("<a, b,>4"),
-                    abjad.Chord("<a, e>4"),
-                    abjad.Chord("<a, g>4"),
-                    abjad.Chord("<a, a>4"),
-                ],
-                direction=abjad.UP,
-                voice_name="saxophone 1 intermittent_voice_2",
-                cluster=True,
-                from_components=True,
-            ),
-            evans.select_measures([1], leaves=[0]),
-        ),
         evans.MusicCommand(
-            ("saxophone 2 voice", (5, 8)),
+            ("saxophone 2 voice", (6, 9)),
             nyctivoe.B_rhythm(
                 stage=1,
                 numerators=[7, 8, 6],
@@ -312,16 +268,36 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("ff"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            evans.PitchHandler(["bf"]),
+            evans.PitchHandler(
+                [
+                    "fqs",
+                    "bqs",
+                    "f",
+                    "c'",
+                    "d",
+                    "e'",
+                    "cqs",
+                    "eqs'",
+                    "aqs",
+                    "gqs",
+                    "a",
+                    "a",
+                    "f",
+                    "c'",
+                    "eqs",
+                    "cqs'",
+                ]
+            ),
+            evans.text_span([r"sub tone"], "=|", padding=5, id=1),
             # bis,
-            nyctivoe.B_color,
+            # nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [8, 9]),
+            ("saxophone 2 voice", [9, 10]),
             evans.note(preprocessor=None, rewrite=False),
             evans.PitchHandler(["aqs,"]),
             abjad.Dynamic("ff"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -332,7 +308,7 @@ maker = evans.SegmentMaker(
                 cluster=True,
                 from_components=True,
             ),
-            evans.select_measures([8], leaves=[0]),
+            evans.select_measures([9], leaves=[0]),
         ),
         evans.call(
             "saxophone 2 voice",
@@ -348,10 +324,10 @@ maker = evans.SegmentMaker(
                 cluster=True,
                 from_components=True,
             ),
-            evans.select_measures([9], leaves=[0]),
+            evans.select_measures([10], leaves=[0]),
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [10, 11, 12]),
+            ("saxophone 2 voice", [11, 12, 13]),
             nyctivoe.B_rhythm(
                 stage=1,
                 numerators=[7, 8, 6],
@@ -369,16 +345,36 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("ff"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            evans.PitchHandler(["g'"]),
+            evans.PitchHandler(
+                [
+                    "fqs",
+                    "bqs",
+                    "f",
+                    "c'",
+                    "d",
+                    "e'",
+                    "cqs",
+                    "eqs'",
+                    "aqs",
+                    "gqs",
+                    "a",
+                    "a",
+                    "f",
+                    "c'",
+                    "eqs",
+                    "cqs'",
+                ]
+            ),
+            evans.text_span([r"sub tone"], "=|", padding=5, id=1),
             # bis,
-            nyctivoe.B_color,
+            # nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("saxophone 2 voice", [13, 14]),
+            ("saxophone 2 voice", [14, 15]),
             evans.note(preprocessor=None, rewrite=False),
             evans.PitchHandler(["aqs,"]),
             abjad.Dynamic("ff"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.call(
             "saxophone 2 voice",
@@ -397,7 +393,7 @@ maker = evans.SegmentMaker(
                 cluster=True,
                 from_components=True,
             ),
-            evans.select_measures([13], leaves=[0]),
+            evans.select_measures([14], leaves=[0]),
         ),
         evans.call(
             "saxophone 2 voice",
@@ -413,10 +409,10 @@ maker = evans.SegmentMaker(
                 cluster=True,
                 from_components=True,
             ),
-            evans.select_measures([14], leaves=[0]),
+            evans.select_measures([15], leaves=[0]),
         ),
         evans.MusicCommand(
-            ("percussion voice", [0, 1]),
+            ("percussion voice", 0),
             evans.make_tied_notes(preprocessor=None, rewrite=False),
             evans.PitchHandler([0]),
             # evans.ArticulationHandler(["tremolo"]),
@@ -425,13 +421,13 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r'\boxed-markup "bass drum + superball" 1', site="after"
             ),
-            evans.trill(padding=3, right_padding=25),
-            abjad.LilyPondLiteral(r"\loop-spanner 16", site="before"),
+            # evans.trill(padding=3, right_padding=25),
+            # abjad.LilyPondLiteral(r"\loop-spanner 16", site="before"),
             abjad.Dynamic("mf"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("percussion voice", (3, 8)),
+            ("percussion voice", (4, 9)),
             evans.even_division(
                 [8],
                 extra_counts=[1],
@@ -440,6 +436,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler([0]),
             # evans.ArticulationHandler(["tremolo"]),
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="before"),
             abjad.LilyPondLiteral(
                 r'\boxed-markup "brake drum + scrape" 1', site="after"
             ),
@@ -449,10 +446,10 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("f"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            nyctivoe.B_color,
+            # nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("percussion voice", [8, 9]),
+            ("percussion voice", [9, 10]),
             evans.accelerando(
                 [(1, 8), (1, 20), (1, 16)],
                 [(1, 16), (1, 30), (1, 32)],
@@ -466,12 +463,12 @@ maker = evans.SegmentMaker(
                 ]
             ),
             abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
-            abjad.LilyPondLiteral(r'\boxed-markup "woodblocks" 1', site="after"),
+            abjad.LilyPondLiteral(r'\boxed-markup "log drums" 1', site="after"),
             evans.hairpin("mf > p", [16]),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("percussion voice", [10, 11, 12]),
+            ("percussion voice", [11, 12, 13]),
             evans.even_division(
                 [8],
                 extra_counts=[1],
@@ -480,6 +477,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler([0]),
             # evans.ArticulationHandler(["tremolo"]),
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="before"),
             abjad.LilyPondLiteral(
                 r'\boxed-markup "brake drum + scrape" 1', site="after"
             ),
@@ -489,10 +487,10 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("f"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
-            nyctivoe.B_color,
+            # nyctivoe.B_color,
         ),
         evans.MusicCommand(
-            ("percussion voice", [13, 14]),
+            ("percussion voice", [14, 15]),
             evans.accelerando(
                 [(1, 8), (1, 20), (1, 16)],
                 [(1, 16), (1, 30), (1, 32)],
@@ -506,9 +504,9 @@ maker = evans.SegmentMaker(
                 ]
             ),
             abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
-            abjad.LilyPondLiteral(r'\boxed-markup "woodblocks" 1', site="after"),
+            abjad.LilyPondLiteral(r'\boxed-markup "log drums" 1', site="after"),
             evans.hairpin("mp < f", [16]),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         # evans.MusicCommand(
         #     ("string 1 voice", [0, 1]),
@@ -517,26 +515,26 @@ maker = evans.SegmentMaker(
         #     nyctivoe.A_color,
         # ),
         evans.MusicCommand(
-            ("viola voice", [0, 1]),
+            ("viola voice", 0),
             evans.talea([1, 2, 3, 1], 4, preprocessor=None, rewrite=False),
             evans.PitchHandler([["a", "c'"], 0]),
             evans.Attachment(
                 abjad.AfterGraceContainer("<c' e'>16"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            evans.Attachment(
-                abjad.AfterGraceContainer("<c' e'>16"),
-                selector=lambda _: abjad.select.leaf(_, 4),
-            ),
+            # evans.Attachment(
+            #     abjad.AfterGraceContainer("<c' e'>16"),
+            #     selector=lambda _: abjad.select.leaf(_, 3),
+            # ),
             abjad.glissando,
             evans.Attachment(
                 evans.make_fancy_gliss(3, 2, 4, 2, 1, right_padding=1),
                 lambda _: abjad.select.leaf(_, 2),
             ),
-            evans.Attachment(
-                evans.make_fancy_gliss(4, 2, 1, 3, 2, right_padding=1),
-                lambda _: abjad.select.leaf(_, 6),
-            ),
+            # evans.Attachment(
+            #     evans.make_fancy_gliss(4, 2, 1, 3, 2, right_padding=1),
+            #     lambda _: abjad.select.leaf(_, 6),
+            # ),
             abjad.LilyPondLiteral(
                 r"\override Staff.StaffSymbol.line-positions = #'(-4.2 -4 4 4.2)",
                 site="before",
@@ -576,34 +574,34 @@ maker = evans.SegmentMaker(
             ),
             evans.Attachment(
                 abjad.StopTextSpan(),
-                lambda _: abjad.get.leaf(abjad.select.leaf(_, 3, grace=False), 1),
+                lambda _: abjad.get.leaf(abjad.select.leaf(_, 2, grace=False), 1),
             ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r'\stringNumberSpanner "III"', site="before"),
-                lambda _: abjad.select.leaf(_, 4, grace=False),
-            ),
-            evans.Attachment(
-                abjad.StartTextSpan(),
-                lambda _: abjad.select.leaf(_, 4, grace=False),
-            ),
-            evans.Attachment(
-                abjad.StopTextSpan(),
-                lambda _: abjad.get.leaf(abjad.select.leaf(_, 4, grace=False), 1),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r'\stringNumberSpanner "I + II"', site="before"),
-                lambda _: abjad.select.leaf(_, 5, grace=False),
-            ),
-            evans.Attachment(
-                abjad.StartTextSpan(),
-                lambda _: abjad.select.leaf(_, 5, grace=False),
-            ),
-            evans.Attachment(
-                abjad.StopTextSpan(),
-                lambda _: abjad.get.leaf(abjad.select.leaf(_, -1, grace=False), 1),
-            ),
+            # evans.Attachment(
+            #     abjad.LilyPondLiteral(r'\stringNumberSpanner "III"', site="before"),
+            #     lambda _: abjad.select.leaf(_, 4, grace=False),
+            # ),
+            # evans.Attachment(
+            #     abjad.StartTextSpan(),
+            #     lambda _: abjad.select.leaf(_, 4, grace=False),
+            # ),
+            # evans.Attachment(
+            #     abjad.StopTextSpan(),
+            #     lambda _: abjad.get.leaf(abjad.select.leaf(_, 4, grace=False), 1),
+            # ),
+            # evans.Attachment(
+            #     abjad.LilyPondLiteral(r'\stringNumberSpanner "I + II"', site="before"),
+            #     lambda _: abjad.select.leaf(_, 5, grace=False),
+            # ),
+            # evans.Attachment(
+            #     abjad.StartTextSpan(),
+            #     lambda _: abjad.select.leaf(_, 5, grace=False),
+            # ),
+            # evans.Attachment(
+            #     abjad.StopTextSpan(),
+            #     lambda _: abjad.get.leaf(abjad.select.leaf(_, -1, grace=False), 1),
+            # ),
             abjad.Dynamic("f"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("string 1 voice", [2]),
@@ -615,10 +613,10 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("string 1 voice", (3, 8)),
+            ("string 1 voice", (4, 9)),
             evans.talea(
                 [2, 2, 2, 3, 2],
                 16,
@@ -633,7 +631,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", [2]),
@@ -647,10 +645,10 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             abjad.StartHairpin("--"),
             abjad.Clef("petrucci-c3"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("viola voice", (3, 8)),
+            ("viola voice", (4, 9)),
             evans.talea(
                 [7, 6, 3, 4],
                 8,
@@ -659,9 +657,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler([["bf", "g'"]]),
             abjad.LilyPondLiteral(r"\staff-line-count 5", site="before"),
-            abjad.LilyPondLiteral(
-                r'\boxed-markup "extremely slow bow" 1', site="after"
-            ),
+            evans.text_span([r"extremely slow bow"], "=|", padding=5, id=1),
             lambda _: abjad.glissando(
                 _,
                 allow_repeats=True,
@@ -671,19 +667,23 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("petrucci-c3"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("viola voice", [8, 9]),
+            ("viola voice", [9, 10]),
             evans.talea(
                 [1, 1, 1, 1, 5],
                 16,
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
+            # evans.PitchHandler(
+            #     ["f'", "aqf'", "g'", "bf'", "c''", "a'", "fqs'", "f'", "d'", "cqs'"]
+            # ),
             evans.PitchHandler(
-                ["f'", "aqf'", "g'", "bf'", "c''", "a'", "fqs'", "f'", "d'", "cqs'"]
+                [-12, 8.5, 0, 12.5, 20, 12.5, 8,]
             ),
+            lambda _: baca.register(abjad.select.leaves(_), -12, 0),
             abjad.Dynamic("p"),
             evans.Attachment(
                 abjad.StartTrillSpan(), selector=lambda _: abjad.select.leaf(_, 4)
@@ -710,10 +710,12 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], forget=False, articulation_boolean_vector=[1, 1, 1, 1, 0]
             ),
-            nyctivoe.A_color,
+            evans.text_span([r"1/2 P"], "=|", padding=5, id=1),
+            evans.text_span([r"1/2 scr."], "=|", padding=7, id=2),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("string 1 voice", [10, 11, 12]),
+            ("string 1 voice", [11, 12, 13]),
             evans.talea(
                 [2, 2, 2, 3, 2],
                 16,
@@ -728,10 +730,10 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("viola voice", [10, 11, 12]),
+            ("viola voice", [11, 12, 13]),
             evans.talea(
                 [7, 6, 3, 4],
                 8,
@@ -740,9 +742,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler([["bf", "g'"]]),
             abjad.LilyPondLiteral(r"\staff-line-count 5", site="before"),
-            abjad.LilyPondLiteral(
-                r'\boxed-markup "extremely slow bow" 1', site="after"
-            ),
+            evans.text_span([r"extremely slow bow"], "=|", padding=5, id=1),
             lambda _: abjad.glissando(
                 _,
                 allow_repeats=True,
@@ -751,19 +751,23 @@ maker = evans.SegmentMaker(
                 zero_padding=True,
             ),
             nyctivoe.swells,
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("viola voice", [13, 14]),
+            ("viola voice", [14, 15]),
             evans.talea(
                 [1, 1, 1, 1, 5],
                 16,
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
+            # evans.PitchHandler(
+            #     ["f'", "aqf'", "g'", "bf'", "c''", "a'", "fqs'", "f'", "d'", "cqs'"]
+            # ),
             evans.PitchHandler(
-                ["f'", "aqf'", "g'", "bf'", "c''", "a'", "fqs'", "f'", "d'", "cqs'"]
+                [-12, 8.5, 0, 12.5, 20, 12.5, 8,]
             ),
+            lambda _: baca.register(abjad.select.leaves(_), -12, 0),
             abjad.Dynamic("p"),
             evans.Attachment(
                 abjad.StartTrillSpan(), selector=lambda _: abjad.select.leaf(_, 4)
@@ -814,10 +818,12 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], forget=False, articulation_boolean_vector=[1, 1, 1, 1, 0]
             ),
-            nyctivoe.A_color,
+            evans.text_span([r"1/2 P"], "=|", padding=5, id=1),
+            evans.text_span([r"1/2 scr."], "=|", padding=7, id=2),
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
-            ("string 2 voice", [0, 1]),
+            ("string 2 voice", 0),
             evans.talea(
                 [2],
                 16,
@@ -825,7 +831,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -835,13 +841,11 @@ maker = evans.SegmentMaker(
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
-            ("cello voice", [0, 1]),
+            ("cello voice", 0),
             evans.Skeleton(
                 [
                     abjad.TremoloContainer(2, "<e b>16 <g d'>16"),
                     abjad.TremoloContainer(2, "<e'' b''>16 <g'' d'''>16"),
-                    abjad.TremoloContainer(4, "<e b>16 <g d'>16"),
-                    abjad.TremoloContainer(4, "<g d'>16 <bf f'>16"),
                     abjad.TremoloContainer(4, "<e b>16 <g d'>16"),
                 ]
             ),
@@ -870,22 +874,6 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 5),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
-                selector=lambda _: abjad.select.leaf(_, 7),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
-                selector=lambda _: abjad.select.leaf(_, 7),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\half-harmonic", site="before"),
-                selector=lambda _: abjad.select.leaf(_, 9),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\revert-noteheads", site="after"),
-                selector=lambda _: abjad.select.leaf(_, 9),
-            ),
-            evans.Attachment(
                 abjad.LilyPondLiteral(
                     r"\glissando \once \override NoteColumn.glissando-skip = ##t",
                     site="after",
@@ -898,29 +886,13 @@ maker = evans.SegmentMaker(
                     site="after",
                 ),
                 selector=lambda _: abjad.select.leaf(_, 2),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"\glissando \once \override NoteColumn.glissando-skip = ##t",
-                    site="after",
-                ),
-                selector=lambda _: abjad.select.leaf(_, 4),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"\glissando \once \override NoteColumn.glissando-skip = ##t",
-                    site="after",
-                ),
-                selector=lambda _: abjad.select.leaf(_, 6),
             ),
             evans.Attachment(
                 abjad.Dynamic("p"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"- \tweak stencil #guerrero-flared-hairpin \<", site="after"
-                ),
+                abjad.StartHairpin("<|"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             evans.Attachment(
@@ -928,9 +900,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 2),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"- \tweak stencil #guerrero-flared-hairpin \<", site="after"
-                ),
+                abjad.StartHairpin("<|"),
                 selector=lambda _: abjad.select.leaf(_, 2),
             ),
             evans.Attachment(
@@ -938,37 +908,15 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 4),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"- \tweak stencil #guerrero-flared-hairpin \<", site="after"
-                ),
+                abjad.StartHairpin("<|"),
                 selector=lambda _: abjad.select.leaf(_, 4),
             ),
             evans.Attachment(
-                abjad.Dynamic("fp"),
-                selector=lambda _: abjad.select.leaf(_, 6),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"- \tweak stencil #guerrero-flared-hairpin \<", site="after"
-                ),
-                selector=lambda _: abjad.select.leaf(_, 6),
-            ),
-            evans.Attachment(
-                abjad.Dynamic("fp"),
-                selector=lambda _: abjad.select.leaf(_, 8),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(
-                    r"- \tweak stencil #guerrero-flared-hairpin \<", site="after"
-                ),
-                selector=lambda _: abjad.select.leaf(_, 8),
-            ),
-            evans.Attachment(
-                abjad.Dynamic("ff"),
-                selector=lambda _: abjad.select.leaf(_, 9),
+                abjad.Dynamic("f"),
+                selector=lambda _: abjad.select.leaf(_, 5),
             ),
             abjad.Clef("petrucci-c4"),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
         ),
         evans.MusicCommand(
             ("string 2 voice", [2]),
@@ -982,14 +930,14 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
-                    for _ in [0, 1, 2, 8, 2, 4, 1, 2, -3]
+                    for _ in [0, 1, 2, 8, -6, -5, -7, 2, 4, 1, 2, -3]
                 ]
             ),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
-            ("string 2 voice", (3, 8)),
+            ("string 2 voice", (4, 9)),
             evans.talea(
                 [2, 2, 3, 2, 2],
                 16,
@@ -1000,22 +948,42 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
-                    for _ in [0, 1, 2, 8, 2, 4, 1, 2, -3]
+                    for _ in [0, 1, 2, 8, -8, -6, -5, -7, -9, -5, -2, 2, 4, 1, 2, -3]
                 ]
             ),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
             ("cello voice", [2]),
-            evans.even_division([8], preprocessor=None, rewrite=False),
-            evans.PitchHandler([-5, -6, -5, -7, -5, -8]),
-            abjad.slur,
+            evans.tuplet([(1, 2, 1)], preprocessor=None, rewrite=False),
+            evans.PitchHandler([-23]),
+            nyctivoe.zero_padding_glissando,
             abjad.Clef("bass"),
-            nyctivoe.E_color,
+            evans.Attachment(
+                abjad.Dynamic("sfp"),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
+            evans.Attachment(
+                abjad.StartHairpin("<"),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
+            evans.Attachment(
+                abjad.Dynamic("ff"),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.StartHairpin(">"),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.Dynamic("ppp"),
+                selector=lambda _: abjad.select.leaf(_, 4),
+            ),
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("cello voice", (3, 8)),
+            ("cello voice", (4, 9)),
             evans.talea(
                 [6, 3, 4, 7],
                 8,
@@ -1023,9 +991,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
             evans.PitchHandler([["e,", "b,"]]),
-            abjad.LilyPondLiteral(
-                r'\boxed-markup "extremely slow bow" 1', site="after"
-            ),
+            evans.text_span([r"extremely slow bow"], "=|", padding=5, id=1),
             lambda _: abjad.glissando(
                 _,
                 allow_repeats=True,
@@ -1035,10 +1001,10 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("bass"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("string 2 voice", [8, 9]),
+            ("string 2 voice", [9, 10]),
             evans.talea(
                 [2],
                 16,
@@ -1046,7 +1012,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -1056,7 +1022,7 @@ maker = evans.SegmentMaker(
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
-            ("cello voice", [8, 9]),
+            ("cello voice", [9, 10]),
             evans.Skeleton(
                 [
                     abjad.TremoloContainer(2, "<e b>16 <g d'>16"),
@@ -1137,10 +1103,10 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 5),
             ),
             abjad.Clef("petrucci-c4"),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
         ),
         evans.MusicCommand(
-            ("string 2 voice", [10, 11, 12]),
+            ("string 2 voice", [11, 12, 13]),
             evans.talea(
                 [2, 2, 3, 2, 2],
                 16,
@@ -1155,10 +1121,10 @@ maker = evans.SegmentMaker(
                 ]
             ),
             nyctivoe.zero_padding_glissando,
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("cello voice", [10, 11, 12]),
+            ("cello voice", [11, 12, 13]),
             evans.talea(
                 [6, 3, 4, 7],
                 8,
@@ -1166,9 +1132,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
             evans.PitchHandler([["e,", "b,"]]),
-            abjad.LilyPondLiteral(
-                r'\boxed-markup "extremely slow bow" 1', site="after"
-            ),
+            evans.text_span([r"extremely slow bow"], "=|", padding=5, id=1),
             lambda _: abjad.glissando(
                 _,
                 allow_repeats=True,
@@ -1178,10 +1142,10 @@ maker = evans.SegmentMaker(
             ),
             nyctivoe.swells,
             abjad.Clef("bass"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
-            ("string 2 voice", [13, 14]),
+            ("string 2 voice", [14, 15]),
             evans.talea(
                 [2],
                 16,
@@ -1189,7 +1153,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 rewrite=False,
             ),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
             evans.PitchHandler(
                 [
                     float(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
@@ -1199,16 +1163,19 @@ maker = evans.SegmentMaker(
             nyctivoe.zero_padding_glissando,
         ),
         evans.MusicCommand(
-            ("cello voice", [13]),
+            ("cello voice", [14]),
             evans.even_division([4]),
             evans.ArticulationHandler(["tremolo"]),
             evans.ArticulationHandler(["accent"]),
-            abjad.LilyPondLiteral(r'\boxed-markup "clt." 1', site="after"),
+            # abjad.LilyPondLiteral(r'\boxed-markup "clt." 1', site="after"),
             evans.PitchHandler([["ef''", "f''"]]),
+            evans.text_span([r"clt."], "=|", padding=5, id=1),
+            evans.text_span([r"1/2 scr."], "=|", padding=7, id=2),
+            abjad.Dynamic("pp"),
             abjad.Clef("treble"),
         ),
         evans.MusicCommand(
-            ("cello voice", [14]),
+            ("cello voice", [15]),
             evans.Skeleton(
                 [
                     abjad.TremoloContainer(2, "<e b>16 <g d'>16"),
@@ -1289,74 +1256,95 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.select.leaf(_, 5),
             ),
             abjad.Clef("petrucci-c4"),
-            nyctivoe.D_color,
+            # nyctivoe.D_color,
         ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.select.components(_, abjad.Score),
         ),
-        evans.call(
-            "cello voice",
-            lambda _: evans.imbricate(
-                _,
-                [-6, -7, -8],
-                "imbrication 1",
-                articulation="tenuto",
-                direction=abjad.DOWN,
+        # evans.call(
+        #     "cello voice",
+        #     lambda _: evans.imbricate(
+        #         _,
+        #         [-6, -7, -8],
+        #         "imbrication 1",
+        #         articulation="tenuto",
+        #         direction=abjad.DOWN,
+        #     ),
+        #     selector=evans.select_measures([2], leaves=True),
+        # ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.mark_92,
+            lambda _: abjad.select.leaf(_, 0),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.met_92,
+            lambda _: abjad.select.leaf(_, 0),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.mark_40,
+            lambda _: abjad.select.leaf(_, 2),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.met_40,
+            lambda _: abjad.select.leaf(_, 2),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.mark_92,
+            lambda _: abjad.select.leaf(_, 6),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.met_92,
+            lambda _: abjad.select.leaf(_, 6),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.mark_40,
+            lambda _: abjad.select.leaf(_, 11),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.met_40,
+            lambda _: abjad.select.leaf(_, 11),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.mark_92,
+            lambda _: abjad.select.leaf(_, 13),
+        ),
+        evans.attach(
+            "Global Context",
+            nyctivoe.lib.met_92,
+            lambda _: abjad.select.leaf(_, 13),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
             ),
-            selector=evans.select_measures([2], leaves=True),
+            evans.select_measures([1], leaf=1),
+            direction=abjad.UP,
         ),
         evans.attach(
             "Global Context",
-            nyctivoe.lib.mark_92,
-            lambda _: abjad.select.leaf(_, 0),
+            abjad.Markup(
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+            ),
+            evans.select_measures([3], leaf=1),
+            direction=abjad.UP,
         ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.met_92,
-            lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.mark_40,
-            lambda _: abjad.select.leaf(_, 2),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.met_40,
-            lambda _: abjad.select.leaf(_, 2),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.mark_92,
-            lambda _: abjad.select.leaf(_, 8),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.met_92,
-            lambda _: abjad.select.leaf(_, 8),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.mark_40,
-            lambda _: abjad.select.leaf(_, 10),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.met_40,
-            lambda _: abjad.select.leaf(_, 10),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.mark_92,
-            lambda _: abjad.select.leaf(_, 13),
-        ),
-        evans.attach(
-            "Global Context",
-            nyctivoe.lib.met_92,
-            lambda _: abjad.select.leaf(_, 13),
-        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r'\sectionLabel \markup \underline "Segment 01"', site="before"),
+        #     evans.select_measures([0], leaf=0),
+        # ),
     ],
     score_template=nyctivoe.score,
     transpose_from_sounding_pitch=True,

@@ -1,12 +1,12 @@
 \version "2.22.1" %2.23.6
 \language "english"
 #(set-default-paper-size "11x17landscape")
-#(set-global-staff-size 13) % was 13
+#(set-global-staff-size 12) % was 13
 
 %{ \include "/Users/gregoryevans/ekmelily/ly/ekmel-24.ily" % just trying this out %}
 %{ \ekmelicStyle evans-alt-one % just trying this out %}
 
-%{ \include "baca.ily" %}
+\include "baca-spanners.ily"
 \include "../../lib.ily"
 \include "evans.ily"
 \include "evans-accidentals-markups.ily"
@@ -163,7 +163,7 @@ dashedStaffSymbolLines =
         \consists Axis_group_engraver
 		\consists Bar_number_engraver
         \consists Time_signature_engraver
-		%{ \consists Mark_engraver %}
+		%{ \consists Mark_engraver % for section labels. Any errors? %}
 		%{ \consists Metronome_mark_engraver %}
 		\consists Text_engraver
 		\consists Text_spanner_engraver
@@ -291,7 +291,7 @@ dashedStaffSymbolLines =
 		\override Clef.stencil = \old-clefs
         \override Accidental.stencil = \alt-accidentals
         \override TupletBracket.edge-text = #(cons
-            (markup #:fontsize 6 #:arrow-head X LEFT #f)
+            (markup #:arrow-head X LEFT #f)
             (markup #:arrow-head X RIGHT #f)
         )
 
@@ -464,24 +464,24 @@ dashedStaffSymbolLines =
         (padding . 0)
         (stretchability . 0)
     )
-    system-system-spacing = #'(
+    %{ system-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 30) % space after each system
         (padding . 0)
         (stretchability . 0)
-    )
+    ) %}
     top-markup-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 18)
         (padding . 0)
         (stretchability . 0)
     )
-    top-system-spacing = #'(
+    %{ top-system-spacing = #'(
         (basic-distance . 0)
         (minimum-distance . 26)
         (padding . 0)
         (stretchability . 0)
-    )
+    ) %}
     top-margin = 0\mm
 	bottom-margin = 5\mm
 	right-margin = 10\mm
@@ -496,3 +496,7 @@ dashedStaffSymbolLines =
       )) %}
 
 }
+
+
+#(define-public abjad-flared-hairpin
+  (elbowed-hairpin '((1.0 . 0.0) (1.45 . 1.0)) - #t))

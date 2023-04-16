@@ -19,6 +19,21 @@ tenor_multiphonics = evans.PitchHandler(
     forget=False,
 )
 
+rotated_tenor_multiphonics = evans.PitchHandler(
+    [
+        ["e", "f'", "b'", "e''", "gtqs''"],
+        ["a", "b"],
+        ["c'", "cqs''", "gqs''"],
+        ["c'", "df'"],
+        ["cqs'", "df''"],
+        ["cs'", "df''"],
+        ["c'", "dqf''"],
+        ["c", "c'", "gs'", "cqs''", "gs''"],
+        ["dqs", "e'", "as'"],
+    ],
+    forget=False,
+)
+
 baritone_multiphonics = evans.PitchHandler(
     [
         ["f,", "f", "cqs'", "f'"],

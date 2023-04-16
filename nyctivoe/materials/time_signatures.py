@@ -93,9 +93,11 @@ signatures_01 = evans.CyclicList(time_signature_series["A"].rotate(0), forget=Fa
 
 signatures_01 = signatures_01(r=15)
 
+signatures_01 = signatures_01[0:3] + [abjad.TimeSignature((4, 4))] + signatures_01[3:]
+
 signatures_01.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_01 = []
+fermata_measures_01 = [1, 3]
 
 reduced_signatures_01 = evans.reduce_fermata_measures(
     signatures_01, fermata_measures_01
@@ -454,11 +456,28 @@ reduced_signatures_23 = evans.reduce_fermata_measures(
 )
 
 ##
+## 24 ##
+##
+
+signatures_24 = evans.CyclicList(time_signature_series["B"].rotate(-16), forget=False)
+
+signatures_24 = signatures_24(r=17)
+
+signatures_24.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_24 = [2, 4, 7, 12, 16]
+
+reduced_signatures_24 = evans.reduce_fermata_measures(
+    signatures_24, fermata_measures_24
+)
+
+##
 ## total ##
 ##
 
 all_signatures = evans.join_time_signature_lists(
     [
+        reduced_signatures_24,
         reduced_signatures_01,
         reduced_signatures_02,
         reduced_signatures_03,

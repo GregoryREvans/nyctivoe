@@ -42,7 +42,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 stage=3,
             ),
-            evans.loop([-12], [1, 1, 0, 2, 1, 2, -5]),
+            evans.loop([-12 - 2], [1, 1, 0, 2, 1, 2, -5]),
             nyctivoe.upward_gliss,
             nyctivoe.swells,
             evans.ArticulationHandler(
@@ -55,7 +55,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (0, 5)),
@@ -66,7 +66,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 stage=3,
             ),
-            evans.loop([-12], [1, 1, 0, 2, 1, 2, -5]),
+            evans.loop([-12 - 9], [1, 1, 0, 2, 1, 2, 1, -5]),
             nyctivoe.upward_gliss,
             nyctivoe.swells,
             evans.ArticulationHandler(
@@ -79,7 +79,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("viola voice", (0, 5)),
@@ -90,7 +90,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 stage=3,
             ),
-            evans.loop([-12], [1, 1, 0, 2, 1, 2, -5]),
+            evans.loop([-12], [1, 1, 0, 2, 1, 2, 1, 1, -5]),
             nyctivoe.upward_gliss,
             nyctivoe.swells,
             evans.ArticulationHandler(
@@ -103,7 +103,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("petrucci-c3"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
             evans.Attachment(
                 abjad.StopTrillSpan(),
                 selector=lambda _: abjad.select.leaf(_, 0),
@@ -118,7 +118,7 @@ maker = evans.SegmentMaker(
                 preprocessor=evans.make_preprocessor(quarters=True),
                 stage=3,
             ),
-            evans.loop([-12], [1, 1, 0, 2, 1, 2, -5]),
+            evans.loop([-12 - 12], [1, 1, 0, 2, 1, 2, 1, 1, 1, -5]),
             nyctivoe.upward_gliss,
             nyctivoe.swells,
             evans.ArticulationHandler(
@@ -131,7 +131,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("bass"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
             evans.Attachment(
                 abjad.StopTrillSpan(),
                 selector=lambda _: abjad.select.leaf(_, 0),
@@ -152,6 +152,11 @@ maker = evans.SegmentMaker(
             nyctivoe.lib.met_40,
             lambda _: abjad.select.leaf(_, 0),
         ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r'\sectionLabel \markup \underline "Segment 19"', site="before"),
+        #     evans.select_measures([0], leaf=0),
+        # ),
     ],
     score_template=nyctivoe.score,
     transpose_from_sounding_pitch=True,

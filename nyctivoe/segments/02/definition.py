@@ -1,4 +1,5 @@
 import pathlib
+import numpy as np
 
 import abjad
 import baca
@@ -59,7 +60,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("saxophone 1 voice", (4, 13)),
@@ -74,7 +75,7 @@ maker = evans.SegmentMaker(
             nyctivoe.tenor_fingerings,
             nyctivoe.tenor_dynamics,
             abjad.Clef("treble"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (0, 4)),
@@ -101,7 +102,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("treble"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("saxophone 2 voice", (4, 13)),
@@ -116,14 +117,18 @@ maker = evans.SegmentMaker(
             nyctivoe.baritone_fingerings,
             nyctivoe.baritone_dynamics,
             abjad.Clef("treble"),
-            nyctivoe.A_color,
+            # nyctivoe.A_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (0, 4)),
             evans.make_tied_notes(preprocessor=None, rewrite=False),
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="before"),
             # evans.PitchHandler([12]),
             abjad.Clef("percussion"),
-            nyctivoe.C_color,
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "tam tam + superball" 1', site="after"
+            ),
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("percussion voice", (4, 13)),
@@ -134,8 +139,32 @@ maker = evans.SegmentMaker(
                 insertions_rotation=0,
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence([-5, -1, 2, 5]).mirror(False).rotate(10).random_walk(
+                    length=100,
+                    step_list=[1, 3, 2, 2],
+                    random_seed=3,
+                ).remove_repeats()]
+            ),
+            evans.hairpin(
+                "p <| f > mf >",
+                # counts=[7, 5, 3, 5],
+                counts=[2, 5, 2, 6, 2, 7, 2, 6, 2, 5, 2, 5],
+                cyclic=True,
+                pitched=True,
+                final_hairpin=False,
+                remove_length_1_spanner_start=False,
+            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="before"),
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "gongs" 1', site="after"
+            ),
+            evans.ArticulationHandler(
+                ["tremolo"],
+                articulation_boolean_vector=[1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0]
+            ),
             abjad.Clef("percussion"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("viola voice", (0, 4)),
@@ -162,7 +191,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("petrucci-c3"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("viola voice", (4, 13)),
@@ -173,8 +202,26 @@ maker = evans.SegmentMaker(
                 insertions_rotation=-1,
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence([_ for _ in np.arange(-12, 12, 0.5)]).mirror(False).rotate(10).random_walk(
+                    length=100,
+                    step_list=[1, 3, 2, 2],
+                    random_seed=2,
+                ).remove_repeats()]
+            ),
+            # nyctivoe.zero_padding_glissando,
+            evans.hairpin(
+                "p <| f > mf >",
+                # counts=[7, 5, 3, 5],
+                counts=[2, 5, 2, 5, 2, 6, 2, 7, 2, 6, 2, 5],
+                cyclic=True,
+                pitched=True,
+                final_hairpin=False,
+                remove_length_1_spanner_start=False,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [5], padding=5.25, id=2),
             abjad.Clef("petrucci-c3"),
-            nyctivoe.E_color,
+            # nyctivoe.E_color,
         ),
         evans.MusicCommand(
             ("cello voice", (0, 4)),
@@ -201,7 +248,7 @@ maker = evans.SegmentMaker(
                 abjad.Clef("bass"),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
-            nyctivoe.C_color,
+            # nyctivoe.C_color,
         ),
         evans.MusicCommand(
             ("cello voice", (4, 13)),
@@ -212,8 +259,26 @@ maker = evans.SegmentMaker(
                 insertions_rotation=-2,
                 preprocessor=evans.make_preprocessor(quarters=True),
             ),
-            abjad.Clef("petrucci-c3"),
-            nyctivoe.E_color,
+            evans.PitchHandler(
+                [_ for _ in evans.Sequence([_ for _ in np.arange(-12, 12, 0.5)]).mirror(False).rotate(10).random_walk(
+                    length=100,
+                    step_list=[1, 3, 2, 2],
+                    random_seed=1,
+                ).remove_repeats()]
+            ),
+            # nyctivoe.zero_padding_glissando,
+            evans.hairpin(
+                "p <| f > mf >",
+                # counts=[7, 5, 3, 5],
+                counts=[2, 6, 2, 5, 2, 5, 2, 6, 2, 7, 2, 5],
+                cyclic=True,
+                pitched=True,
+                final_hairpin=False,
+                remove_length_1_spanner_start=False,
+            ),
+            evans.text_span([r"T", r"P"], "=>", [5], padding=5.25, id=2),
+            # abjad.Clef("petrucci-c4"),
+            # nyctivoe.E_color,
         ),
         evans.call(
             "score",
@@ -235,6 +300,11 @@ maker = evans.SegmentMaker(
             nyctivoe.lib.met_40,
             lambda _: abjad.select.leaf(_, 4),
         ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r'\sectionLabel \markup \underline "Segment 02"', site="before"),
+        #     evans.select_measures([0], leaf=0),
+        # ),
     ],
     score_template=nyctivoe.score,
     transpose_from_sounding_pitch=True,

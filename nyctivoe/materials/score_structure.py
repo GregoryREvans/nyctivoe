@@ -78,17 +78,17 @@ score = abjad.Score(
 
 abjad.setting(
     score["sub group 1"]
-).instrumentName = r'\markup { \hcenter-in #14 "Saxophone 1" }'
+).instrumentName = r'\markup { \hcenter-in #14 "Tenor Saxophone" }'
 abjad.setting(
     score["sub group 1"]
-).shortInstrumentName = r'\markup { \hcenter-in #12 "sx. 1" }'
+).shortInstrumentName = r'\markup { \hcenter-in #12 "tn. sx." }'
 
 abjad.setting(
     score["sub group 2"]
-).instrumentName = r'\markup { \hcenter-in #14 "Saxophone 2" }'
+).instrumentName = r'\markup { \hcenter-in #14 "Baritone Saxophone" }'
 abjad.setting(
     score["sub group 2"]
-).shortInstrumentName = r'\markup { \hcenter-in #12 "sx. 2" }'
+).shortInstrumentName = r'\markup { \hcenter-in #12 "br. sx." }'
 
 abjad.setting(
     score["percussion staff"]

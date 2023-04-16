@@ -165,8 +165,8 @@
                         \context RemoveableStaffGroup = "sub group 1"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 1" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 1" }
+                            instrumentName = \markup { \hcenter-in #14 "Tenor Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "tn. sx." }
                         }
                         <<
 
@@ -182,8 +182,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
@@ -462,8 +460,6 @@
                                           %! baca.PiecewiseCommand._call(3)
                                           %! baca.hairpin()
                                         \p
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -508,22 +504,17 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 6]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 15/8
+                                            gqs'16 * 15/8
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             [
                                             \<
 
-                                            a''16 * 21/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            g'16 * 21/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            e'16 * 13/16
                                             ]
 
                                         }
@@ -570,25 +561,19 @@
 
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            dqs'32 * 29/16
                                             [
 
-                                            a''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            bqs'32 * 27/16
 
-                                            a''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            b'32 * 45/32
 
-                                            a''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            g'32 * 37/32
 
-                                            a''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            ftqs'32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            dqs''32 * 15/16
                                             ]
 
                                         }
@@ -635,19 +620,15 @@
 
                                             \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 43/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            d''16 * 43/64
                                             [
 
-                                            a''16 * 49/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            b'16 * 49/64
 
-                                            a''16 * 17/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            aqs'16 * 17/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 3/2
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ftqs''16 * 3/2
                                             ]
 
                                         }
@@ -692,12 +673,9 @@
                                         \scaleDurations #'(1 . 1)
                                         {
 
-                                            a''16
+                                            fs''16
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -705,8 +683,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 8]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r8
@@ -893,8 +869,6 @@
                                           %! baca.hairpin()
                                         \p
                                         ]
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -939,22 +913,17 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 12]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 15/8
+                                            gqs'16 * 15/8
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             [
                                             \<
 
-                                            a''16 * 21/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            g'16 * 21/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            e'16 * 13/16
                                             ]
 
                                         }
@@ -1001,25 +970,19 @@
 
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            dqs'32 * 29/16
                                             [
 
-                                            a''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            bqs'32 * 27/16
 
-                                            a''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            b'32 * 45/32
 
-                                            a''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            g'32 * 37/32
 
-                                            a''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ftqs'32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            dqs''32 * 15/16
                                             ]
 
                                         }
@@ -1069,19 +1032,15 @@
                                             % [saxophone 1 voice measure 13]
                                             \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 43/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            d''16 * 43/64
                                             [
 
-                                            a''16 * 49/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            b'16 * 49/64
 
-                                            a''16 * 17/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            aqs'16 * 17/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 3/2
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ftqs''16 * 3/2
                                             ]
 
                                         }
@@ -1126,12 +1085,9 @@
                                         \scaleDurations #'(1 . 1)
                                         {
 
-                                            a''8
+                                            fs''8
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -1139,8 +1095,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 14]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         d'4
                                           %! SPANNER_STOP
@@ -1243,8 +1197,6 @@
                                               %! baca.PiecewiseCommand._call(3)
                                               %! baca.hairpin()
                                             \p
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -1291,22 +1243,17 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 16]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 15/8
+                                            gqs'16 * 15/8
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             [
                                             \<
 
-                                            a''16 * 21/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            g'16 * 21/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            e'16 * 13/16
                                             ]
 
                                         }
@@ -1353,25 +1300,19 @@
 
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            dqs'32 * 29/16
                                             [
 
-                                            a''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            bqs'32 * 27/16
 
-                                            a''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            b'32 * 45/32
 
-                                            a''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            g'32 * 37/32
 
-                                            a''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            ftqs'32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            dqs''32 * 15/16
                                             ]
 
                                         }
@@ -1418,19 +1359,15 @@
 
                                             \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a''16 * 43/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            d''16 * 43/64
                                             [
 
-                                            a''16 * 49/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            b'16 * 49/64
 
-                                            a''16 * 17/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            aqs'16 * 17/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            a''16 * 3/2
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            ftqs''16 * 3/2
                                             ]
 
                                         }
@@ -1475,12 +1412,9 @@
                                         \scaleDurations #'(1 . 1)
                                         {
 
-                                            a''8
+                                            fs''8
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -1488,8 +1422,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 18]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         r16
 
@@ -1522,8 +1454,6 @@
                                           %! baca.hairpin()
                                         \p
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -1647,8 +1577,8 @@
                         \context RemoveableStaffGroup = "sub group 2"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 2" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 2" }
+                            instrumentName = \markup { \hcenter-in #14 "Baritone Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "br. sx." }
                         }
                         <<
 
@@ -1664,8 +1594,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r8
@@ -1806,8 +1734,6 @@
                                               %! baca.hairpin()
                                             \p
                                             ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -1854,31 +1780,23 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 4]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16 * 63/32
+                                            dqs''16 * 63/32
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
                                             [
                                             \<
 
-                                            g''16 * 115/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            gtqs''16 * 115/64
 
-                                            g''16 * 91/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            d''16 * 91/64
 
-                                            g''16 * 35/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            a''16 * 35/32
 
-                                            g''16 * 29/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            b'16 * 29/32
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            cs'''16 * 13/16
                                             ]
 
                                         }
@@ -1928,25 +1846,19 @@
                                             % [saxophone 2 voice measure 5]
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            aqs'32 * 29/16
                                             [
 
-                                            g''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ctqs'''32 * 27/16
 
-                                            g''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            ftqs''32 * 45/32
 
-                                            g''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            eqs''32 * 37/32
 
-                                            g''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            fs''32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            fs''32 * 15/16
                                             ]
 
                                         }
@@ -1993,21 +1905,16 @@
 
                                             \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16 * 45/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            d''16 * 45/64
                                             [
 
-                                            g''16 * 57/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            a''16 * 57/64
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''16 * 45/32
+                                            ctqs''16 * 45/32
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
                                             ]
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -2015,8 +1922,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         \override Staff.Stem.stemlet-length = 0.75
                                         b8
@@ -2191,8 +2096,6 @@
                                               %! baca.hairpin()
                                             \p
                                             ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
 
@@ -2239,31 +2142,23 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 9]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16 * 63/32
+                                            dqs''16 * 63/32
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
                                             [
                                             \<
 
-                                            g''16 * 115/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            gtqs''16 * 115/64
 
-                                            g''16 * 91/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            d''16 * 91/64
 
-                                            g''16 * 35/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            a''16 * 35/32
 
-                                            g''16 * 29/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            b'16 * 29/32
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            cs'''16 * 13/16
                                             ]
 
                                         }
@@ -2313,25 +2208,19 @@
                                             % [saxophone 2 voice measure 10]
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            aqs'32 * 29/16
                                             [
 
-                                            g''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ctqs'''32 * 27/16
 
-                                            g''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            ftqs''32 * 45/32
 
-                                            g''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            eqs''32 * 37/32
 
-                                            g''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            fs''32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            fs''32 * 15/16
                                             ]
 
                                         }
@@ -2378,24 +2267,18 @@
 
                                             \once \override Beam.grow-direction = #left
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16 * 43/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            d''16 * 43/64
                                             [
 
-                                            g''16 * 49/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            a''16 * 49/64
 
-                                            g''16 * 17/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            ctqs''16 * 17/16
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''16 * 3/2
+                                            aqs''16 * 3/2
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
                                             ]
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -2403,8 +2286,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 11]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
@@ -2679,8 +2560,6 @@
                                           %! baca.hairpin()
                                         \p
                                         ]
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                         \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                             {
@@ -2725,31 +2604,23 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 2 voice measure 16]
                                             \slapped
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 0.961 0.961 0.406)
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''16 * 63/32
+                                            dqs''16 * 63/32
                                             \p
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
                                             [
                                             \<
 
-                                            g''16 * 115/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            gtqs''16 * 115/64
 
-                                            g''16 * 91/64
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            d''16 * 91/64
 
-                                            g''16 * 35/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            a''16 * 35/32
 
-                                            g''16 * 29/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            b'16 * 29/32
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''16 * 13/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            cs'''16 * 13/16
                                             ]
 
                                         }
@@ -2796,25 +2667,19 @@
 
                                             \once \override Beam.grow-direction = #right
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g''32 * 29/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            aqs'32 * 29/16
                                             [
 
-                                            g''32 * 27/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            ctqs'''32 * 27/16
 
-                                            g''32 * 45/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
+                                            ftqs''32 * 45/32
 
-                                            g''32 * 37/32
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
+                                            eqs''32 * 37/32
 
-                                            g''32 * 1
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            fs''32 * 1
 
                                             \revert Staff.Stem.stemlet-length
-                                            g''32 * 15/16
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 3 }
+                                            fs''32 * 15/16
                                             ]
 
                                         }
@@ -2859,12 +2724,9 @@
                                         \scaleDurations #'(1 . 1)
                                         {
 
-                                            g''8
+                                            d''8
                                             \ff
-                                            ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
                                             \revert-noteheads
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
                                         \revert TupletNumber.text
@@ -2872,8 +2734,6 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 18]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
                                         \clef "treble"
                                         r8
 
@@ -2897,8 +2757,6 @@
                                           %! baca.hairpin()
                                         \p
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -3033,14 +2891,33 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 1]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.8 1)
+                                \boxed-markup "timpani + cymbal" 1
+                                \staff-line-count 5
+                                \clef "bass"
                                 \afterGrace
-                                c'2
+                                a,2
+                                :32
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak stencil #abjad-flared-hairpin
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
                                 \glissando
                                 {
 
-                                    c'8
+                                    c,8
+                                    :32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
 
                                 }
 
@@ -3049,11 +2926,25 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 2]
                                 \afterGrace
-                                c'2
+                                c,2
+                                :32
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
                                 \glissando
                                 {
 
-                                    c'8
+                                    a,8
+                                    :32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \ff
 
                                 }
 
@@ -3062,13 +2953,29 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 3]
                                 \afterGrace
-                                c'4.
+                                a,4.
+                                :32
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                - \tweak stencil #abjad-flared-hairpin
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
                                 \glissando
                                 {
 
-                                    c'8
-                                      %! MATERIAL_COLOR
-                                    \stopStaffHighlight
+                                    c,8
+                                    :32
+                                      %! SPANNER_STOP
+                                      %! baca.PiecewiseCommand._call(2)
+                                      %! baca.hairpin()
+                                    \f
 
                                 }
 
@@ -3076,24 +2983,24 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 4]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.2 1 0.592)
-                                \clef "percussion"
-                                c'2
+                                a,2
+                                :32
+                                \mp
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 5]
-                                c'4..
+                                a,4..
+                                :32
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 6]
-                                c'4.
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
+                                a,4.
+                                :32
+                                - \bendAfter #'-3
 
                                 \times 2/3
                                 {
@@ -3101,23 +3008,25 @@
                                       %! COMMENT_MEASURE_NUMBERS
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 7]
-                                      %! MATERIAL_COLOR
-                                    \staffHighlight #(rgb-color 1 0.2 0.2)
+                                    \staff-line-count 4
                                     \clef "percussion"
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    g16
+                                    \sfp
                                     [
+                                    \<
+                                    \boxed-markup "gongs" 1
 
-                                    d'16
+                                    b16
 
-                                    c'16
+                                    g16
 
-                                    d'16
+                                    f'16
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    g16
                                     ]
 
                                 }
@@ -3127,17 +3036,17 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'32
+                                    f'32
                                     [
 
-                                    d'32
+                                    b32
 
-                                    c'32
+                                    f'32
 
                                     d'32
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'32
+                                    b32
                                     ]
 
                                 }
@@ -3146,15 +3055,15 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 8]
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d'16
+                                f'16
                                 [
 
-                                c'16
+                                b16
 
                                 d'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                b16
                                 ]
 
                                 \times 2/3
@@ -3164,10 +3073,10 @@
                                     d'16
                                     [
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    f'16
                                     ]
 
                                 }
@@ -3180,13 +3089,13 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 9]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    d'16
                                     [
 
-                                    d'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    d'16
                                     ]
 
                                 }
@@ -3196,21 +3105,21 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'32
+                                    b32
                                     [
 
-                                    c'32
-
                                     d'32
 
-                                    c'32
+                                    b32
 
-                                    d'32
+                                    g32
 
-                                    c'32
+                                    f'32
+
+                                    b32
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'32
+                                    g32
                                     ]
 
                                 }
@@ -3222,19 +3131,19 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 10]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    f'16
                                     [
 
+                                    b16
+
+                                    f'16
+
                                     d'16
 
-                                    c'16
-
-                                    d'16
-
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    f'16
                                     ]
 
                                 }
@@ -3243,17 +3152,17 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    b16
                                     [
 
                                     d'16
 
-                                    c'16
+                                    b16
 
-                                    d'16
+                                    f'16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    b16
                                     ]
 
                                 }
@@ -3265,61 +3174,61 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 11]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    g16
                                     [
 
-                                    c'16
+                                    f'16
+
+                                    b16
 
                                     d'16
 
-                                    c'16
-
-                                    d'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    f'16
                                     ]
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d'16
+                                b16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                g16
                                 ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 12]
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d'16
+                                f'16
                                 [
 
-                                c'16
+                                b16
 
-                                d'16
+                                g16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                f'16
                                 ]
 
                                 \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    b16
                                     [
 
-                                    c'16
+                                    f'16
 
                                     d'16
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    g16
                                     ]
 
                                 }
@@ -3332,13 +3241,13 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 13]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    f'16
                                     [
 
-                                    d'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    g16
                                     ]
 
                                 }
@@ -3347,13 +3256,13 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    f'16
                                     [
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    f'16
                                     ]
 
                                 }
@@ -3365,19 +3274,19 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 14]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    d'16
                                     [
 
-                                    d'16
+                                    b16
 
-                                    c'16
+                                    f'16
 
-                                    d'16
+                                    b16
 
-                                    c'16
+                                    g16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    f'16
                                     ]
 
                                 }
@@ -3386,17 +3295,17 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    b16
                                     [
 
-                                    d'16
-
-                                    c'16
+                                    f'16
 
                                     d'16
+
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    f'16
                                     ]
 
                                 }
@@ -3408,19 +3317,19 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 15]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    b16
                                     [
 
-                                    c'16
+                                    g16
 
-                                    d'16
+                                    f'16
 
-                                    c'16
+                                    b16
 
-                                    d'16
+                                    g16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    f'16
                                     ]
 
                                 }
@@ -3429,19 +3338,19 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    b16
                                     [
 
-                                    c'16
+                                    g16
 
-                                    d'16
+                                    f'16
 
-                                    c'16
+                                    b16
 
-                                    d'16
+                                    g16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    b16
                                     ]
 
                                 }
@@ -3450,28 +3359,28 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 16]
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d'16
+                                g16
                                 [
 
-                                c'16
+                                f'16
 
-                                d'16
+                                b16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                g16
                                 ]
 
                                 \times 2/3
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'16
+                                    f'16
                                     [
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    f'16
                                     ]
 
                                 }
@@ -3484,13 +3393,13 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 17]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    d'16
                                     [
 
-                                    d'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    f'16
                                     ]
 
                                 }
@@ -3500,18 +3409,18 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'32
+                                    b32
                                     [
 
-                                    c'32
+                                    d'32
+
+                                    b32
 
                                     d'32
 
-                                    c'32
+                                    b32
 
-                                    d'32
-
-                                    c'32
+                                    f'32
 
                                     \revert Staff.Stem.stemlet-length
                                     d'32
@@ -3526,37 +3435,36 @@
                                       %! evans.SegmentMaker.comment_measure_numbers()
                                     % [percussion voice measure 18]
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
+                                    b16
                                     [
 
                                     d'16
 
-                                    c'16
+                                    b16
 
                                     d'16
 
-                                    c'16
+                                    b16
 
                                     \revert Staff.Stem.stemlet-length
-                                    d'16
+                                    g16
                                     ]
 
                                 }
 
-                                c'32.
+                                f'32.
 
-                                d'32.
+                                b32.
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'32.
+                                g32.
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                d'32.
+                                f'32.
+                                \ff
                                 ]
                                 \bar "||"
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 
@@ -3647,12 +3555,12 @@
                                             % [string 1 voice measure 12]
                                             \revert Staff.StaffSymbol.line-positions
                                             \staff-line-count 4
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
                                             \clef "percussion"
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
                                             f'16
+                                            \sfp
                                             [
+                                            \<
 
                                             d'16
 
@@ -3898,10 +3806,10 @@
 
                                         \revert VanishingStringStaff.Stem.stemlet-length
                                         b16
+                                        \ff
                                         ]
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \revert Staff.StaffSymbol.line-positions
 
                                     }
 
@@ -3921,15 +3829,61 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "petrucci-c3"
                                         \afterGrace
-                                        c'2
+                                        <cqs' gqf'>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -3938,11 +3892,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 2]
                                         \afterGrace
-                                        c'2
+                                        <cqs' gqf'>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -3951,11 +3949,59 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 3]
                                         \afterGrace
-                                        c'4.
+                                        <cqs' gqf'>4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' gqf'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -3964,11 +4010,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 4]
                                         \afterGrace
-                                        c'2
+                                        <cqs' gqf'>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -3977,11 +4067,59 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 5]
                                         \afterGrace
-                                        c'4..
+                                        <cqs' gqf'>4..
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' gqf'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -3990,11 +4128,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 6]
                                         \afterGrace
-                                        c'4.
+                                        <cqs' gqf'>4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4003,11 +4185,59 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 7]
                                         \afterGrace
-                                        c'4..
+                                        <cqs' gqf'>4..
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4016,11 +4246,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 8]
                                         \afterGrace
-                                        c'4.
+                                        <cqs' gqf'>4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' gqf'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4029,11 +4303,59 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 9]
                                         \afterGrace
-                                        c'2
+                                        <cqs' gqf'>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4042,11 +4364,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 10]
                                         \afterGrace
-                                        c'2
+                                        <cqs' gqf'>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <cqs' gqf'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4055,13 +4421,59 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 11]
                                         \afterGrace
-                                        c'4.
+                                        <cqs' gqf'>4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
+                                            <cqs' eqs'>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4069,53 +4481,79 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 12]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
                                         \clef "petrucci-c3"
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c16
+                                        <c g d' a'>16
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 8.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
+                                        <c'' g'' d''' a'''>16
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c4
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
+                                        <c g d' a'>4
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
+                                        <c g d' a'>16
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
+                                        <c'' g'' d''' a'''>16
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
@@ -4129,31 +4567,31 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [viola voice measure 13]
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''8.
+                                            <c'' g'' d''' a'''>8.
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c8.
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>8.
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            <c'' g'' d''' a'''>16
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -4168,19 +4606,19 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [viola voice measure 14]
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c2
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>2
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''8
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c'' g'' d''' a'''>8
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
@@ -4194,76 +4632,76 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [viola voice measure 15]
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''4
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c'' g'' d''' a'''>4
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            <c'' g'' d''' a'''>16
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>16
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c'' g'' d''' a'''>16
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>16
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c'' g'' d''' a'''>16
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>16
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            <c'' g'' d''' a'''>16
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -4275,10 +4713,10 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 16]
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''4.
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
+                                        <c'' g'' d''' a'''>4.
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
@@ -4290,32 +4728,32 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [viola voice measure 17]
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
+                                            <c g d' a'>16
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
+                                            <c'' g'' d''' a'''>16
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c4..
+                                            \once \override Accidental.stencil = ##f
+                                            \once \override NoteHead.X-extent = #'(0 . 0)
+                                            \once \override NoteHead.transparent = ##t
+                                            <c g d' a'>4..
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
@@ -4326,64 +4764,64 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 18]
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
+                                        <c g d' a'>16
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
+                                        <c'' g'' d''' a'''>16
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
+                                        <c g d' a'>16
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
+                                        <c'' g'' d''' a'''>16
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
+                                        <c g d' a'>16
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                        \once \override Accidental.stencil = ##f
+                                        \once \override NoteHead.X-extent = #'(0 . 0)
+                                        \once \override NoteHead.transparent = ##t
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
+                                        <c'' g'' d''' a'''>16
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
@@ -4391,11 +4829,13 @@
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        c16
+                                        <c g d' a'>16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
                                         ]
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                     }
 
@@ -4536,15 +4976,61 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
                                         \clef "bass"
                                         \afterGrace
-                                        c'2
+                                        <aqs, ef>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        - \tweak stencil #abjad-flared-hairpin
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <aqs, d>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4553,11 +5039,55 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
                                         \afterGrace
-                                        c'2
+                                        <aqs, ef>2
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
                                         \glissando
                                         {
 
-                                            c'8
+                                            <aqs, g>8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
 
                                         }
 
@@ -4565,213 +5095,133 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        \sfp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5.25
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        \<
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        \afterGrace
-                                        c'4..
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4..
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        \afterGrace
-                                        c'4..
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4..
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 12]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 13]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 14]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 15]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 16]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>4.
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 17]
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
+                                        <aqs, ef>2
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 18]
-                                        \afterGrace
-                                        c'4..
-                                        \glissando
-                                        {
-
-                                            c'8
-                                            \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
-
+                                        <aqs, ef>4..
+                                        \ff
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                        \bar "||"
 
                                     }
 

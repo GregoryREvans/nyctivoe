@@ -116,8 +116,8 @@
                         \context RemoveableStaffGroup = "sub group 1"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 1" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 1" }
+                            instrumentName = \markup { \hcenter-in #14 "Tenor Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "tn. sx." }
                         }
                         <<
 
@@ -130,459 +130,232 @@
                                     \context Voice = "saxophone 1 voice"
                                     {
 
-                                        <<
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 1]
+                                        r4
 
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
+                                        \override Staff.NoteHead.style = #'cross
+                                        \staff-line-count 1
+                                        \clef "percussion"
+                                        c'4
+                                        \mp
+                                        \boxed-markup "key clicks" 1
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [saxophone 1 voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                                \clef "treble"
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <d''>8 * 2/7
-                                                [
-                                                (
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 2]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r8
+                                        [
 
-                                                d''8 * 2/7
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
 
-                                                d''8 * 2/7
+                                        \times 2/3
+                                        {
 
-                                                d''8 * 2/7
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            [
 
-                                                d''8 * 2/7
-                                                )
-                                                ]
+                                            r8
 
-                                            }
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
 
-                                            \context Voice = "temporary music"
-                                            {
+                                        }
 
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                d''2
-                                                :32
+                                        \times 2/3
+                                        {
 
-                                            }
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [saxophone 1 voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            r8
+                                            [
 
-                                        >>
+                                            c'8
 
-                                        <<
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            ]
 
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
+                                        }
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [saxophone 1 voice measure 2]
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <d''>8 * 2/7
-                                                [
-                                                (
+                                        c'8
 
-                                                d''8 * 2/7
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 4]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                                d''8 * 2/7
+                                        \revert Staff.Stem.stemlet-length
+                                        r8
+                                        ]
 
-                                                d''8 * 2/7
-                                                )
-                                                ]
+                                        r8
 
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                d''2
-                                                :32
-
-                                            }
-
-                                        >>
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [saxophone 1 voice measure 3]
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <d''>8 * 2/7
-                                                [
-                                                (
-
-                                                d''8 * 2/7
-
-                                                d''8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                d''4.
-                                                :32
-                                                ~
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [temporary music measure 4]
-                                                d''4
-                                                :32
-
-                                            }
-
-                                        >>
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <d''>8 * 2/7
-                                                [
-                                                (
-
-                                                d''8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                d''4
-                                                :32
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
-
-                                            }
-
-                                        >>
+                                        r8
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 5]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        \clef "treble"
-                                        d'8
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \mf
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        ds'8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        c'16
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        ds'16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        e'8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        c'16
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'32
+                                            [
+
+                                            r32
+
+                                            c'32
+
+                                            r32
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'32
+                                            ]
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [saxophone 1 voice measure 6]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'16
+                                        [
+
+                                        c'16
+
+                                        c'16
+
+                                        c'16
+
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
+                                        ]
 
                                         \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 1 voice measure 6]
+                                            % [saxophone 1 voice measure 7]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e'16
+                                            r16
                                             [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            fs'8
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            c'16
+
+                                            c'16
+
+                                            c'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            g'8
+                                            c'16
                                             ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
 
                                         }
 
+                                        r16
+
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        g'16
+                                        c'16
                                         [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        a'16
+                                        r16
                                         ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \times 2/3
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 1 voice measure 7]
+                                            % [saxophone 1 voice measure 8]
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'32
+                                            c'16
                                             [
 
-                                            e'32
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            c'16
 
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            f'16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            r16
+
+                                            c'16
+
+                                            r16
 
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            fs'16.
+                                            c'16
                                             ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
 
                                         }
 
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        fs'16.
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        gs'32.
+                                        c'16
                                         [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        a'32.
+                                        c'16
                                         ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 1 voice measure 8]
+                                        % [saxophone 1 voice measure 9]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        a'16
+                                        c'16
                                         [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+
+                                        r16
+
+                                        r16
 
                                         \revert Staff.Stem.stemlet-length
-                                        b'8.
+                                        r16
                                         ]
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            fs'8
+                                            c'16
                                             [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+
+                                            c'16
+
+                                            c'16
+
+                                            c'16
+
+                                            c'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            g'16
+                                            r16
                                             ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
 
                                         }
-
-                                        \times 2/3
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 1 voice measure 9]
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            gs'8
-                                            [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            gs'8.
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            bf'16
-                                            ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                        }
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        bf'16
-                                        [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        b'16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        cs''8
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.hairpin()
-                                        \pp
-                                        ]
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
 
                                         \times 2/3
                                         {
@@ -590,44 +363,44 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [saxophone 1 voice measure 10]
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
-                                            \clef "treble"
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
+                                            c'16
                                             [
 
-                                            e''16
+                                            r16
 
-                                            d''16
+                                            c'16
 
-                                            e''16
+                                            c'16
 
-                                            d''16
+                                            c'16
 
                                             \revert Staff.Stem.stemlet-length
-                                            e''16
+                                            c'16
                                             ]
 
                                         }
 
-                                        \times 2/3
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
+                                            c'32
                                             [
 
-                                            e''16
+                                            c'32
 
-                                            d''16
+                                            c'32
 
-                                            e''16
+                                            r32
 
-                                            d''16
+                                            c'32
+
+                                            c'32
 
                                             \revert Staff.Stem.stemlet-length
-                                            e''16
+                                            c'32
                                             ]
 
                                         }
@@ -636,34 +409,22 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 1 voice measure 11]
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        d''16
+                                        c'16
                                         [
 
-                                        e''16
+                                        r16
 
-                                        d''16
+                                        c'16
+
+                                        r16
+
+                                        c'16
 
                                         \revert Staff.Stem.stemlet-length
-                                        e''16
+                                        c'16
                                         ]
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d''16
-                                            [
-
-                                            e''16
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d''16
-                                            ]
-                                            \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
+                                        \bar "||"
+                                        \revert-noteheads
 
                                     }
 
@@ -752,8 +513,8 @@
                         \context RemoveableStaffGroup = "sub group 2"
                         \with
                         {
-                            instrumentName = \markup { \hcenter-in #14 "Saxophone 2" }
-                            shortInstrumentName = \markup { \hcenter-in #12 "sx. 2" }
+                            instrumentName = \markup { \hcenter-in #14 "Baritone Saxophone" }
+                            shortInstrumentName = \markup { \hcenter-in #12 "br. sx." }
                         }
                         <<
 
@@ -769,294 +530,258 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 1]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        a''4
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''8.
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8
-                                            ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
+                                        r2
 
                                         <<
 
-                                            \context Voice = "On_Beat_Grace_Container"
+                                            \context Voice = "saxophone 2 voice temp"
                                             {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
 
                                                   %! COMMENT_MEASURE_NUMBERS
                                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [saxophone 2 voice measure 2]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
+                                                % [saxophone 2 voice temp measure 2]
                                                 \clef "treble"
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                <a''>8 * 2/7
-                                                [
-                                                (
-
-                                                a''8 * 2/7
-
-                                                a''8 * 2/7
-                                                )
-                                                ]
+                                                \voiceTwo
+                                                ftqs'2
+                                                \ff
 
                                             }
 
-                                            \context Voice = "temporary music"
+                                            \context Voice = "saxophone 1 intermittent_voice_1"
                                             {
 
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                a''2
-                                                :32
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
+                                                \override Staff.ClusterSpanner.style = #'ramp
+                                                \override Staff.ClusterSpanner.layer = #-10
+                                                \override Staff.ClusterSpanner.color = #(rgb-color 0.56 0.85 0.6)
+                                                \makeClusters {
+
+                                                      %! COMMENT_MEASURE_NUMBERS
+                                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                                    % [saxophone 1 intermittent_voice_1 measure 2]
+                                                    \voiceOne
+                                                    <fs' gs'>4
+
+                                                    \afterGrace
+                                                    <fs' cs''>4
+                                                    {
+
+                                                        <fs' cs''>16
+
+                                                    }
+
+
+                                                }
 
                                             }
 
                                         >>
+                                        \oneVoice
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 3]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        a''4
-                                        ~
+                                        r4.
 
-                                        a''8
+                                        <<
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 4]
-                                        a''4
-                                        ~
+                                            \context Voice = "saxophone 2 voice temp"
+                                            {
 
-                                        \times 4/5
-                                        {
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 2 voice temp measure 4]
+                                                \clef "treble"
+                                                \voiceTwo
+                                                ftqs'2
+                                                \ff
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
-                                            [
+                                            }
 
-                                            a''16
+                                            \context Voice = "saxophone 1 intermittent_voice_1"
+                                            {
 
-                                            r16
+                                                \override Staff.ClusterSpanner.style = #'ramp
+                                                \override Staff.ClusterSpanner.layer = #-10
+                                                \override Staff.ClusterSpanner.color = #(rgb-color 0.56 0.85 0.6)
+                                                \makeClusters {
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8
-                                            ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
+                                                      %! COMMENT_MEASURE_NUMBERS
+                                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                                    % [saxophone 1 intermittent_voice_1 measure 4]
+                                                    \voiceOne
+                                                    <fs' gs'>4
 
-                                        }
+                                                    \afterGrace
+                                                    <fs' cs''>4
+                                                    {
+
+                                                        <fs' cs''>16
+
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                        >>
+                                        \oneVoice
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 5]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        \clef "treble"
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        a'16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \mf
-                                        ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        as'8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        b'8.
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.hairpin()
-                                        \pp
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        r4..
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        a''4
-                                        ~
-
-                                        a''8
+                                        r4.
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [saxophone 2 voice measure 7]
-                                        a''4
-                                        ~
+                                        r4..
 
-                                        a''32.
+                                        <<
 
-                                        a''32.
+                                            \context Voice = "saxophone 2 voice temp"
+                                            {
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r32.
-                                        [
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 2 voice temp measure 8]
+                                                \clef "treble"
+                                                \voiceTwo
+                                                ftqs'4.
+                                                \ff
 
-                                        \revert Staff.Stem.stemlet-length
-                                        a''32.
-                                        ]
-                                        ~
+                                            }
 
-                                        \times 4/5
-                                        {
+                                            \context Voice = "saxophone 1 intermittent_voice_1"
+                                            {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 2 voice measure 8]
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''8
-                                            [
+                                                \override Staff.ClusterSpanner.style = #'ramp
+                                                \override Staff.ClusterSpanner.layer = #-10
+                                                \override Staff.ClusterSpanner.color = #(rgb-color 0.56 0.85 0.6)
+                                                \makeClusters {
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8.
-                                            ]
-                                            ~
+                                                      %! COMMENT_MEASURE_NUMBERS
+                                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                                    % [saxophone 1 intermittent_voice_1 measure 8]
+                                                    \voiceOne
+                                                    <fs' gs'>4
 
-                                        }
+                                                    \afterGrace
+                                                    <fs' e''>8
+                                                    {
 
-                                        a''8
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                                        <fs' e''>16
 
-                                        \times 4/5
-                                        {
+                                                    }
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 2 voice measure 9]
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
-                                            \clef "treble"
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''16
-                                            [
 
-                                            b''16
+                                                }
 
-                                            a''16
+                                            }
 
-                                            b''16
+                                        >>
+                                        \oneVoice
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            ]
+                                        <<
 
-                                        }
+                                            \context Voice = "saxophone 2 voice temp"
+                                            {
 
-                                        \times 2/3
-                                        {
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 2 voice temp measure 9]
+                                                \clef "treble"
+                                                \voiceTwo
+                                                ftqs'2
+                                                \ff
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            b''16
-                                            [
+                                            }
 
-                                            a''16
+                                            \context Voice = "saxophone 1 intermittent_voice_1"
+                                            {
 
-                                            b''16
+                                                \override Staff.ClusterSpanner.style = #'ramp
+                                                \override Staff.ClusterSpanner.layer = #-10
+                                                \override Staff.ClusterSpanner.color = #(rgb-color 0.56 0.85 0.6)
+                                                \makeClusters {
 
-                                            a''16
+                                                      %! COMMENT_MEASURE_NUMBERS
+                                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                                    % [saxophone 1 intermittent_voice_1 measure 9]
+                                                    \voiceOne
+                                                    <fs' gs'>4
 
-                                            b''16
+                                                    \afterGrace
+                                                    <fs' cs''>4
+                                                    {
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a''16
-                                            ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
+                                                        <fs' cs''>16
 
-                                        }
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                        >>
+                                        \oneVoice
+
+                                        <<
+
+                                            \context Voice = "saxophone 2 voice temp"
+                                            {
+
+                                                  %! COMMENT_MEASURE_NUMBERS
+                                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [saxophone 2 voice temp measure 10]
+                                                \clef "treble"
+                                                \voiceTwo
+                                                ftqs'2
+                                                \ff
+
+                                            }
+
+                                            \context Voice = "saxophone 1 intermittent_voice_1"
+                                            {
+
+                                                \override Staff.ClusterSpanner.style = #'ramp
+                                                \override Staff.ClusterSpanner.layer = #-10
+                                                \override Staff.ClusterSpanner.color = #(rgb-color 0.56 0.85 0.6)
+                                                \makeClusters {
+
+                                                      %! COMMENT_MEASURE_NUMBERS
+                                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                                    % [saxophone 1 intermittent_voice_1 measure 10]
+                                                    \voiceOne
+                                                    <fs' gs'>8
+
+                                                    \afterGrace
+                                                    <fs' fs''>4.
+                                                    {
+
+                                                        <fs' fs''>16
+
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                        >>
+                                        \oneVoice
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [saxophone 2 voice measure 10]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.6 1)
-                                        a''4
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            a''8.
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [saxophone 2 voice measure 11]
-                                            a''4
-
-                                            a''16
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            r16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            a''8
-                                            ]
-                                            \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
+                                        % [saxophone 2 voice measure 11]
+                                        r4.
+                                        \bar "||"
 
                                     }
 
@@ -1156,200 +881,58 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 1]
-                                  %! MATERIAL_COLOR
-                                \staffHighlight #(rgb-color 0.6 0.6 1)
-                                c'4
-
-                                \times 2/3
-                                {
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
-
-                                    r16
-
-                                    c'8.
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
-                                    ~
-
-                                }
+                                r2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 2]
-                                c'4
-                                ~
+                                r2
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 3]
+                                r4.
 
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ]
-                                ~
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 4]
+                                r2
 
-                                \times 2/3
-                                {
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 5]
+                                r4..
 
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 3]
-                                    c'4
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 6]
+                                r4.
 
-                                    c'8
-                                    ~
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 7]
+                                r4..
 
-                                }
-
-                                c'8
-                                ~
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 4]
-                                    c'4
-
-                                    c'8
-                                    ~
-
-                                }
-
-                                c'4
-                                ~
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 5]
-                                    c'4
-                                    ~
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
-                                    ~
-
-                                }
-
-                                c'8.
-                                ~
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 6]
-                                    c'8
-
-                                    c'4
-                                    ~
-
-                                }
-
-                                c'8
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 7]
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
-
-                                    r16
-
-                                    c'8.
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
-                                    ~
-
-                                }
-
-                                c'8.
-                                ~
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [percussion voice measure 8]
-                                    c'4
-
-                                    c'8
-                                    ~
-
-                                }
-
-                                c'8
-                                ~
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [percussion voice measure 8]
+                                r4.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 9]
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ]
-                                ~
-
-                                \times 2/3
-                                {
-
-                                    c'4
-                                    ~
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'16
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
-                                    ]
-                                    ~
-
-                                }
+                                r2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 10]
-                                c'4
-                                ~
-
-                                c'4
+                                r2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [percussion voice measure 11]
-                                c'4
-                                ~
-
-                                c'8
+                                r4.
                                 \bar "||"
-                                  %! MATERIAL_COLOR
-                                \stopStaffHighlight
 
                             }
 
@@ -1377,188 +960,1573 @@
                                     \context Voice = "string 1 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 1]
-                                        r2
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'1
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 2]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 1]
+                                            \revert Staff.StaffSymbol.line-positions
+                                            \staff-line-count 1
+                                            \once \override Beam.grow-direction = #right
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            c'16 * 123/64
+                                              %! baca.bcps(6)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(6)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(6)
+                                            - \downbow
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 3]
-                                        r4.
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 4]
-                                        r2
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 113/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 5]
-                                        r4..
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                        \times 2/3
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 93/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 21/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 19/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 69/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 1
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 61/64
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 59/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                        }
+                                        \revert TupletNumber.text
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [string 1 voice measure 3]
+                                            \once \override Beam.grow-direction = #left
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 45/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 23/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 25/32
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 55/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 1
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 75/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 89/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 103/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 113/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                        }
+                                        \revert TupletNumber.text
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8.
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
+                                        {
+
+                                            \once \override Beam.grow-direction = #right
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 121/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 115/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 101/64
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 21/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 35/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 27/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 25/32
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 49/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                        }
+                                        \revert TupletNumber.text
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2.
+                                                        ~
+                                                        c'16
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 1 voice measure 6]
-                                            \revert Staff.StaffSymbol.line-positions
-                                            \staff-line-count 4
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
-                                            \clef "percussion"
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            f'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 107/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 47/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 41/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 9/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 65/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/16
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        f'16
-                                        [
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        d'16
-                                        ]
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 7]
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        b16
-                                        [
-
-                                        g16
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        b16
-                                        ]
-
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        d'16
-                                        [
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        f'32.
-                                        ]
-
-                                        d'32.
-
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        b32.
-                                        [
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        d'32.
-                                        ]
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [string 1 voice measure 8]
+                                            \once \override Beam.grow-direction = #left
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 45/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 23/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 25/32
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 55/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 1
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 75/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 89/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 103/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 113/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 63/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 115/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 91/64
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 35/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            f'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [string 1 voice measure 9]
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 127/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/8
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            f'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 105/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 11/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 37/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 33/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-right-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            g16
+                                            c'16 * 15/16
+                                              %! baca.bcps(1)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                            \bar "||"
 
                                         }
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            b16
-                                            [
-
-                                            d'16
-
-                                            f'16
-
-                                            d'16
-
-                                            \revert VanishingStringStaff.Stem.stemlet-length
-                                            b16
-                                            ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 10]
-                                        r2
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 1 voice measure 11]
-                                        r4.
-                                        \bar "||"
+                                        \revert TupletNumber.text
 
                                     }
 
@@ -1575,257 +2543,402 @@
                                     \context Voice = "viola voice"
                                     {
 
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [viola voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                                \clef "petrucci-c3"
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                a'8 * 2/7
-                                                [
-                                                (
-
-                                                bqf'8 * 2/7
-
-                                                c''8 * 2/7
-
-                                                aqs'8 * 2/7
-
-                                                f''8 * 2/7
-
-                                                cqs''8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \pitchedTrill
-                                                bf2
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak bound-details.right.padding 0
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak staff-padding 6
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \startTrillSpan bf
-
-                                            }
-
-                                        >>
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [viola voice measure 2]
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                c'''8 * 2/7
-                                                [
-                                                (
-
-                                                bqf''8 * 2/7
-
-                                                c'''8 * 2/7
-
-                                                dqf'''8 * 2/7
-
-                                                b''8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \pitchedTrill
-                                                c'2
-                                                  %! SPANNER_STOP
-                                                  %! baca._do_spanner_indicator_command(2)
-                                                  %! baca.trill_spanner()
-                                                \stopTrillSpan
-                                                  %! SPANNER_STOP
-                                                  %! baca._do_spanner_indicator_command(2)
-                                                  %! baca.trill_spanner()
-                                                \stopTrillSpan
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak bound-details.right.padding 0
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak staff-padding 6
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \startTrillSpan c'
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
-
-                                            }
-
-                                        >>
-
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 3]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
+                                        % [viola voice measure 1]
                                         \clef "petrucci-c3"
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        r8
+                                        f'8
+                                        \p
                                         [
-
-                                        c8
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \mf
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
                                           %! SPANNER_START
                                           %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        cs16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "1/2 P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanThree
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        d16
+                                        e'8
+                                        \mf
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \>
 
                                         \times 4/5
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [viola voice measure 4]
                                             \override Staff.Stem.stemlet-length = 0.75
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            d16
+                                            fs'8
+                                            \p
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            d8.
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            \<
 
                                             \revert Staff.Stem.stemlet-length
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            e16
+                                            d'8.
+                                            \f
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
                                         }
 
-                                        \times 2/3
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 2]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        d'4
+                                        \p
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            e16
+                                            d'8
+                                            \mf
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            f16
+                                            d'32
+                                            \p
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            g8
+                                            \<
 
                                             \revert Staff.Stem.stemlet-length
-                                            d8
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            e'16
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
                                             ]
-                                            ~
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
 
                                         }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 3]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        ef'8
+                                        \p
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanThree
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        f'8
+                                        \mf
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        cs'8
+                                        \p
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 4]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        cs'4
+                                        \f
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            cs'8
+                                            \p
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \<
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            cs'32
+                                            \mf
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
+
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            ef'16
+                                            \p
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-text "1/2 T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanTwo
+                                            \<
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 5]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        d'8
+                                        \f
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanThree
+                                        \>
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        e'16
+                                        \p
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        e'16
+                                        \mf
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'8.
+                                        \p
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 6]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4.
+                                        \f
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1833,174 +2946,75 @@
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [viola voice measure 5]
+                                            % [viola voice measure 7]
                                             \override Staff.Stem.stemlet-length = 0.75
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            d32
+                                            c'8
+                                            \p
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \<
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            ef16
+                                            d'16
+                                            \mf
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e32
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            \>
 
                                             \revert Staff.Stem.stemlet-length
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            fs32
+                                            cs'32
+                                            \p
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \<
 
                                         }
 
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        fs16.
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        g16.
+                                        cs'16
+                                        \f
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
-                                          %! baca.hairpin()
-                                        \pp
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 6]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
-                                        \clef "petrucci-c3"
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c16
-                                        [
+                                          %! baca.text_spanner()
+                                        \stopTextSpanThree
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \>
 
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c''16
+                                        ef'8
+                                        \p
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c8
-                                        ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \times 2/3
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [viola voice measure 7]
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''4
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c8
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                        }
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
-                                        [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
-                                        ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        \<
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2008,38 +3022,13 @@
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c4
+                                        b4.
+                                        \mf
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
-                                            [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''8
-                                            ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                        }
+                                        \>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2047,11 +3036,147 @@
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c''4
+                                        b4
+                                        \p
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \<
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        cs'8
+                                        \f
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "XT"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        \>
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'8
+                                        \p
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \times 8/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [viola voice measure 10]
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            d'8
+                                            \mf
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \default-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanThree
+                                            \>
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            bf4..
+                                            \p
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \<
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [viola voice measure 11]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        bf4
+                                        \f
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanThree
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
 
                                         \times 2/3
                                         {
@@ -2060,87 +3185,22 @@
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c''16
+                                            bf16
+                                            \p
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            \<
 
                                             \revert Staff.Stem.stemlet-length
-                                            c16
+                                            c'8
+                                            \mf
                                             ]
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
-
-                                        }
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 10]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.6 0.8 1)
-                                        \afterGrace
-                                        c'2
-                                        \glissando
-                                        {
-
-                                            c'8
-
-                                        }
-
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 11]
-                                        \afterGrace
-                                        c'4.
-                                        \glissando
-                                        {
-
-                                            c'8
                                             \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
-
 
                                     }
 
@@ -2172,196 +3232,1591 @@
                                     \context Voice = "string 2 voice"
                                     {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 1]
-                                        r2
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 2]
-                                        r2
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 3]
-                                        r4.
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 4]
-                                        r2
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 5]
-                                        r4..
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 6]
-                                        r4.
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 7]
-                                        r4..
-
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2.
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [string 2 voice measure 8]
+                                            % [string 2 voice measure 1]
                                             \revert Staff.StaffSymbol.line-positions
-                                            \staff-line-count 4
-                                              %! MATERIAL_COLOR
-                                            \staffHighlight #(rgb-color 1 0.2 0.2)
-                                            \clef "percussion"
+                                            \staff-line-count 1
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            f'16
+                                            c'16 * 15/8
+                                              %! baca.bcps(6)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(6)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(6)
+                                            - \downbow
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 115/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 103/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 11/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 37/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 1
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 7/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 49/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 47/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        f'16
-                                        [
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        d'16
-                                        ]
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [string 2 voice measure 9]
-                                        \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                        b16
-                                        [
-
-                                        g16
-
-                                        b16
-
-                                        \revert VanishingStringStaff.Stem.stemlet-length
-                                        d'16
-                                        ]
-
-                                        \times 4/5
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            f'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 127/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 105/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 11/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 37/32
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 33/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2...
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [string 2 voice measure 10]
+                                            % [string 2 voice measure 4]
+                                            \once \override Beam.grow-direction = #left
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 47/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 47/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 49/64
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 51/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 55/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 33/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 37/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 83/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 47/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 7/4
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 59/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            d'32
-                                            [
-
-                                            f'32
-
-                                            b32
-
-                                            d'32
-
-                                            f'32
-
-                                            d'32
-
-                                            \revert VanishingStringStaff.Stem.stemlet-length
-                                            b32
-                                            ]
-
-                                        }
-
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [string 2 voice measure 11]
+                                            % [string 2 voice measure 6]
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 61/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 115/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 49/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            f'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 5/4
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 33/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 57/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 25/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
+                                        \revert TupletNumber.text
 
-                                        \times 2/3
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'4..
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
                                         {
 
+                                            \once \override Beam.grow-direction = #right
                                             \override VanishingStringStaff.Stem.stemlet-length = 0.75
-                                            g16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 123/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
                                             [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
-                                            b16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 111/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 43/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 17/16
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert VanishingStringStaff.Stem.stemlet-length
-                                            d'16
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/16
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                        }
+                                        \revert TupletNumber.text
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2..
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
+                                        {
+
+                                            \once \override Beam.grow-direction = #left
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 3/4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 3/4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 25/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 53/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 29/32
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 63/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 71/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #7 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 5/4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 91/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #5 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 51/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 7/4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #3 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 15/8
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                        }
+                                        \revert TupletNumber.text
+
+                                        \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                            {
+                                                \context Score = "Score"
+                                                \with
+                                                {
+                                                    \override SpacingSpanner.spacing-increment = 0.5
+                                                    proportionalNotationDuration = ##f
+                                                }
+                                                <<
+                                                    \context RhythmicStaff = "Rhythmic_Staff"
+                                                    \with
+                                                    {
+                                                        \remove Time_signature_engraver
+                                                        \remove Staff_symbol_engraver
+                                                        \override Stem.direction = #up
+                                                        \override Stem.length = 5
+                                                        \override TupletBracket.bracket-visibility = ##t
+                                                        \override TupletBracket.direction = #up
+                                                        \override TupletBracket.minimum-length = 4
+                                                        \override TupletBracket.padding = 1.25
+                                                        \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                        \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                        \override TupletNumber.font-size = 0
+                                                        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                        tupletFullLength = ##t
+                                                    }
+                                                    {
+                                                        c'2
+                                                        ~
+                                                        c'8
+                                                    }
+                                                >>
+                                                \layout
+                                                {
+                                                    indent = 0
+                                                    ragged-right = ##t
+                                                }
+                                            }
+                                        \times 2/2
+                                        {
+
+                                            \once \override Beam.grow-direction = #right
+                                            \override VanishingStringStaff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 61/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #1 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 115/64
+                                              %! baca.bcps(8)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(8)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(8)
+                                            - \downbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #0 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 49/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #2 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 5/4
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #4 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 33/32
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #6 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 57/64
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            c'16 * 13/16
+                                              %! baca.bcps(7)
+                                            - \tweak self-alignment-X #left
+                                              %! baca.bcps(7)
+                                            - \tweak staff-padding 6
+                                              %! baca.bcps(7)
+                                            - \upbow
+                                              %! baca.bcps(3)
+                                            \bacaStopTextSpanBCP
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! baca.bcps(2)
+                                            - \tweak staff-padding 4
+                                              %! baca.bcps(2)
+                                            - \abjad-solid-line-with-arrow
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-left-text #9 #9
+                                              %! baca.bcps(2)
+                                            - \baca-bcp-spanner-right-text #8 #9
+                                              %! baca.bcps(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert VanishingStringStaff.Stem.stemlet-length
+                                            c'16 * 25/32
+                                              %! baca.bcps(1)
+                                            \bacaStopTextSpanBCP
                                             ]
                                             \bar "||"
-                                              %! MATERIAL_COLOR
-                                            \stopStaffHighlight
 
                                         }
+                                        \revert TupletNumber.text
 
                                     }
 
@@ -2378,246 +4833,227 @@
                                     \context Voice = "cello voice"
                                     {
 
-                                        <<
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 1]
+                                        \harmonicsOn
+                                        \clef "bass"
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        f,8
+                                        \p
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "1/2 P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 7
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-dashed-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-markup \diamond-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-markup \default-notehead-markup
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanThree
+                                        \<
 
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        fs,8
+                                        \mf
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 1]
-                                                  %! MATERIAL_COLOR
-                                                \staffHighlight #(rgb-color 0.961 0.961 0.406)
-                                                \clef "bass"
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                f8 * 2/7
-                                                [
-                                                (
+                                        \times 4/5
+                                        {
 
-                                                cqs'8 * 2/7
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            e,8
+                                            \p
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \<
 
-                                                c'8 * 2/7
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            af,8.
+                                            \f
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
 
-                                                a8 * 2/7
-                                                )
-                                                ]
+                                        }
 
-                                            }
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 2]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        af,2
+                                        \p
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
 
-                                            \context Voice = "temporary music"
-                                            {
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \pitchedTrill
-                                                f,2
-                                                ~
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak bound-details.right.padding 0
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak staff-padding 6
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \startTrillSpan f,
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 3]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            af,32
+                                            \mf
+                                            [
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [temporary music measure 2]
-                                                f,8
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            fs,16
+                                            \p
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \<
 
-                                            }
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            g,16
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
 
-                                        >>
+                                            \revert Staff.Stem.stemlet-length
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            f,16
+                                            \p
+                                            ]
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \<
 
-                                        <<
+                                        }
 
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                bqf'8 * 2/7
-                                                [
-                                                (
-
-                                                c''8 * 2/7
-
-                                                aqs'8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \pitchedTrill
-                                                aqf,4.
-                                                  %! SPANNER_STOP
-                                                  %! baca._do_spanner_indicator_command(2)
-                                                  %! baca.trill_spanner()
-                                                \stopTrillSpan
-                                                ~
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak bound-details.right.padding 0
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak staff-padding 6
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \startTrillSpan aqf,
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [temporary music measure 3]
-                                                aqf,8
-
-                                            }
-
-                                        >>
-
-                                        <<
-
-                                            \context Voice = "On_Beat_Grace_Container"
-                                            {
-                                                  %! abjad.on_beat_grace_container(1)
-                                                \set fontSize = #-3
-
-                                                  %! abjad.on_beat_grace_container(2)
-                                                \slash
-                                                  %! abjad.on_beat_grace_container(3)
-                                                \voiceOne
-                                                gqf'8 * 2/7
-                                                [
-                                                (
-
-                                                d''8 * 2/7
-                                                )
-                                                ]
-
-                                            }
-
-                                            \context Voice = "temporary music"
-                                            {
-
-                                                  %! abjad.on_beat_grace_container(4)
-                                                \voiceTwo
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \pitchedTrill
-                                                af4
-                                                  %! SPANNER_STOP
-                                                  %! baca._do_spanner_indicator_command(2)
-                                                  %! baca.trill_spanner()
-                                                \stopTrillSpan
-                                                  %! SPANNER_STOP
-                                                  %! baca._do_spanner_indicator_command(2)
-                                                  %! baca.trill_spanner()
-                                                \stopTrillSpan
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak bound-details.right.padding 0
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                - \tweak staff-padding 6
-                                                  %! SPANNER_START
-                                                  %! baca._do_spanner_indicator_command(1)
-                                                  %! baca.trill_spanner()
-                                                \startTrillSpan af
-                                                  %! MATERIAL_COLOR
-                                                \stopStaffHighlight
-
-                                            }
-
-                                        >>
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        a,8
+                                        \mf
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanThree
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 0.2 1 0.592)
-                                        \clef "bass"
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        r8.
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \mf
-                                        ]
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c8
-                                        [
+                                        a,2
+                                        \p
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \<
 
-                                        \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        cs8
-                                        ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \times 4/5
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 7/10
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
@@ -2627,216 +5063,249 @@
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            d16
+                                            a,16
+                                            \f
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            d8
+                                            g,8
+                                            \p
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-text "1/2 T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanTwo
+                                            \<
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            af,8
+                                            \mf
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                            \>
+
+                                            \tweak Accidental.stencil ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            \tweak transparent ##t
+                                            fs,8
+                                            \p
+                                              %! abjad.glissando(7)
+                                            - \abjad-zero-padding-glissando
+                                              %! abjad.glissando(7)
+                                            \glissando
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 7
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-markup \half-diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-markup \diamond-notehead-markup
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanThree
+                                            \<
 
                                             \revert Staff.Stem.stemlet-length
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            e8
+                                            bf,8.
+                                            \f
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/5
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e32
-                                            [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            f16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            g32
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d32
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 6]
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            d32
-                                            [
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            ef16.
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \revert Staff.Stem.stemlet-length
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            e32
-                                            ]
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                        }
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 6]
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        bf,4.
+                                        \p
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
 
                                         \times 2/3
                                         {
 
-                                            \override Staff.Stem.stemlet-length = 0.75
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 7]
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            fs8
-                                            [
+                                            bf,4
+                                            \mf
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
-                                            \revert Staff.Stem.stemlet-length
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            g16
-                                            ]
+                                            af,8
+                                            \p
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \<
 
                                         }
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 7]
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        g8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        a8
-
-                                        e16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        f8
+                                        a,16
+                                        \f
                                           %! SPANNER_STOP
                                           %! baca.PiecewiseCommand._call(3)
-                                          %! baca.hairpin()
-                                        \pp
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 8]
-                                          %! MATERIAL_COLOR
-                                        \staffHighlight #(rgb-color 1 0.2 0.2)
-                                        \clef "bass"
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c16
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        a,16
+                                        \p
                                         [
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c8
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        \<
 
                                         \revert Staff.Stem.stemlet-length
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c8
+                                        g,16
+                                        \mf
                                         ]
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \>
 
-                                        \times 2/3
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 8]
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        g,16
+                                        \p
+                                        [
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \revert Staff.Stem.stemlet-length
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        b,16
+                                        \f
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanThree
+                                        ]
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \>
+
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        b,4
+                                        \p
+                                          %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \<
+
+                                        \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
@@ -2845,164 +5314,111 @@
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c''4
+                                            b,2
+                                            \mf
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                            \>
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c8
+                                            a,8
+                                            \p
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak staff-padding 5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-dashed-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-text "XT"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanTwo
+                                            \<
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \times 8/11
                                         {
 
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 10]
                                             \override Staff.Stem.stemlet-length = 0.75
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c32
+                                            bf,8
+                                            \f
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c''32
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c8
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            \>
 
                                             \revert Staff.Stem.stemlet-length
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c32
+                                            af,8
+                                            \p
                                             ]
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                        }
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 10]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c8
-                                        [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''8
-                                        ]
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \times 4/5
-                                        {
+                                            \<
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c''4
+                                            c4..
+                                            \mf
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                               %! abjad.glissando(7)
                                             \glissando
-
-                                            \tweak Accidental.stencil ##f
-                                            \tweak X-extent #'(0 . 0)
-                                            \tweak transparent ##t
-                                            c16
-                                              %! abjad.glissando(7)
-                                            - \abjad-zero-padding-glissando
-                                              %! abjad.glissando(7)
-                                            \glissando
+                                            \>
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
-                                        [
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c''16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c16
-                                          %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c''8
-                                        ]
+                                        c4.
+                                        \p
                                         \bar "||"
-                                          %! MATERIAL_COLOR
-                                        \stopStaffHighlight
+                                        \revert-noteheads
 
                                     }
 
